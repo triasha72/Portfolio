@@ -1,6 +1,4 @@
-# Triasha Sarkar — Harsha-inspired research portfolio website
-
-This is a static, multi-page portfolio website inspired by the large-type, visual case-study feel of the reference portfolio, but rewritten for an academic/research review context.
+# Triasha Sarkar
 
 ## Files
 - `index.html` — homepage
