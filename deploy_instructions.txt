@@ -1,0 +1,11 @@
+DEPLOY STEPS
+
+1. Unzip Triasha_Sarkar_Final_Portfolio.zip.
+2. Open the folder named Triasha_Sarkar_Final_Portfolio.
+3. Select all contents inside the folder, not the folder itself.
+4. Upload those files to the root of your GitHub repository named Portfolio.
+5. Commit the changes.
+6. Wait 2-5 minutes for GitHub Pages to redeploy.
+7. Open: https://triasha72.github.io/Portfolio/
+
+Make sure index.html is directly in the repository root.

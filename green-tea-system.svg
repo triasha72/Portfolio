@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" role="img" aria-label="Forest residue SAF lifecycle system diagram">
+  <defs>
+    <linearGradient id="gt-bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#04191f"/><stop offset="1" stop-color="#082b33"/></linearGradient>
+    <linearGradient id="gt-teal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#2dd4bf"/><stop offset="1" stop-color="#0f7a6c"/></linearGradient>
+    <linearGradient id="gt-amber" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffc46b"/><stop offset="1" stop-color="#c97d10"/></linearGradient>
+    <filter id="gt-glow" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <marker id="gt-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#f5a524"/></marker>
+  </defs>
+  <rect width="900" height="620" rx="38" fill="url(#gt-bg)"/>
+  <g stroke="#0f3b41" stroke-width="2" fill="none" opacity=".8">
+    <path d="M-20 520 C160 430 300 470 460 360 S740 200 920 120"/>
+    <path d="M-20 560 C180 480 320 520 480 410 S760 250 920 170"/>
+    <path d="M-20 480 C140 390 280 420 440 310 S720 150 920 70"/>
+  </g>
+  <circle cx="790" cy="92" r="42" fill="url(#gt-amber)" opacity=".9" filter="url(#gt-glow)"/>
+  <circle cx="790" cy="92" r="58" fill="none" stroke="#f5a524" stroke-width="1.5" stroke-dasharray="3 8" opacity=".6"/>
+  <g transform="translate(90 340)">
+    <g fill="url(#gt-teal)">
+      <path d="M40 120 L70 40 L100 120 z"/><path d="M40 88 L70 16 L100 88 z"/>
+      <path d="M110 130 L134 66 L158 130 z"/><path d="M110 104 L134 46 L158 104 z"/>
+      <path d="M-10 132 L12 76 L34 132 z"/><path d="M-10 110 L12 60 L34 110 z"/>
+    </g>
+    <rect x="64" y="120" width="12" height="26" rx="3" fill="#8a5a24"/>
+    <rect x="128" y="130" width="10" height="20" rx="3" fill="#8a5a24"/>
+    <rect x="7" y="132" width="9" height="18" rx="3" fill="#8a5a24"/>
+    <text x="72" y="186" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="17" fill="#8beee0" font-weight="700">FOREST RESIDUE</text>
+  </g>
+  <g transform="translate(330 400)">
+    <rect x="0" y="18" width="86" height="44" rx="8" fill="#0d3a42" stroke="#2dd4bf" stroke-width="2"/>
+    <rect x="86" y="30" width="38" height="32" rx="6" fill="#0d3a42" stroke="#2dd4bf" stroke-width="2"/>
+    <rect x="8" y="26" width="70" height="12" rx="4" fill="#155e56"/>
+    <circle cx="26" cy="66" r="11" fill="#04191f" stroke="#ffc46b" stroke-width="3"/>
+    <circle cx="98" cy="66" r="11" fill="#04191f" stroke="#ffc46b" stroke-width="3"/>
+    <text x="60" y="106" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="17" fill="#8beee0" font-weight="700">LOGISTICS</text>
+  </g>
+  <g transform="translate(540 330)">
+    <rect x="0" y="50" width="120" height="86" rx="10" fill="#0d3a42" stroke="#2dd4bf" stroke-width="2"/>
+    <rect x="16" y="8" width="20" height="60" rx="6" fill="#155e56" stroke="#2dd4bf" stroke-width="1.5"/>
+    <rect x="52" y="-8" width="20" height="76" rx="6" fill="#155e56" stroke="#2dd4bf" stroke-width="1.5"/>
+    <circle cx="62" cy="-22" r="8" fill="#8beee0" opacity=".5"/>
+    <circle cx="70" cy="-36" r="6" fill="#8beee0" opacity=".35"/>
+    <circle cx="30" cy="92" r="16" fill="none" stroke="#f5a524" stroke-width="3"/>
+    <circle cx="72" cy="92" r="16" fill="none" stroke="#f5a524" stroke-width="3"/>
+    <rect x="94" y="76" width="14" height="34" rx="4" fill="#f5a524" opacity=".85"/>
+    <text x="60" y="176" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="17" fill="#8beee0" font-weight="700">CONVERSION</text>
+  </g>
+  <g transform="translate(672 150) rotate(-12)" filter="url(#gt-glow)">
+    <path d="M0 30 C36 18 96 14 132 22 C148 25 150 36 132 40 C96 48 36 44 0 34 z" fill="url(#gt-teal)"/>
+    <path d="M58 26 L36 -12 L52 -12 L84 24 z" fill="#2dd4bf"/>
+    <path d="M60 40 L48 66 L60 66 L82 42 z" fill="#1aa08f"/>
+    <path d="M124 20 L136 2 L144 4 L136 24 z" fill="#2dd4bf"/>
+    <circle cx="138" cy="31" r="5" fill="#ffc46b"/>
+  </g>
+  <text x="770" y="238" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="17" fill="#8beee0" font-weight="700">SAF FLIGHT</text>
+  <g fill="none" stroke="#f5a524" stroke-width="3" stroke-dasharray="10 8" marker-end="url(#gt-arrow)" opacity=".9">
+    <path d="M262 452 C290 448 300 446 322 442"/>
+    <path d="M462 440 C494 434 508 428 532 420"/>
+    <path d="M668 380 C712 340 726 300 742 252"/>
+  </g>
+  <path d="M742 200 C560 60 300 90 150 300" fill="none" stroke="#2dd4bf" stroke-width="2.5" stroke-dasharray="4 10" opacity=".7" marker-end="url(#gt-arrow)"/>
+  <g font-family="Inter,system-ui,sans-serif" font-weight="700">
+    <text x="360" y="158" font-size="14" fill="#8beee0" letter-spacing="3" opacity=".85">CARBON CYCLE</text>
+    <text x="64" y="82" font-size="26" fill="#eefbfa" letter-spacing="1">GREEN TEA - SAF LIFECYCLE</text>
+    <text x="64" y="110" font-size="15" fill="#96bcbe">techno-economic analysis (TEA) &#183; feedstock &#8594; conversion &#8594; policy</text>
+  </g>
+  <rect x="24" y="24" width="852" height="572" rx="32" fill="none" stroke="rgba(139,238,224,.18)" stroke-width="1.5"/>
+</svg>
