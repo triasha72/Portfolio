@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" role="img" aria-label="Gaussian process surrogate model with uncertainty band">
+  <defs>
+    <linearGradient id="sm-bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#04191f"/><stop offset="1" stop-color="#082b33"/></linearGradient>
+    <linearGradient id="sm-band" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#2dd4bf" stop-opacity=".34"/><stop offset=".5" stop-color="#2dd4bf" stop-opacity=".14"/><stop offset="1" stop-color="#2dd4bf" stop-opacity=".34"/></linearGradient>
+    <filter id="sm-glow" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="900" height="620" rx="38" fill="url(#sm-bg)"/>
+  <g stroke="#0d333b" stroke-width="1.5">
+    <path d="M110 140 H840 M110 240 H840 M110 340 H840 M110 440 H840" opacity=".7"/>
+    <path d="M110 520 V120 M292 520 V510 M474 520 V510 M656 520 V510 M838 520 V510"/>
+  </g>
+  <path d="M110 520 H840" stroke="#96bcbe" stroke-width="2"/>
+  <path d="M110 520 V120" stroke="#96bcbe" stroke-width="2"/>
+  <path d="M110 360 C170 280 220 236 290 260 C360 284 380 420 460 428 C540 436 570 300 650 262 C720 228 790 268 840 236 L840 320 C790 352 720 320 656 352 C580 390 545 490 460 482 C380 474 356 348 292 330 C232 314 176 380 110 440 Z" fill="url(#sm-band)"/>
+  <path d="M110 400 C170 320 225 268 291 295 C360 322 375 445 460 455 C545 465 560 345 653 307 C725 278 790 294 840 278" fill="none" stroke="#2dd4bf" stroke-width="4.5" filter="url(#sm-glow)"/>
+  <path d="M110 404 C180 330 240 300 300 312 C380 328 400 430 470 438 C560 448 580 330 660 300 C726 276 792 288 840 274" fill="none" stroke="#8beee0" stroke-width="1.6" stroke-dasharray="2 9" opacity=".8"/>
+  <g fill="#ffc46b" stroke="#04191f" stroke-width="2" filter="url(#sm-glow)">
+    <circle cx="150" cy="382" r="8"/><circle cx="235" cy="300" r="8"/><circle cx="310" cy="308" r="8"/>
+    <circle cx="392" cy="404" r="8"/><circle cx="460" cy="452" r="8"/><circle cx="540" cy="410" r="8"/>
+    <circle cx="614" cy="330" r="8"/><circle cx="700" cy="290" r="8"/><circle cx="788" cy="284" r="8"/>
+  </g>
+  <g stroke="#f5a524" stroke-width="2" opacity=".75">
+    <path d="M150 366 V398 M235 284 V316 M392 388 V420 M540 394 V426 M700 274 V306"/>
+  </g>
+  <g transform="translate(556 128)">
+    <rect width="284" height="96" rx="18" fill="rgba(4,25,31,.85)" stroke="rgba(139,238,224,.25)" stroke-width="1.5"/>
+    <circle cx="26" cy="28" r="6" fill="#ffc46b"/><text x="42" y="33" font-family="Inter,system-ui,sans-serif" font-size="14" fill="#d3efec">training data (multifidelity)</text>
+    <rect x="18" y="50" width="18" height="4" rx="2" fill="#2dd4bf"/><text x="42" y="58" font-family="Inter,system-ui,sans-serif" font-size="14" fill="#d3efec">GP surrogate mean</text>
+    <rect x="18" y="72" width="18" height="10" rx="3" fill="#2dd4bf" opacity=".28"/><text x="42" y="82" font-family="Inter,system-ui,sans-serif" font-size="14" fill="#d3efec">95% credible interval</text>
+  </g>
+  <g font-family="Inter,system-ui,sans-serif" font-weight="700">
+    <text x="64" y="82" font-size="26" fill="#eefbfa">SCIENTIFIC ML - SURROGATES</text>
+    <text x="64" y="110" font-size="15" fill="#96bcbe">Gaussian processes - operator learning - model reduction - UQ</text>
+    <text x="838" y="556" font-size="13" fill="#96bcbe" text-anchor="end">input parameter</text>
+    <text x="96" y="150" font-size="13" fill="#96bcbe" text-anchor="end" transform="rotate(-90 96 150)"> </text>
+  </g>
+  <rect x="24" y="24" width="852" height="572" rx="32" fill="none" stroke="rgba(139,238,224,.18)" stroke-width="1.5"/>
+</svg>
