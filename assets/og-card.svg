@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img"
+     aria-label="Triasha Sarkar, applied machine learning, model validation, uncertainty quantification">
+  <defs>
+    <linearGradient id="ogBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#03151a"/>
+      <stop offset="55%" stop-color="#062229"/>
+      <stop offset="100%" stop-color="#02100f"/>
+    </linearGradient>
+    <radialGradient id="ogTeal" cx="10%" cy="4%" r="52%">
+      <stop offset="0%" stop-color="#2dd4bf" stop-opacity=".26"/>
+      <stop offset="100%" stop-color="#2dd4bf" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="ogAmber" cx="92%" cy="88%" r="46%">
+      <stop offset="0%" stop-color="#f5a524" stop-opacity=".18"/>
+      <stop offset="100%" stop-color="#f5a524" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ogMark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2dd4bf" stop-opacity=".28"/>
+      <stop offset="100%" stop-color="#f5a524" stop-opacity=".10"/>
+    </linearGradient>
+    <linearGradient id="ogBarA" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f5a524" stop-opacity=".85"/>
+      <stop offset="100%" stop-color="#f5a524" stop-opacity=".12"/>
+    </linearGradient>
+    <linearGradient id="ogBarT" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2dd4bf" stop-opacity=".50"/>
+      <stop offset="100%" stop-color="#2dd4bf" stop-opacity=".08"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#ogBg)"/>
+  <rect width="1200" height="630" fill="url(#ogTeal)"/>
+  <rect width="1200" height="630" fill="url(#ogAmber)"/>
+
+  <g font-family="'Space Grotesk',Inter,DejaVu Sans,Helvetica,Arial,sans-serif">
+
+    <!-- brand mark -->
+    <circle cx="94" cy="92" r="30" fill="url(#ogMark)" stroke="#2dd4bf" stroke-opacity=".6" stroke-width="2.4"/>
+    <text x="94" y="102" text-anchor="middle" font-size="26" font-weight="700" fill="#2dd4bf">TS</text>
+    <text x="142" y="102" font-size="24" font-weight="700" fill="#eefbfa" letter-spacing="-.3">Triasha Sarkar</text>
+
+    <!-- accent rule -->
+    <rect x="64" y="168" width="72" height="4" rx="2" fill="#f5a524"/>
+
+    <!-- headline -->
+    <text x="64" y="248" font-size="62" font-weight="700" fill="#eefbfa" letter-spacing="-2.2">I build machine learning</text>
+    <text x="64" y="318" font-size="62" font-weight="700" fill="#eefbfa" letter-spacing="-2.2">models for engineering</text>
+    <text x="64" y="388" font-size="62" font-weight="700" fill="#eefbfa" letter-spacing="-2.2">systems &#8212; and I test</text>
+    <text x="64" y="458" font-size="62" font-weight="700" fill="#2dd4bf" letter-spacing="-2.2">whether they can be trusted.</text>
+
+    <!-- footer -->
+    <line x1="64" y1="516" x2="1136" y2="516" stroke="#8beee0" stroke-opacity=".18" stroke-width="1"/>
+    <text x="64" y="556" font-size="20" fill="#96bcbe" letter-spacing="1.4">Applied ML &#183; Model validation &#183; Uncertainty quantification &#183; ML systems</text>
+    <text x="64" y="590" font-size="19" fill="#f5a524" letter-spacing="1.2">triasha72.github.io/Portfolio</text>
+
+    <!-- small exposure-chart motif, bottom right -->
+    <g transform="translate(966,536)">
+      <rect x="0"  y="-46" width="26" height="46" rx="3" fill="url(#ogBarA)" stroke="#f5a524" stroke-opacity=".45"/>
+      <rect x="38" y="-30" width="26" height="30" rx="3" fill="url(#ogBarT)" stroke="#8beee0" stroke-opacity=".28"/>
+      <rect x="76" y="-33" width="26" height="33" rx="3" fill="url(#ogBarT)" stroke="#8beee0" stroke-opacity=".28"/>
+      <rect x="114" y="-28" width="26" height="28" rx="3" fill="url(#ogBarT)" stroke="#8beee0" stroke-opacity=".28"/>
+      <line x1="-6" y1="2" x2="148" y2="2" stroke="#8beee0" stroke-opacity=".25"/>
+    </g>
+  </g>
+</svg>
