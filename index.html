@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Triasha Sarkar | Applied ML & AI Engineer</title>
+  <meta name="description" content="Applied ML and AI engineer with a scientific-computing background. Production RAG, recommendation systems, uncertainty-aware scientific ML, model evaluation, deployment, and observability." />
+  <meta property="og:title" content="Triasha Sarkar | Applied ML & AI Engineer" />
+  <meta property="og:description" content="Applied ML, AI engineering, scientific ML, evaluated ML systems, deployment, and model reliability." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://triasha72.github.io/Portfolio/" />
+  <meta property="og:image" content="https://triasha72.github.io/Portfolio/assets/og-card.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://triasha72.github.io/Portfolio/assets/og-card.png" />
+  <link rel="canonical" href="https://triasha72.github.io/Portfolio/" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <style>
+    :root{
+      --bg:#071a1f; --text:#e8f4f2; --muted:#93aeb0; --faint:#6d8a8c;
+      --teal:#2dd4bf; --amber:#f5a524; --line:rgba(139,238,224,.14);
+      --panel:rgba(255,255,255,.028);
+      --display:'Space Grotesk',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+      --body:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+      --max:830px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+    body{margin:0;background:var(--bg);color:var(--text);font-family:var(--body);
+      font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+    a{color:var(--teal);text-decoration:none} a:hover{text-decoration:underline}
+    .wrap{max-width:var(--max);margin:0 auto;padding:64px 22px 80px}
+    .profile{display:flex;gap:26px;align-items:flex-start}
+    .avatar{width:112px;height:112px;border-radius:50%;flex:none;object-fit:cover;border:1px solid var(--line)}
+    .profile h1{font-family:var(--display);font-size:31px;font-weight:700;letter-spacing:-.02em;margin:2px 0 5px;line-height:1.15}
+    .headline{font-family:var(--display);font-size:16px;color:var(--text);margin:0 0 3px}
+    .role{margin:0;color:var(--muted);line-height:1.5}
+    .links{margin:14px 0 0;display:flex;flex-wrap:wrap;gap:8px 16px;font-size:14.5px}
+    .mail{color:var(--muted);font-size:14.5px;margin:8px 0 0}
+    .mail a{color:var(--muted);border-bottom:1px solid var(--line)}
+    section{margin:52px 0 0}
+    h2{font-family:var(--display);font-size:17px;font-weight:700;letter-spacing:.02em;margin:0 0 18px;padding-bottom:9px;border-bottom:1px solid var(--line)}
+    h3{font-family:var(--display)}
+    p{margin:0 0 15px}
+    .lede{color:var(--muted)} .lede strong{color:var(--text);font-weight:600}
+    .lane-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    .lane{padding:16px;border:1px solid var(--line);border-radius:8px;background:var(--panel)}
+    .lane h3{font-size:15px;margin:0 0 7px}
+    .lane p{font-size:14px;color:var(--muted);margin:0}
+    .chips{display:flex;flex-wrap:wrap;gap:7px;margin:16px 0 0;padding:0;list-style:none}
+    .chips li{font-size:13px;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:4px 11px;background:var(--panel)}
+    .rows{display:grid;gap:2px}
+    .row{display:grid;grid-template-columns:1fr auto;gap:8px 22px;align-items:baseline;padding:11px 0;border-bottom:1px solid rgba(139,238,224,.07)}
+    .row:last-child{border-bottom:none}
+    .row .what{margin:0}.row .what b{font-weight:600}.row .what span{display:block;color:var(--muted);font-size:14.5px;margin-top:1px}
+    .row .when{margin:0;color:var(--faint);font-size:14px;white-space:nowrap}
+    .year{font-family:var(--display);font-size:14px;font-weight:700;color:var(--amber);letter-spacing:.06em;margin:26px 0 12px}
+    .proj{display:grid;grid-template-columns:126px 1fr;gap:20px;padding:18px 0;border-bottom:1px solid rgba(139,238,224,.07)}
+    .proj-thumb{display:block;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:#04141a;aspect-ratio:3/2}
+    .proj-thumb img{width:100%;height:100%;object-fit:cover;display:block}
+    .proj h3{font-size:17px;font-weight:700;margin:0 0 5px;line-height:1.3;letter-spacing:-.01em}
+    .proj h3 a{color:var(--text)} .proj h3 a:hover{color:var(--teal);text-decoration:none}
+    .proj p{margin:0 0 8px;color:var(--muted);font-size:15px;line-height:1.55}
+    .proj .where{color:var(--faint);font-size:13.5px;margin:0 0 9px}
+    .proj-links{display:flex;flex-wrap:wrap;gap:14px;font-size:13.5px}
+    .metric{color:var(--text);font-weight:600}
+    .other-links{display:grid;gap:8px;font-size:14.5px}
+    .direction{border-left:2px solid var(--teal);padding-left:16px}
+    footer{margin:64px 0 0;padding-top:20px;border-top:1px solid var(--line);color:var(--faint);font-size:13.5px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+    @media (max-width:700px){
+      .lane-grid{grid-template-columns:1fr}
+      .proj{grid-template-columns:1fr}.proj-thumb{max-width:240px}
+    }
+    @media (max-width:620px){
+      .wrap{padding:44px 18px 60px}.profile{gap:18px}.avatar{width:84px;height:84px}
+      .profile h1{font-size:25px}.row{grid-template-columns:1fr;gap:2px}.row .when{white-space:normal}
+    }
+  </style>
+</head>
+<body>
+<main class="wrap">
+
+  <div class="profile">
+    <img class="avatar" src="assets/avatar.jpg" alt="Triasha Sarkar" width="112" height="112" />
+    <div>
+      <h1>Triasha Sarkar</h1>
+      <p class="headline">Applied ML / AI Engineer · Scientific Machine Learning</p>
+      <p class="role">M.S. Aerospace Engineering, Georgia Tech · Aerospace Systems Design Laboratory · Atlanta, GA</p>
+      <p class="links">
+        <a href="assets/Triasha_Sarkar_CV.pdf" target="_blank" rel="noreferrer">Resume</a>
+        <a href="https://github.com/triasha72" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/triasha-sarkar" target="_blank" rel="noreferrer">LinkedIn</a>
+      </p>
+      <p class="mail"><a href="mailto:tsarkar34@gatech.edu">tsarkar34@gatech.edu</a></p>
+    </div>
+  </div>
+
+  <section id="about">
+    <h2>About</h2>
+    <p class="lede">I build <strong>evaluated machine learning and AI systems</strong> from data and model development through serving, deployment, and observability. My recent work spans production RAG, recommender systems, uncertainty-aware surrogate modeling, optimization, and physics-based simulation.</p>
+    <p class="lede">My engineering background shapes how I work: a metric is useful only if the evaluation is honest, a model is useful only if its failure modes are understood, and a deployment is useful only if the result can be reproduced and monitored outside the notebook that produced it.</p>
+  </section>
+
+  <section id="methods">
+    <h2>What I build</h2>
+    <div class="lane-grid">
+      <div class="lane">
+        <h3>Applied AI & ML systems</h3>
+        <p>RAG, search, recommendation, ranking, FastAPI services, containerized inference, cloud deployment, and observability.</p>
+      </div>
+      <div class="lane">
+        <h3>Scientific ML</h3>
+        <p>Surrogate models, uncertainty quantification, operator learning, multi-objective optimization, and physics-based validation.</p>
+      </div>
+      <div class="lane">
+        <h3>Evaluation & reliability</h3>
+        <p>Leakage-aware splits, held-out evaluation, bootstrap intervals, regression gates, failure analysis, and traceable artifacts.</p>
+      </div>
+    </div>
+    <ul class="chips">
+      <li>Python</li><li>SQL</li><li>scikit-learn</li><li>PyTorch</li><li>TensorFlow</li>
+      <li>RAG</li><li>BM25</li><li>Sentence Transformers</li><li>cross-encoder reranking</li>
+      <li>FastAPI</li><li>Docker</li><li>GitHub Actions</li><li>ONNX</li>
+      <li>Google Cloud Run</li><li>Prometheus</li><li>OpenTelemetry</li>
+      <li>uncertainty quantification</li><li>surrogate modeling</li><li>optimization</li>
+    </ul>
+  </section>
+
+  <section id="work">
+    <h2>Selected work</h2>
+    <p class="year">2026</p>
+
+    <div class="proj">
+      <a class="proj-thumb" href="case-aerorag.html"><img src="assets/aerorag-card.svg" alt="AeroRAG-X architecture diagram" loading="lazy" /></a>
+      <div>
+        <h3><a href="case-aerorag.html">AeroRAG-X: evidence-grounded aerospace RAG</a></h3>
+        <p>Production-oriented RAG over NASA technical reports with BM25 + dense retrieval, reciprocal-rank fusion, cross-encoder reranking, evidence-sufficiency gating, structured LLM generation, claim-level citations, FastAPI, Docker, Prometheus, OpenTelemetry, and private Cloud Run deployment.</p>
+        <p><span class="metric">32-query development benchmark:</span> 100% answerability accuracy and claim-citation coverage. A separate 12-query held-out deterministic evaluation is tracked independently rather than used as a tuning target.</p>
+        <p class="where">Independent · Aug 2026</p>
+        <p class="proj-links"><a href="case-aerorag.html">Case study</a><a href="https://github.com/triasha72/AeroRAG-X" target="_blank" rel="noreferrer">Code</a></p>
+      </div>
+    </div>
+
+    <div class="proj">
+      <a class="proj-thumb" href="case-edgegenbench.html"><img src="assets/edgegenbench-card.svg" alt="EdgeGenBench workflow diagram" loading="lazy" /></a>
+      <div>
+        <h3><a href="case-edgegenbench.html">EdgeGenBench: uncertainty-aware surrogate modeling and edge inference</a></h3>
+        <p>Reproducible Scientific ML benchmark connecting synthetic aircraft-design physics, multi-output surrogate models, uncertainty estimation, safety-aware feasibility classification, constrained multi-objective optimization, physics validation, and ONNX deployment.</p>
+        <p><span class="metric">Current benchmark:</span> mean test R² 0.995 for HistGradientBoosting; ONNX Runtime reduced batch-1 Random Forest surrogate latency from 13.795 ms to 0.305 ms.</p>
+        <p class="where">Independent · Aug 2026</p>
+        <p class="proj-links"><a href="case-edgegenbench.html">Case study</a><a href="https://github.com/triasha72/EdgeGenBench" target="_blank" rel="noreferrer">Code</a></p>
+      </div>
+    </div>
+
+    <div class="proj">
+      <a class="proj-thumb" href="case-newslens.html"><img src="assets/newslens-card.svg" alt="NewsLens project card" loading="lazy" /></a>
+      <div>
+        <h3><a href="case-newslens.html">NewsLens: leakage-aware recommendation, search, and serving</a></h3>
+        <p>End-to-end ML system over Microsoft MIND with a DuckDB analytical layer, chronological evaluation, TF-IDF personalization, cold-start routing, bootstrap model comparison, subgroup diagnostics, checksummed artifacts, FastAPI, Docker, CI/CD, and 400+ automated tests.</p>
+        <p><span class="metric">Validation:</span> NDCG@10 0.3664, Recall@10 0.5955, Hit Rate@10 0.6762 across 31,393 chronological validation impressions.</p>
+        <p class="where">Independent · 2026</p>
+        <p class="proj-links"><a href="case-newslens.html">Case study</a><a href="https://github.com/triasha72/NewsLens" target="_blank" rel="noreferrer">Code</a></p>
+      </div>
+    </div>
+
+    <div class="proj">
+      <a class="proj-thumb" href="case-nurbs-bem.html"><img src="assets/nurbs-bem.svg" alt="NURBS-BEM project card" loading="lazy" /></a>
+      <div>
+        <h3><a href="case-nurbs-bem.html">NURBS-BEM: numerical electromagnetics and operator learning</a></h3>
+        <p>Mesh-free electromagnetic solver built from the integral formulation through code, with STEP-to-NURBS geometry processing, a two-fidelity simulation dataset, closed-form verification, and a GNN–DeepONet/SIREN surrogate pipeline.</p>
+        <p>The first neural training run failed silently after ~11 GPU-hours; gradient and activation diagnostics exposed input-scale overflow, disconnected parameters, and a physics-loss defect. The corrected pipeline is implemented; retraining remains intentionally unclaimed.</p>
+        <p class="where">Independent · Oct 2025–present</p>
+        <p class="proj-links"><a href="case-nurbs-bem.html">Case study</a><a href="https://github.com/triasha72/NURBS_BEM_EMSolver" target="_blank" rel="noreferrer">Code</a></p>
+      </div>
+    </div>
+
+    <div class="proj">
+      <a class="proj-thumb" href="case-srm.html"><img src="assets/srm-timeseries.svg" alt="SRM failure analysis chart" loading="lazy" /></a>
+      <div>
+        <h3><a href="case-srm.html">Diagnosing silent failures in a 15,120-case simulation study</a></h3>
+        <p>Audited a large solid-rocket-motor simulation campaign, identified 6,804 silent failures, removed duplicate-geometry leakage, and evaluated failure classification on unseen geometries.</p>
+        <p><span class="metric">Held-out result:</span> 96.8% accuracy and ROC AUC 0.986.</p>
+        <p class="where">Georgia Tech ASDL · 2026</p>
+        <p class="proj-links"><a href="case-srm.html">Case study</a></p>
+      </div>
+    </div>
+
+    <p class="year">2025–2026</p>
+    <div class="proj">
+      <a class="proj-thumb" href="case-green-tea.html"><img src="assets/green-tea-system.svg" alt="GREEN TEA system diagram" loading="lazy" /></a>
+      <div>
+        <h3><a href="case-green-tea.html">GREEN TEA: lifecycle and techno-economic modeling</a></h3>
+        <p>Well-to-wake lifecycle and techno-economic modeling for a forest-residue sustainable aviation fuel pathway, including parametric uncertainty and benchmarking against established aviation-fuel frameworks. The documented model is used by the sponsor.</p>
+        <p class="where">Georgia Tech ASDL · 2025–2026</p>
+        <p class="proj-links"><a href="case-green-tea.html">Case study</a></p>
+      </div>
+    </div>
+
+    <div class="other-links">
+      <span>Other work:
+        <a href="case-scientific-ml.html">classical surrogate modeling</a> ·
+        <a href="case-backtest.html">walk-forward equity backtesting</a> ·
+        <a href="case-atlanta.html">Atlanta mobility resilience digital twin</a>
+      </span>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="rows">
+      <div class="row">
+        <p class="what"><b>Georgia Tech, Aerospace Systems Design Laboratory</b><span>Graduate Research Assistant · ML, simulation reliability, uncertainty-aware decision support</span></p>
+        <p class="when">2025–2026</p>
+      </div>
+      <div class="row">
+        <p class="what"><b>Alten India, embedded at Rolls-Royce</b><span>Systems Engineer · Trent XWB-84 EP airworthiness certification</span></p>
+        <p class="when">Oct 2023–Apr 2025</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="rows">
+      <div class="row"><p class="what"><b>Georgia Institute of Technology</b><span>M.S., Aerospace Engineering</span></p><p class="when">Aug 2026</p></div>
+      <div class="row"><p class="what"><b>Cranfield University</b><span>M.Sc., Aerospace Vehicle Design · First Class Honours</span></p><p class="when">Feb 2023</p></div>
+      <div class="row"><p class="what"><b>SRM Institute of Science and Technology</b><span>B.Tech., Aerospace Engineering</span></p><p class="when">Jun 2021</p></div>
+    </div>
+  </section>
+
+  <section id="direction">
+    <h2>Current direction</h2>
+    <div class="direction">
+      <p class="lede">I am extending my work toward <strong>transformer adaptation, efficient GPU training, neural operators, model compression, and scalable ML infrastructure</strong>—especially where modern AI systems intersect with scientific computing and real engineering constraints.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p class="lede">For ML engineering, applied AI, or scientific ML opportunities: <a href="mailto:tsarkar34@gatech.edu">tsarkar34@gatech.edu</a>.</p>
+  </section>
+
+  <footer><span>Triasha Sarkar</span><span>Updated August 2026</span></footer>
+</main>
+</body>
+</html>
