@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>AeroRAG-X — Triasha Sarkar</title>
+<meta name="description" content="Production-oriented evidence-grounded RAG over NASA technical reports: hybrid retrieval, reranking, grounded generation, evaluation, FastAPI, Docker, observability, and Cloud Run."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css"/></head>
+<body><div class="grain" aria-hidden="true"></div>
+<header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">TS</span><span>Triasha Sarkar</span></a>
+<nav class="nav-links"><a href="index.html#work">Work</a><a href="index.html#direction">Direction</a><a href="index.html#methods">Methods</a><a href="index.html#contact">Contact</a></nav>
+<button class="menu-button" aria-label="Open menu">Menu</button></header>
+<main>
+<section class="case-hero section-pad">
+<a class="back-link" href="index.html#work">&larr; Back to portfolio</a>
+<p class="eyebrow">independent · RAG · retrieval · LLM systems · production ML</p>
+<h1>A technical answer is only as useful as the evidence it can point back to.</h1>
+<p>AeroRAG-X is a production-oriented retrieval-augmented generation system over a curated NASA Technical Reports Server corpus. I built it to make retrieval, answerability, citation validity, deployment, and operational behavior independently measurable rather than hidden behind a single “chatbot quality” impression.</p>
+</section>
+
+<section class="section-pad case-layout">
+<aside class="case-sidebar"><div class="case-panel"><h3>At a glance</h3><ul class="mini-list">
+<li>3,233 citation-preserving chunks</li>
+<li>BM25 + dense retrieval + Reciprocal Rank Fusion</li>
+<li>Cross-encoder reranking</li>
+<li>Evidence-sufficiency gating and grounded refusal</li>
+<li>OpenAI Responses API + deterministic local provider</li>
+<li>Claim-level citation resolution</li>
+<li>FastAPI + Docker + Cloud Run</li>
+<li>Prometheus + OpenTelemetry + load validation</li>
+<li>Held-out generation evaluation tracked separately</li>
+</ul><p><a class="repo-link" href="https://github.com/triasha72/AeroRAG-X" target="_blank" rel="noreferrer">View the repository &rarr;</a></p></div></aside>
+
+<div>
+<article class="case-panel"><h2>The engineering question</h2>
+<p>RAG systems fail in several different places: the source corpus can be wrong, chunk provenance can disappear, retrieval can miss the evidence, generation can answer when evidence is insufficient, citations can point to the wrong source, and an API can be “up” while the actual model runtime is broken. AeroRAG-X treats those as separate engineering problems with separate tests and telemetry.</p>
+</article>
+
+<article class="case-panel"><h2>Retrieval before generation</h2>
+<p>The corpus is built from NASA NTRS metadata and PDFs with versioned manifests, checksums, page-level extraction, and citation-preserving overlapping chunks. Retrieval is evaluated independently using BM25, Sentence Transformer dense retrieval, Reciprocal Rank Fusion, and a cross-encoder reranker.</p>
+<table class="mini-table"><thead><tr><th>Retriever</th><th>Recall@10</th><th>MRR@10</th><th>NDCG@10</th></tr></thead>
+<tbody><tr><td>BM25</td><td>0.4016</td><td>0.7292</td><td>0.5321</td></tr>
+<tr><td>Dense</td><td>0.2778</td><td>0.5521</td><td>0.3976</td></tr>
+<tr><td>Hybrid RRF</td><td>0.3024</td><td>0.7639</td><td>0.4777</td></tr>
+<tr><td>Reranker top-20</td><td>0.3375</td><td><strong>0.8375</strong></td><td>0.5080</td></tr></tbody></table>
+<p>The point of keeping these numbers separate is diagnostic: an LLM should not be allowed to hide a retrieval regression by producing a plausible answer anyway.</p>
+</article>
+
+<article class="case-panel"><h2>Generation is gated by evidence</h2>
+<p>Before a provider is called, the pipeline checks whether the retrieved evidence is sufficient for the requested claim. Numeric support, named anchors, qualifiers, and supported synthesis patterns are checked deterministically. Unsupported questions are refused rather than routed blindly to the LLM.</p>
+<p>The final 32-query development benchmark recorded 100% answerability accuracy, 100% unsupported refusal, 100% claim-citation coverage, and 100% structural validity under the selected configuration. Those numbers are development-benchmark results, not a claim of universal RAG correctness.</p>
+</article>
+
+<article class="case-panel"><h2>The held-out result stays held out</h2>
+<p>A separate 12-query deterministic set was kept outside the 32-query development benchmark and was not used to choose retrieval or sufficiency settings. It recorded 0.9167 answerability accuracy and 0.8333 unsupported refusal, with full claim-citation and citation-reference validity. I keep that result visible because a held-out set stops being evidence if it becomes another tuning target.</p>
+</article>
+
+<article class="case-panel"><h2>Serving and observability</h2>
+<p>The same RAG runtime is used by the CLI and FastAPI service. Runtime loading happens once at application startup. The service exposes health, readiness, structured errors, request IDs, and a query endpoint. Docker runs non-root with read-only runtime artifacts.</p>
+<p>Operational behavior is instrumented with structured JSON logs, Prometheus metrics, OpenTelemetry traces, detailed stage timings, provider telemetry, and deterministic HTTP load validation. The service is deployed privately on Google Cloud Run Gen2 with read-only Cloud Storage artifact mounts.</p>
+</article>
+
+<article class="case-panel"><h2>What this project demonstrates</h2>
+<p>For me, the important part is not the acronym RAG. It is the systems boundary: data provenance, retrieval, ranking, model-provider behavior, evaluation, API contracts, containers, cloud deployment, traces, metrics, and regression policies are all part of the model once the model is expected to serve users.</p>
+</article>
+</div></section>
+</main><script src="script.js"></script></body></html>
