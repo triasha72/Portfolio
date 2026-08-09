@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#071a1f"/>
+      <stop offset="100%" stop-color="#0d2830"/>
+    </linearGradient>
+    <style>
+      .title{font:700 38px 'Arial', sans-serif; fill:#e8f4f2}
+      .sub{font:500 18px 'Arial', sans-serif; fill:#93aeb0}
+      .label{font:700 22px 'Arial', sans-serif; fill:#e8f4f2}
+      .small{font:500 18px 'Arial', sans-serif; fill:#93aeb0}
+      .chip{fill:#0f2329; stroke:#2dd4bf; stroke-opacity:.28; stroke-width:2}
+      .accent{stroke:#2dd4bf; stroke-width:4; fill:none; marker-end:url(#arrow)}
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L10,3 L0,6 z" fill="#2dd4bf"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <text x="70" y="80" class="title">EdgeGenBench</text>
+  <text x="70" y="116" class="sub">Uncertainty-aware Scientific ML benchmark for design, safety, optimization, and edge inference</text>
+
+  <rect x="70" y="180" rx="18" ry="18" width="210" height="95" class="chip"/>
+  <text x="175" y="218" text-anchor="middle" class="label">Physics model</text>
+  <text x="175" y="244" text-anchor="middle" class="small">synthetic aircraft design data</text>
+
+  <rect x="350" y="180" rx="18" ry="18" width="250" height="95" class="chip"/>
+  <text x="475" y="218" text-anchor="middle" class="label">Surrogate models</text>
+  <text x="475" y="244" text-anchor="middle" class="small">Ridge · RF · HistGB</text>
+
+  <rect x="670" y="180" rx="18" ry="18" width="220" height="95" class="chip"/>
+  <text x="780" y="218" text-anchor="middle" class="label">Uncertainty</text>
+  <text x="780" y="244" text-anchor="middle" class="small">conformal + tree quantiles</text>
+
+  <rect x="960" y="180" rx="18" ry="18" width="170" height="95" class="chip"/>
+  <text x="1045" y="218" text-anchor="middle" class="label">Feasibility</text>
+  <text x="1045" y="244" text-anchor="middle" class="small">false-safe aware</text>
+
+  <rect x="160" y="470" rx="18" ry="18" width="220" height="95" class="chip"/>
+  <text x="270" y="508" text-anchor="middle" class="label">Optimizer</text>
+  <text x="270" y="534" text-anchor="middle" class="small">20,000 candidates</text>
+
+  <rect x="450" y="470" rx="18" ry="18" width="220" height="95" class="chip"/>
+  <text x="560" y="508" text-anchor="middle" class="label">Pareto front</text>
+  <text x="560" y="534" text-anchor="middle" class="small">multi-objective tradeoffs</text>
+
+  <rect x="740" y="470" rx="18" ry="18" width="220" height="95" class="chip"/>
+  <text x="850" y="508" text-anchor="middle" class="label">Physics validation</text>
+  <text x="850" y="534" text-anchor="middle" class="small">agreement checks</text>
+
+  <rect x="980" y="470" rx="18" ry="18" width="150" height="95" class="chip"/>
+  <text x="1055" y="508" text-anchor="middle" class="label">ONNX</text>
+  <text x="1055" y="534" text-anchor="middle" class="small">edge inference</text>
+
+  <path d="M280 228 L350 228" class="accent"/>
+  <path d="M600 228 L670 228" class="accent"/>
+  <path d="M890 228 L960 228" class="accent"/>
+  <path d="M1045 275 L1045 385 L270 385 L270 470" class="accent"/>
+  <path d="M380 517 L450 517" class="accent"/>
+  <path d="M670 517 L740 517" class="accent"/>
+  <path d="M960 517 L980 517" class="accent"/>
+
+  <rect x="70" y="650" rx="18" ry="18" width="1060" height="90" fill="#0f2329" stroke="#2dd4bf" stroke-opacity=".18"/>
+  <text x="100" y="688" class="label" font-size="20">What this demonstrates</text>
+  <text x="100" y="718" class="small">Scientific ML that is evaluated not only on accuracy, but also on safety, optimization utility, and deployable inference.</text>
+</svg>
