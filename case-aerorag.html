@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>AeroRAG-X - Triasha Sarkar</title>
+<meta name="description" content="Evidence-grounded RAG over public NASA technical literature, with hybrid retrieval, LLM adaptation, evaluation, and bounded adaptive orchestration."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css"/></head>
+<body><div class="grain" aria-hidden="true"></div>
+<header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">TS</span><span>Triasha Sarkar</span></a>
+<nav class="nav-links"><a href="index.html#work">Work</a><a href="index.html#experience">Experience</a><a href="index.html#skills">Skills</a><a href="index.html#contact">Contact</a></nav>
+<button class="menu-button" aria-label="Open menu">Menu</button></header>
+<main>
+<section class="case-hero section-pad">
+<a class="back-link" href="index.html#work">&larr; Back to portfolio</a>
+<p class="eyebrow">independent · generative AI · retrieval · evaluation · ML systems</p>
+<h1>Evidence-grounded answers for technical literature.</h1>
+<p>AeroRAG-X is an independent RAG system over public NASA technical literature. It is designed around a simple requirement: an answer should remain traceable to the evidence that supports it, and the system should decline to make unsupported claims.</p>
+</section>
+<section class="section-pad case-layout">
+<aside class="case-sidebar"><div class="case-panel"><h3>At a glance</h3><ul class="mini-list">
+<li>Public NASA technical literature</li><li>BM25 + dense retrieval</li><li>Reciprocal Rank Fusion</li><li>Cross-encoder reranking</li><li>pgvector and evidence-sufficiency checks</li><li>Local Qwen adaptation with PEFT/LoRA</li><li>Adaptive retrieval and safe refusal paths</li><li>FastAPI, Docker, CI/CD, observability</li>
+</ul><p><a class="repo-link" href="https://github.com/triasha72/AeroRAG-X" target="_blank" rel="noreferrer">View the repository &rarr;</a></p></div></aside>
+<div>
+<article class="case-panel"><h2>Project context</h2><p>AeroRAG-X was independently inspired by HERO, a Georgia Tech coursework grand challenge on airline safety and risk assessment. HERO involved restricted FOQA and ASAP records. AeroRAG-X does not use those records: it uses public NASA technical literature so the corpus, evaluation assets, and engineering decisions can be shared and reproduced.</p></article>
+<article class="case-panel"><h2>Retrieval before generation</h2><p>The system combines lexical BM25 and dense retrieval, fuses result lists with Reciprocal Rank Fusion, and applies cross-encoder reranking before a model generates a response. Evidence-sufficiency checks decide whether the retrieved material supports an answer. When it does not, the system preserves provenance and follows a refusal path instead of generating an unsupported assertion.</p></article>
+<article class="case-panel"><h2>Local LLM adaptation and evaluation</h2><p>I adapted a local Qwen LLM with PEFT/LoRA and built a protected evaluation framework for both the model and the RAG system. The goal was to measure evidence coverage and safe behavior, rather than treating fluent text as proof of quality.</p>
+<table class="mini-table"><thead><tr><th>Defined evaluation measure</th><th>Result</th></tr></thead><tbody>
+<tr><td>Conservative semantic concept coverage</td><td>38.2% → <strong>51.3%</strong></td></tr>
+<tr><td>Full answer-to-claim capture</td><td>10% → <strong>45%</strong></td></tr>
+<tr><td>Broad claim-to-evidence support</td><td>~90%</td></tr>
+<tr><td>Safe non-assertion on grounded unsupported-query tests</td><td><strong>100%</strong></td></tr>
+</tbody></table><p>These results describe the defined evaluation suite, not a claim of universal RAG correctness. The suite is deliberately kept separate from the development decisions it is meant to test.</p></article>
+<article class="case-panel"><h2>Bounded adaptive retrieval</h2><p>The system implements bounded adaptive retrieval in both native orchestration and LangGraph/LangChain. Evidence assessment can trigger conditional query rewriting, but the workflow is limited to a maximum two-pass retrieval policy with deterministic termination. It also preserves refusal provenance and includes parity tests between orchestration paths.</p><p>Adaptive retrieval is evaluated against single-pass RAG on recovery quality, unsupported assertions, citation integrity, latency, and retrieval overhead.</p></article>
+<article class="case-panel"><h2>Reproducible ML-system experimentation</h2><p>The platform includes Dockerized services, CI/CD, OpenTelemetry and Prometheus observability, local-inference and quantization benchmarks, multimodal text/table/figure retrieval, regression-tested evaluation suites, and versioned configurations and artifacts. The point is not to turn a retrieval demo into a large platform; it is to make system behavior inspectable, testable, and reproducible.</p></article>
+</div></section>
+</main><script src="script.js"></script></body></html>
