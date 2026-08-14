@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>AeroSynth-Eval - Triasha Sarkar</title>
+<meta name="description" content="Reproducible multimodal VLM evaluation for synthetic aerospace inspection imagery with protected test data, provenance, and strict evaluation contracts."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css"/></head>
+<body><div class="grain" aria-hidden="true"></div>
+<header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">TS</span><span>Triasha Sarkar</span></a>
+<nav class="nav-links"><a href="index.html#work">Work</a><a href="index.html#experience">Experience</a><a href="index.html#skills">Skills</a><a href="index.html#contact">Contact</a></nav>
+<button class="menu-button" aria-label="Open menu">Menu</button></header>
+<main>
+<section class="case-hero section-pad">
+<a class="back-link" href="index.html#work">&larr; Back to portfolio</a>
+<p class="eyebrow">independent · multimodal AI · VLM evaluation · reliability engineering</p>
+<h1>Evaluating multimodal AI before trusting its output.</h1>
+<p>AeroSynth-Eval is a reproducible evaluation project for synthetic aerospace inspection imagery. It focuses on benchmark design, provenance, protected test boundaries, strict response contracts, and human-reviewable evaluation rather than treating a single VLM output as proof of quality.</p>
+</section>
+<section class="section-pad case-layout">
+<aside class="case-sidebar"><div class="case-panel"><h3>At a glance</h3><ul class="mini-list">
+<li>48 frozen scenarios</li><li>36 development / 12 protected test</li><li>48 deterministic synthetic PNG assets</li><li>SHA-256 provenance</li><li>Pydantic + Typer contracts</li><li>Protected-test rejection</li><li>Human annotation queue</li><li>Synthetic agreement fixtures for CI only</li><li>MLX-VLM local development adapter</li><li>Ruff + strict mypy + pytest + GitHub Actions</li>
+</ul><p><a class="repo-link" href="https://github.com/triasha72/AeroSynth-Eval" target="_blank" rel="noreferrer">View the repository &rarr;</a></p></div></aside>
+<div>
+<article class="case-panel"><h2>The evaluation question</h2><p>The project asks whether a vision-language model can evaluate a synthetic aircraft-exterior inspection image against an explicit, human-reviewable rubric while preserving exactly which asset, scenario, and evaluation request produced the result.</p><p>The goal is not to claim operational inspection capability. The goal is to make evaluation inputs, outputs, provenance, and failure boundaries measurable.</p></article>
+<article class="case-panel"><h2>Frozen scenario design</h2><p>The benchmark defines 48 scenarios across aircraft regions, anomaly types, materials, backgrounds, lighting conditions, and capture profiles. The split is frozen at 36 development scenarios and 12 protected test scenarios so development decisions cannot silently consume the evaluation set.</p></article>
+<article class="case-panel"><h2>Deterministic corpus and provenance</h2><p>Each frozen scenario is materialized as a deterministic procedural PNG with a recorded generation specification, seed, timestamp, renderer version, and SHA-256 digest. Registry and manifest checks detect missing assets, mismatched metadata, and corpus drift before evaluation begins.</p></article>
+<article class="case-panel"><h2>Typed evaluation contracts</h2><p>Pydantic and Typer define the benchmark's data and command interfaces. VLM responses are schema constrained: unexpected fields, invalid scores, malformed JSON, metadata mismatches, and protected-test requests are rejected instead of being accepted as usable evaluation records.</p></article>
+<article class="case-panel"><h2>Human-review infrastructure</h2><p>The project includes a balanced development-only annotation queue and validated reviewer-response contracts. Synthetic agreement fixtures exist only to test the analysis and CI workflow; they are not human agreement evidence and are never presented as model-performance results.</p></article>
+<article class="case-panel"><h2>Optional local MLX-VLM runner</h2><p>An Apple-Silicon MLX-VLM adapter runs one development asset at a time after verifying corpus and image integrity. The runner binds model responses to exact asset, scenario, rubric, model, runtime, prompt, and image-digest metadata before writing a local record.</p><p>This is a development inference path, not an aggregate VLM accuracy or calibration claim.</p></article>
+<article class="case-panel"><h2>Automated reliability gates</h2><p>GitHub Actions run formatting, linting, strict type checking, tests, scenario and asset validation, corpus integrity checks, annotation-contract validation, prompt preview checks, response-fixture validation, and no-inference MLX-VLM smoke plans.</p></article>
+</div></section>
+</main><script src="script.js"></script></body></html>

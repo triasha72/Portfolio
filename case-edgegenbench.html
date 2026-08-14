@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>EdgeGenBench - Triasha Sarkar</title>
+<meta name="description" content="Scientific ML benchmark for uncertainty-aware aircraft-design surrogates, safety-conscious feasibility classification, constrained optimization, physics validation, and ONNX inference."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css"/></head>
+<body><div class="grain" aria-hidden="true"></div>
+<header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">TS</span><span>Triasha Sarkar</span></a>
+<nav class="nav-links"><a href="index.html#work">Work</a><a href="index.html#experience">Experience</a><a href="index.html#skills">Skills</a><a href="index.html#contact">Contact</a></nav>
+<button class="menu-button" aria-label="Open menu">Menu</button></header>
+<main>
+<section class="case-hero section-pad">
+<a class="back-link" href="index.html#work">&larr; Back to portfolio</a>
+<p class="eyebrow">independent · scientific ML · uncertainty · optimization · efficient inference</p>
+<h1>A surrogate matters only when it works inside a decision loop.</h1>
+<p>EdgeGenBench is a reproducible benchmark for hybrid-electric and hydrogen regional-aircraft design. It evaluates predictive accuracy together with uncertainty, safety-aware feasibility decisions, optimization behavior, physics validation, and deployment equivalence.</p>
+</section>
+<section class="section-pad case-layout">
+<aside class="case-sidebar"><div class="case-panel"><h3>At a glance</h3><ul class="mini-list">
+<li>6,000-sample deterministic synthetic benchmark</li><li>Ridge regression</li><li>Random Forest regression</li><li>HistGradientBoosting regression</li><li>Tree-quantile uncertainty</li><li>Split-conformal prediction</li><li>False-safe-aware feasibility classification</li><li>Constrained multi-objective optimization</li><li>Physics-based validation</li><li>ONNX export + equivalence checks</li><li>Batch latency benchmarking</li>
+</ul><p><a class="repo-link" href="https://github.com/triasha72/EdgeGenBench" target="_blank" rel="noreferrer">View the repository &rarr;</a></p></div></aside>
+<div>
+<article class="case-panel"><h2>Benchmark design</h2><p>The v0.1 benchmark starts with 6,000 deterministic synthetic aircraft-design samples spanning passenger capacity, design range, cruise speed, battery specific energy, hydrogen storage efficiency, hybridization ratio, and propulsion architecture.</p><p>Ridge, Random Forest, and HistGradientBoosting surrogates are compared under reproducible train, validation, calibration, and held-out test partitions.</p></article>
+<article class="case-panel"><h2>Held-out modeling results</h2><table class="mini-table"><thead><tr><th>Measure</th><th>Current result</th></tr></thead><tbody>
+<tr><td>Best mean held-out test R²</td><td><strong>0.995171</strong></td></tr>
+<tr><td>Best mean held-out NRMSE</td><td><strong>0.062249</strong></td></tr>
+<tr><td>Feasibility-classifier ROC AUC</td><td><strong>99.89%</strong></td></tr>
+<tr><td>False-safe rate</td><td><strong>2.12%</strong></td></tr>
+</tbody></table><p>HistGradientBoosting provides the strongest classical predictive accuracy, while Random Forest is retained for uncertainty estimation, optimization, and ONNX export.</p></article>
+<article class="case-panel"><h2>Uncertainty and safety-aware feasibility</h2><p>The benchmark combines Random Forest tree-quantile intervals with split-conformal prediction and a feasibility classifier whose operating point is selected with explicit attention to false-safe errors.</p><p>The ordinary validation threshold is not assumed to remain safe under optimizer-selected data. A separate physics-validated optimization acceptance threshold is therefore used for downstream design selection.</p></article>
+<article class="case-panel"><h2>Optimization inside the model loop</h2><p>Latin-hypercube sampling generates 20,000 candidate designs. The constrained optimization workflow accepts 5,413 candidates, extracts 47 Pareto designs, and selects representative solutions for direct physics-model checks.</p><p>The reported Pareto-front and representative-design feasibility agreement is 100% for the current benchmark configuration.</p></article>
+<article class="case-panel"><h2>ONNX deployment and equivalence</h2><p>The Random Forest surrogate and feasibility classifier are exported to ONNX and checked against their scikit-learn counterparts before latency claims are made. Classifier decision agreement is 100%, with a maximum probability error of 1.82 × 10⁻⁷.</p><p>At batch size 1, surrogate latency improves from <strong>13.795 ms</strong> in scikit-learn to <strong>0.305 ms</strong> in ONNX Runtime; classifier latency improves from 14.787 ms to 0.311 ms.</p></article>
+<article class="case-panel"><h2>Scope</h2><p>EdgeGenBench v0.1 does not include a neural surrogate, INT8 quantization, a Design Review Agent, mobile GPU/NPU benchmarking, or production aircraft data. Those are roadmap directions rather than current implementation claims.</p></article>
+</div></section>
+</main><script src="script.js"></script></body></html>
