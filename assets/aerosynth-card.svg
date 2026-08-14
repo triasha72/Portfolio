@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" role="img" aria-labelledby="title desc">
+  <title id="title">AeroSynth-Eval multimodal evaluation diagram</title>
+  <desc id="desc">A stylized inspection image flows through provenance and rubric checks into a validated VLM evaluation record.</desc>
+  <rect width="600" height="400" rx="30" fill="#06191e"/>
+  <g fill="none" stroke="#51e2cd" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="55" y="92" width="150" height="132" rx="18"/>
+    <path d="M86 183l35-34 29 22 26-42"/>
+    <circle cx="165" cy="128" r="10"/>
+    <path d="M205 158h65"/>
+    <path d="M252 143l18 15-18 15"/>
+    <rect x="286" y="78" width="122" height="68" rx="14"/>
+    <path d="M313 105h68M313 123h44"/>
+    <rect x="286" y="170" width="122" height="68" rx="14"/>
+    <path d="M313 197h68M313 215h50"/>
+    <path d="M408 158h64"/>
+    <path d="M454 143l18 15-18 15"/>
+    <rect x="480" y="103" width="72" height="110" rx="16"/>
+    <path d="M500 134h32M500 154h32M500 174h21"/>
+    <path d="M493 246c18 21 44 21 62 0"/>
+  </g>
+  <g fill="#edf8f6" font-family="Arial, Helvetica, sans-serif">
+    <text x="55" y="57" font-size="28" font-weight="700">AeroSynth-Eval</text>
+    <text x="55" y="268" font-size="18">synthetic asset</text>
+    <text x="286" y="270" font-size="18">provenance + rubric</text>
+    <text x="468" y="270" font-size="18">validated output</text>
+  </g>
+  <g fill="#afc8c6" font-family="Arial, Helvetica, sans-serif" font-size="16">
+    <text x="55" y="321">48 scenarios · protected test split · strict schema validation</text>
+    <text x="55" y="348">multimodal evaluation with human-reviewable contracts</text>
+  </g>
+</svg>
