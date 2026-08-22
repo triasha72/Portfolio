@@ -5,11 +5,11 @@
 <meta name="description" content="Reproducible multimodal VLM evaluation framework with frozen scenarios, deterministic assets, protected test boundaries, annotation contracts, and an MLX-VLM development runner."/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet"/>
-<link rel="stylesheet" href="styles.css"/></head>
-<body><div class="grain" aria-hidden="true"></div>
+<link rel="stylesheet" href="case-styles.css"/></head>
+<body>
 <header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">TS</span><span>Triasha Sarkar</span></a>
 <nav class="nav-links"><a href="index.html#work">Work</a><a href="index.html#experience">Experience</a><a href="index.html#skills">Skills</a><a href="index.html#contact">Contact</a></nav>
-<button class="menu-button" aria-label="Open menu">Menu</button></header>
+</header>
 <main>
 <section class="case-hero section-pad">
 <a class="back-link" href="index.html#work">&larr; Back to portfolio</a>
@@ -17,6 +17,7 @@
 <h1>Build the evaluation boundary before claiming the evaluator works.</h1>
 <p>AeroSynth-Eval is a research and engineering framework for evaluating synthetic aerospace inspection imagery against explicit, human-reviewable rubrics. The current repo is intentionally stronger on benchmark integrity than on model-quality claims.</p>
 </section>
+<figure class="case-visual"><img src="assets/aerosynth-card.svg" alt="AeroSynth-Eval protected multimodal evaluation workflow"/><figcaption>Frozen scenarios, deterministic image assets, provenance checks, and protected evaluation keep model claims inside the available evidence.</figcaption></figure>
 <section class="section-pad case-layout">
 <aside class="case-sidebar"><div class="case-panel"><h3>At a glance</h3><ul class="mini-list"><li>48 frozen scenarios</li><li>36 development / 12 protected test</li><li>48 deterministic synthetic PNG assets</li><li>SHA-256 provenance and registry validation</li><li>12-item balanced development annotation queue</li><li>Typed prompt/response and evaluation contracts</li><li>Optional local MLX-VLM single-asset development runner</li><li>Ruff + strict mypy + pytest + GitHub Actions</li><li>No aggregate VLM accuracy or human-agreement claim yet</li></ul><p><a class="repo-link" href="https://github.com/triasha72/AeroSynth-Eval" target="_blank" rel="noreferrer">View the repository &rarr;</a></p></div></aside>
 <div><article class="case-panel"><h2>Scenario and test design</h2><p>The frozen matrix spans aircraft regions, anomaly types, materials, backgrounds, lighting conditions, and capture profiles. Exactly 12 scenarios are protected test cases so development decisions cannot silently consume the evaluation set.</p></article>
@@ -25,4 +26,4 @@
 <article class="case-panel"><h2>MLX-VLM development path</h2><p>The optional Apple-Silicon runner processes one development asset at a time only after validating corpus and image integrity. It binds the response to the exact asset, scenario, rubric, model, runtime, prompt, and image digest.</p></article>
 <article class="case-panel"><h2>Current evidence boundary</h2><p>The current version does <strong>not</strong> claim human-rater agreement, calibration, consensus labels, aggregate VLM accuracy, evaluator fine-tuning, or operational inspection capability. Those require genuine annotation and model runs beyond the existing contract and smoke-test layer.</p></article>
 <article class="case-panel"><h2>Next useful milestone</h2><p>The next high-value evidence is real independent human rating, at least two VLM baselines, human-versus-model agreement, error taxonomy, and confidence/abstention analysis on a protected evaluation protocol.</p></article></div></section>
-</main><script src="script.js"></script></body></html>
+</main></body></html>

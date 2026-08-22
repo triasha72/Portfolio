@@ -5,11 +5,11 @@
 <meta name="description" content="Evaluation-first retrieval and GenAI system over NASA technical literature with hybrid search, protected evaluation, bounded agents, distributed services, and Apple-Silicon runtime benchmarking."/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet"/>
-<link rel="stylesheet" href="styles.css"/></head>
-<body><div class="grain" aria-hidden="true"></div>
+<link rel="stylesheet" href="case-styles.css"/></head>
+<body>
 <header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">TS</span><span>Triasha Sarkar</span></a>
 <nav class="nav-links"><a href="index.html#work">Work</a><a href="index.html#experience">Experience</a><a href="index.html#skills">Skills</a><a href="index.html#contact">Contact</a></nav>
-<button class="menu-button" aria-label="Open menu">Menu</button></header>
+</header>
 <main>
 <section class="case-hero section-pad">
 <a class="back-link" href="index.html#work">&larr; Back to portfolio</a>
@@ -17,6 +17,7 @@
 <h1>Retrieval and GenAI systems that can show their evidence — and fail safely when they cannot.</h1>
 <p>AeroRAG-X is an evaluation-first technical knowledge system built on public NASA NTRS material. I use it to study retrieval quality, grounding, model adaptation, agentic tool use, system reliability, and deployment as separate measurable problems.</p>
 </section>
+<figure class="case-visual"><img src="assets/aerorag-card.svg" alt="AeroRAG-X retrieval, evaluation, agent, and service architecture"/><figcaption>Hybrid retrieval feeds evidence checks, grounded generation, bounded agent tools, and measurable service boundaries.</figcaption></figure>
 <section class="section-pad case-layout">
 <aside class="case-sidebar"><div class="case-panel"><h3>At a glance</h3><ul class="mini-list"><li>3,233 citation-preserving NASA NTRS chunks</li><li>BM25 + dense retrieval + RRF + cross-encoder reranking</li><li>PostgreSQL / pgvector with backend-equivalence tests</li><li>Qwen3-0.6B + PEFT / LoRA</li><li>32-query protected Base / LoRA / grounded-RAG study</li><li>LangGraph agent with bounded tools, checkpoints, HITL, and retries</li><li>Agent / Retrieval / Inference FastAPI services</li><li>Docker Compose + OpenTelemetry + Prometheus + Cloud Run validation</li><li>MLX 4-bit vs Transformers MPS float16 benchmark</li><li>GRPO grounded-agent experiment infrastructure; no RL win claimed</li></ul><p><a class="repo-link" href="https://github.com/triasha72/AeroRAG-X" target="_blank" rel="noreferrer">View the repository &rarr;</a></p></div></aside>
 <div><article class="case-panel"><h2>What I built</h2><p>The retrieval pipeline combines BM25 and MiniLM dense retrieval, fuses rankings with Reciprocal Rank Fusion, reranks a bounded candidate set with a cross-encoder, and preserves document, page, URL, checksum, and evidence identity throughout the answer path. An evidence-sufficiency gate can refuse before generation when the retrieved material is not strong enough.</p></article>
@@ -26,4 +27,4 @@
 <article class="case-panel"><h2>Agent and distributed runtime</h2><p>A typed tool registry now supports retrieval, source inspection, evidence-sufficiency checks, citation validation, and multi-source comparison through a dynamically routed LangGraph agent. Graph-step, tool-call, and retrieval budgets are explicit. Checkpoints support bounded human review, fault injection covers timeout and dependency failures, and Agent, Retrieval, and Inference services communicate through typed asynchronous contracts with trace and evidence identity preserved.</p></article>
 <article class="case-panel"><h2>Apple-Silicon runtime work</h2><p>A controlled local comparison measured Transformers MPS float16 at 715.11 ms mean latency and MLX affine 4-bit at 278.43 ms on the same Apple-Silicon host, with artifact sizes of 1448.83 MiB and 313.10 MiB respectively. The token totals differ across runtimes, so this is a runtime/footprint benchmark rather than a model-quality comparison.</p></article>
 <article class="case-panel"><h2>What is still pending</h2><p>The GRPO work currently provides reward contracts, anti-reward-hacking tests, bounded tool environments, and Base/LoRA/GRPO ablation contracts. It does <strong>not</strong> claim a successful RL improvement yet. Kubernetes deployment is also a planned next step, not a current project claim.</p></article></div></section>
-</main><script src="script.js"></script></body></html>
+</main></body></html>

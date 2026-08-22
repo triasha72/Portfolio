@@ -5,11 +5,11 @@
 <meta name="description" content="Leakage-aware news recommendation and ranking on Microsoft MIND-small with chronological evaluation, statistical comparison, serving, containers, and more than 400 tests."/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet"/>
-<link rel="stylesheet" href="styles.css"/></head>
-<body><div class="grain" aria-hidden="true"></div>
+<link rel="stylesheet" href="case-styles.css"/></head>
+<body>
 <header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">TS</span><span>Triasha Sarkar</span></a>
 <nav class="nav-links"><a href="index.html#work">Work</a><a href="index.html#experience">Experience</a><a href="index.html#skills">Skills</a><a href="index.html#contact">Contact</a></nav>
-<button class="menu-button" aria-label="Open menu">Menu</button></header>
+</header>
 <main>
 <section class="case-hero section-pad">
 <a class="back-link" href="index.html#work">&larr; Back to portfolio</a>
@@ -17,6 +17,7 @@
 <h1>A recommendation system where the evaluation protocol matters as much as the model.</h1>
 <p>NewsLens studies how much apparent recommender quality survives once the data is evaluated in the order recommendations could actually have been made. The current v0.3.0 system combines leakage-safe ranking experiments with reproducible serving and failure analysis.</p>
 </section>
+<figure class="case-visual"><img src="assets/newslens-card.svg" alt="NewsLens recommendation and evaluation workflow"/><figcaption>Chronological training, content ranking, and a training-only popularity fallback are evaluated under one leakage-safe protocol.</figcaption></figure>
 <section class="section-pad case-layout">
 <aside class="case-sidebar"><div class="case-panel"><h3>At a glance</h3><ul class="mini-list"><li>MIND-small: 156,965 impressions, 51,282 articles</li><li>125,572 train / 31,393 validation impressions, chronological</li><li>NDCG@10 0.3664 · Recall@10 0.5955 · Hit Rate@10 0.6762</li><li>927 content-model abstentions recovered by training-only fallback</li><li>1,000-replicate paired bootstrap</li><li>DuckDB + SQL audit/feature queries</li><li>FastAPI + non-root Docker/Compose + GHCR</li><li>400+ automated tests</li></ul><p><a class="repo-link" href="https://github.com/triasha72/NewsLens" target="_blank" rel="noreferrer">View the repository &rarr;</a></p></div></aside>
 <div><article class="case-panel"><h2>Leakage-safe evaluation</h2><p>All fitting happens on the chronological training partition: popularity counts, TF-IDF vocabulary, and engagement features. The split explicitly verifies that the latest training timestamp precedes the earliest validation timestamp.</p></article>
@@ -25,4 +26,4 @@
 <article class="case-panel"><h2>Failure analysis</h2><p>The project reports subgroup behavior by history length, article category, and training exposure. One unresolved result is intentionally retained: clicked articles with zero training exposure rank better than the most-exposed band under the current cohort definition. The repo treats that as a confounded observation to investigate, not a causal conclusion.</p></article>
 <article class="case-panel"><h2>Serving and reproducibility</h2><p>Versioned, checksummed model artifacts are loaded by FastAPI. Liveness and readiness are separate, the Docker image runs non-root, CI validates both Python behavior and container readiness, and multi-platform images are published to GHCR.</p></article>
 <article class="case-panel"><h2>Current limit / next model step</h2><p>No online experiment has been run and no neural recommender is claimed yet. A high-value next step is a learned two-tower retrieval / neural ranking stage evaluated under the same chronological protocol, rather than adding complexity without a controlled baseline.</p></article></div></section>
-</main><script src="script.js"></script></body></html>
+</main></body></html>
