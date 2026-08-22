@@ -9,18 +9,18 @@
   <circle cx="1050" cy="95" r="120" fill="#2dd4bf" fill-opacity=".08"/>
   <circle cx="1120" cy="540" r="170" fill="#f5a524" fill-opacity=".06"/>
   <text x="80" y="160" fill="#e8f4f2" font-family="Arial, sans-serif" font-size="56" font-weight="700">Triasha Sarkar</text>
-  <text x="80" y="220" fill="#e8f4f2" font-family="Arial, sans-serif" font-size="34" font-weight="700">Applied ML / AI Engineer</text>
-  <text x="80" y="266" fill="#93aeb0" font-family="Arial, sans-serif" font-size="30" font-weight="600">Scientific Machine Learning</text>
+  <text x="80" y="220" fill="#e8f4f2" font-family="Arial, sans-serif" font-size="38" font-weight="700">Machine Learning Engineer</text>
+  <text x="80" y="270" fill="#93aeb0" font-family="Arial, sans-serif" font-size="27" font-weight="600">Search · Recommendation · GenAI Evaluation</text>
 
   <rect x="80" y="340" rx="18" ry="18" width="250" height="58" fill="#0f2329" stroke="#2dd4bf" stroke-opacity=".25"/>
-  <rect x="350" y="340" rx="18" ry="18" width="220" height="58" fill="#0f2329" stroke="#2dd4bf" stroke-opacity=".25"/>
-  <rect x="590" y="340" rx="18" ry="18" width="250" height="58" fill="#0f2329" stroke="#2dd4bf" stroke-opacity=".25"/>
-  <rect x="860" y="340" rx="18" ry="18" width="220" height="58" fill="#0f2329" stroke="#2dd4bf" stroke-opacity=".25"/>
-  <text x="205" y="377" text-anchor="middle" fill="#e8f4f2" font-family="Arial, sans-serif" font-size="24" font-weight="700">RAG</text>
-  <text x="460" y="377" text-anchor="middle" fill="#e8f4f2" font-family="Arial, sans-serif" font-size="24" font-weight="700">ML Systems</text>
-  <text x="715" y="377" text-anchor="middle" fill="#e8f4f2" font-family="Arial, sans-serif" font-size="24" font-weight="700">Scientific ML</text>
-  <text x="970" y="377" text-anchor="middle" fill="#e8f4f2" font-family="Arial, sans-serif" font-size="24" font-weight="700">Evaluation</text>
+  <rect x="350" y="340" rx="18" ry="18" width="250" height="58" fill="#0f2329" stroke="#2dd4bf" stroke-opacity=".25"/>
+  <rect x="620" y="340" rx="18" ry="18" width="250" height="58" fill="#0f2329" stroke="#2dd4bf" stroke-opacity=".25"/>
+  <rect x="890" y="340" rx="18" ry="18" width="230" height="58" fill="#0f2329" stroke="#2dd4bf" stroke-opacity=".25"/>
+  <text x="205" y="377" text-anchor="middle" fill="#e8f4f2" font-family="Arial, sans-serif" font-size="24" font-weight="700">Search</text>
+  <text x="475" y="377" text-anchor="middle" fill="#e8f4f2" font-family="Arial, sans-serif" font-size="24" font-weight="700">Recommendation</text>
+  <text x="745" y="377" text-anchor="middle" fill="#e8f4f2" font-family="Arial, sans-serif" font-size="24" font-weight="700">ML Systems</text>
+  <text x="1005" y="377" text-anchor="middle" fill="#e8f4f2" font-family="Arial, sans-serif" font-size="24" font-weight="700">On-Device ML</text>
 
-  <text x="80" y="500" fill="#93aeb0" font-family="Arial, sans-serif" font-size="24">Production RAG · Recommendation Systems · UQ · Optimization · Deployment · Observability</text>
+  <text x="80" y="500" fill="#93aeb0" font-family="Arial, sans-serif" font-size="24">Retrieval · Ranking · Reliable evaluation · Deployment · Observability</text>
   <text x="80" y="560" fill="#2dd4bf" font-family="Arial, sans-serif" font-size="22">triasha72.github.io/Portfolio</text>
 </svg>
