@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>EdgeGenBench - Triasha Sarkar</title>
+<meta name="description" content="Scientific ML and edge-inference benchmark spanning PyTorch surrogates, uncertainty-aware optimization, ONNX, FP16/INT8, CoreML provider benchmarking, and Qualcomm QNN on Snapdragon 8 Elite."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css"/></head>
+<body><div class="grain" aria-hidden="true"></div>
+<header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">TS</span><span>Triasha Sarkar</span></a>
+<nav class="nav-links"><a href="index.html#work">Work</a><a href="index.html#experience">Experience</a><a href="index.html#skills">Skills</a><a href="index.html#contact">Contact</a></nav>
+<button class="menu-button" aria-label="Open menu">Menu</button></header>
+<main>
+<section class="case-hero section-pad">
+<a class="back-link" href="index.html#work">&larr; Back to portfolio</a>
+<p class="eyebrow">independent · scientific ML · efficient inference · edge AI</p>
+<h1>From surrogate modeling to hardware-targeted inference — with accuracy and drift measured at every step.</h1>
+<p>EdgeGenBench is a reproducible aircraft-design ML benchmark that connects model accuracy, uncertainty, constrained optimization, numerical equivalence, quantization, runtime selection, and hardware-oriented deployment.</p>
+</section>
+<section class="section-pad case-layout">
+<aside class="case-sidebar"><div class="case-panel"><h3>At a glance</h3><ul class="mini-list"><li>6,000 deterministic aircraft-design cases</li><li>Compact PyTorch MLP: 3,414 parameters</li><li>Mean held-out R² 0.996956</li><li>FP32 / FP16 / mixed INT8-FP32 ONNX deployments</li><li>CoreML execution-provider benchmarking</li><li>Qualcomm QNN / Snapdragon 8 Elite / Hexagon v79 validation</li><li>Deployment selection under latency, size, quality, and drift constraints</li><li>Native iOS/Core ML app is the next milestone — not yet claimed</li></ul><p><a class="repo-link" href="https://github.com/triasha72/EdgeGenBench" target="_blank" rel="noreferrer">View the repository &rarr;</a></p></div></aside>
+<div><article class="case-panel"><h2>Modeling and scientific validation</h2><p>The benchmark uses 4,200 training, 900 validation, and 900 held-out test cases generated from a deterministic aircraft-design model. The compact 10→64→32→16→6 PyTorch surrogate reaches <strong>0.996956 mean held-out R²</strong> and <strong>0.050425 mean NRMSE</strong>, outperforming the strongest classical baseline while remaining only 3,414 trainable parameters.</p></article>
+<article class="case-panel"><h2>FP32 ONNX equivalence</h2><p>The neural surrogate exports to dynamic-batch ONNX. Across all 900 held-out rows, PyTorch and ONNX Runtime agree to a maximum normalized absolute difference of 9.54e-07. ONNX Runtime is clearly faster than PyTorch CPU at batch sizes 1 and 32 in the controlled local benchmark; batch 256 is near parity.</p></article>
+<article class="case-panel"><h2>FP16 is smaller, not automatically faster</h2><p>The FP16 ONNX artifact is <strong>24.39% smaller</strong> than FP32 and preserves mean held-out R² at 0.996954. Under the measured CoreML execution-provider setup, FP16 is roughly at parity for batches 1 and 32 and slower at batch 256. The project therefore does not market FP16 as a universal latency optimization.</p></article>
+<article class="case-panel"><h2>Mixed INT8/FP32</h2><p>The final static-QDQ configuration keeps the output head in FP32 and calibrates only on the 4,200 training rows. It reduces serialized ONNX size by <strong>33.21%</strong>, retains mean held-out R² of <strong>0.996855</strong>, and lowers median CPU latency by about <strong>18%</strong> at batch 256. It is slightly slower at batches 1 and 32, again showing that quantization benefits depend on workload.</p></article>
+<article class="case-panel"><h2>Qualcomm QNN / Snapdragon</h2><p>The dynamic FP32 ONNX source is compiled into a QNN Context Binary with batch-1, batch-32, and batch-256 graphs for a Snapdragon 8 Elite QRD. All nine profiled layers are placed on the Hexagon v79 NPU. AI Hub profile latency is 38 μs, 34 μs, and 57 μs for batches 1, 32, and 256 respectively. On all 900 held-out rows, mean R² remains 0.996953 with maximum normalized deployment drift of 0.003636.</p></article>
+<article class="case-panel"><h2>Deployment-aware selection</h2><p>The project selects deployment candidates only after applying hard constraints on provider, batch size, latency, serialized size, predictive quality, and precision drift. This makes the deployment decision part of the ML evaluation rather than an afterthought.</p></article>
+<article class="case-panel"><h2>What the current repo does not claim</h2><p>CoreML measurements currently use ONNX Runtime’s CoreMLExecutionProvider with MLComputeUnits=ALL; they do not prove exclusive Apple Neural Engine execution. A native Swift/SwiftUI iOS application with direct Core ML integration and real-device load/p50/p95 measurements is the next deployment milestone.</p></article></div></section>
+</main><script src="script.js"></script></body></html>

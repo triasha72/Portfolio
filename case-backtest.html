@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Equity Backtest - Triasha Sarkar</title>
+<meta name="description" content="Walk-forward cross-sectional equity ML backtest with transaction costs, multiple-testing controls, negative-result reporting, and committed experiment history."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css"/></head>
+<body><div class="grain" aria-hidden="true"></div>
+<header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">TS</span><span>Triasha Sarkar</span></a>
+<nav class="nav-links"><a href="index.html#work">Work</a><a href="index.html#experience">Experience</a><a href="index.html#skills">Skills</a><a href="index.html#contact">Contact</a></nav>
+<button class="menu-button" aria-label="Open menu">Menu</button></header>
+<main>
+<section class="case-hero section-pad">
+<a class="back-link" href="index.html#work">&larr; Back to portfolio</a>
+<p class="eyebrow">independent · walk-forward ML · evaluation methodology</p>
+<h1>A backtest published with its own negative result.</h1>
+<p>This project tests a cross-sectional equity signal under an expanding-window protocol strict enough that the result can be believed either way. The signal does not survive as a convincing investment result — and that is the result reported.</p>
+</section>
+<section class="section-pad case-layout">
+<aside class="case-sidebar"><div class="case-panel"><h3>At a glance</h3><ul class="mini-list"><li>2014-01 to 2024-11 · 131 months</li><li>11,304 stock-months · 50 large-cap names</li><li>Ridge regression with four cross-sectional features</li><li>Net Sharpe 0.246 · t-statistic 0.813</li><li>Equal-weight universe Sharpe 1.00</li><li>Six runs / five specifications, all committed</li><li>Explicit survivorship-bias limitation</li></ul><p><a class="repo-link" href="https://github.com/triasha72/Equity-Backtest" target="_blank" rel="noreferrer">View the repository &rarr;</a></p></div></aside>
+<div><article class="case-panel"><h2>Walk-forward protocol</h2><p>At each formation month, the model trains only on targets already realized by that date. Features are standardized cross-sectionally rather than pooled through time, and a shuffled-target test checks that the pipeline cannot earn a result from leakage.</p></article>
+<article class="case-panel"><h2>Result</h2><p>The baseline earns annualized Sharpe 0.324 gross and <strong>0.246 net</strong> of a 10 bp turnover charge, with net t-statistic <strong>0.813</strong>. Setting costs to zero only raises the t-statistic to 1.072. Over the same window, the equal-weight universe Sharpe is 1.00.</p></article>
+<article class="case-panel"><h2>Multiple testing</h2><p>Every run appends its configuration and statistics to a committed variants log. The strongest tested specification is the quintile spread at net Sharpe 0.478 and t = 1.579, still far below the pre-stated significance hurdle and readily explained by lower concentration.</p></article>
+<article class="case-panel"><h2>Known limitation</h2><p>The universe uses currently traded tickers, so survivorship bias remains present and the results are optimistic. The repo states this directly rather than hiding it behind a polished chart.</p></article>
+<article class="case-panel"><h2>Why it matters for ML</h2><p>The transferable skill is evaluation discipline: respect time ordering, define thresholds before seeing results, count all attempts, report the negative result, and distinguish statistical evidence from a compelling story.</p></article></div></section>
+</main><script src="script.js"></script></body></html>
