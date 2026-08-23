@@ -130,25 +130,35 @@ h1 {
   max-width: var(--max);
   margin: 34px auto 0;
   padding: 0 24px;
+  overflow: hidden;
+  isolation: isolate;
 }
 
 .case-visual img {
   display: block;
   width: 100%;
-  max-height: 500px;
+  height: clamp(280px, 48vw, 560px);
+  max-width: 100%;
   object-fit: contain;
+  object-position: center;
+  overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 12px;
   background: #06191e;
 }
 
 .case-visual figcaption {
+  position: relative;
+  z-index: 1;
   margin-top: 10px;
   color: var(--faint);
   font-size: 13px;
 }
 
 .case-layout {
+  position: relative;
+  clear: both;
+  isolation: isolate;
   display: grid;
   grid-template-columns: minmax(240px, 0.34fr) minmax(0, 0.66fr);
   gap: 28px;
@@ -197,13 +207,34 @@ h1 {
 }
 
 .mini-list {
+  display: grid;
+  gap: 8px;
   margin: 0;
-  padding-left: 19px;
+  padding: 0;
   color: var(--muted);
+  list-style: none;
 }
 
-.mini-list li + li {
-  margin-top: 7px;
+.mini-list li {
+  position: relative;
+  padding: 9px 11px 9px 28px;
+  border: 1px solid rgba(154, 241, 228, 0.1);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.018);
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.mini-list li::before {
+  position: absolute;
+  top: 16px;
+  left: 12px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 3px rgba(81, 226, 205, 0.09);
+  content: "";
 }
 
 .repo-link {
@@ -238,6 +269,10 @@ h1 {
     grid-template-columns: 1fr;
     gap: 8px;
     padding-bottom: 54px;
+  }
+
+  .case-visual img {
+    height: clamp(240px, 68vw, 420px);
   }
 
   .case-sidebar {
