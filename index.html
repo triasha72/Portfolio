@@ -116,7 +116,7 @@
         <p class="subtitle">I build ML systems from modeling and evaluation through deployment and on-device inference.</p>
         <p class="intro">My work spans retrieval and ranking, recommender systems, RAG and LLM evaluation, time-series ML, and efficient inference. I care about building systems that are useful, measurable, and reliable outside a notebook.</p>
         <div class="buttons">
-          <a class="button primary" href="https://triasha72.github.io/Portfolio/assets/Triasha_Sarkar_CV.pdf?v=20260823c" type="application/pdf">Resume</a>
+          <a class="button primary" href="https://triasha72.github.io/Portfolio/assets/Triasha_Sarkar_CV.pdf?v=20260823d" type="application/pdf">Resume</a>
           <a class="button" href="https://github.com/triasha72" target="_blank" rel="noreferrer">GitHub</a>
           <a class="button" href="https://www.linkedin.com/in/triasha-sarkar/" target="_blank" rel="noreferrer">LinkedIn</a>
         </div>
@@ -160,10 +160,10 @@
         <article class="project">
           <a class="project-image" href="case-newslens.html"><img src="assets/newslens-card.svg" alt="NewsLens recommendation workflow" /></a>
           <div>
-            <h3><a href="case-newslens.html">NewsLens: recommendation, ranking, and production ML</a></h3>
-            <p>Leakage-safe news recommendation on MIND-small using chronological evaluation, DuckDB/SQL, TF-IDF personalization, and a training-only popularity fallback.</p>
-            <p><span class="metric">NDCG@10 0.3664</span>, followed by a one-time MIND development holdout whose positive change crossed zero. The selected artifact also ran as two local Kubernetes replicas with probes and bounded load evidence.</p>
-            <p class="meta">Independent · Jul 2026</p>
+            <h3><a href="case-newslens.html">NewsLens: recommendation, real-time search, and production ML</a></h3>
+            <p>Leakage-safe MIND recommendation now paired with a separate Go, Kafka, PostgreSQL, and FastAPI article path built for idempotency, dead letters, and freshness-aware ranking.</p>
+            <p><span class="metric">NDCG@10 0.3664</span> offline. In a 500-event local run, publish p99 was 44 ms, index-freshness p95 was 79 ms, all duplicate probes were caught, and a stopped consumer's partition recovered in 5.7 seconds.</p>
+            <p class="meta">Independent · Jul–Aug 2026</p>
             <p class="links"><a href="case-newslens.html">Case study</a><a href="https://github.com/triasha72/NewsLens" target="_blank" rel="noreferrer">Code</a></p>
           </div>
         </article>
