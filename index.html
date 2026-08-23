@@ -138,7 +138,7 @@
         </article>
         <article class="card">
           <h3>ML systems &amp; on-device inference</h3>
-          <p>FastAPI, Docker, CI/CD, observability, ONNX, Core ML, Qualcomm QNN, quantization, and deployment-focused benchmarking.</p>
+          <p>PyTorch FSDP, DeepSpeed, Megatron-LM, vLLM, SGLang, TensorRT-LLM, FastAPI, Docker, CI/CD, observability, ONNX, Core ML, Qualcomm QNN, and deployment-focused benchmarking.</p>
         </article>
       </div>
     </section>
@@ -147,11 +147,22 @@
       <h2 class="section-title">Selected work</h2>
       <div class="projects">
         <article class="project">
+          <a class="project-image" href="case-integritybench.html"><img src="assets/integritybench-card.svg" alt="IntegrityBench policy evaluation workflow" /></a>
+          <div>
+            <h3><a href="case-integritybench.html">IntegrityBench: evaluation for changing moderation policies</a></h3>
+            <p>A 360-case benchmark across policy shifts, long context, multilingual content, adversarial transformations, and limited-label settings. Decisions include a rule, evidence, confidence, remediation, and a human-review flag.</p>
+            <p>The static-policy control reached <span class="metric">0.620 macro F1</span> with a 0.286 false-acceptance rate; current-policy retrieval reached 1.000 on the controlled generator. I treat that as a benchmark construction check, not a production moderation result.</p>
+            <p class="meta">Independent · Aug 2026–Present</p>
+            <p class="links"><a href="case-integritybench.html">Case study</a></p>
+          </div>
+        </article>
+
+        <article class="project">
           <a class="project-image" href="case-aerorag.html"><img src="assets/aerorag-card.svg" alt="AeroRAG-X system diagram" /></a>
           <div>
             <h3><a href="case-aerorag.html">AeroRAG-X: retrieval and LLM evaluation for technical knowledge</a></h3>
             <p>Evaluation-first GenAI system over <span class="metric">3,233 citation-preserving NASA NTRS chunks</span>, combining BM25 + dense retrieval, Reciprocal Rank Fusion, cross-encoder reranking, pgvector, evidence-sufficiency checks, and application-controlled citations.</p>
-            <p>Added PEFT/LoRA experiments, bounded LangGraph agents, protected evaluation, containerized FastAPI services, tracing, and a release gate that rejects placeholder GRPO evidence.</p>
+            <p>Added PEFT/LoRA experiments, bounded LangGraph agents, protected evaluation, containerized FastAPI services, and controlled FSDP, DeepSpeed, Megatron-LM, vLLM, SGLang, and TensorRT-LLM experiment paths. Their GPU result tables remain pending rather than being presented as completed benchmarks.</p>
             <p class="meta">Independent · Oct 2025–Present</p>
             <p class="links"><a href="case-aerorag.html">Case study</a><a href="https://github.com/triasha72/AeroRAG-X" target="_blank" rel="noreferrer">Code</a></p>
           </div>

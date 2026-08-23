@@ -3,7 +3,8 @@
 This repository contains the portfolio site I use to explain my machine
 learning work through problems, decisions, experiments, and results. The site
 focuses on retrieval and ranking, recommendation systems, GenAI evaluation,
-scientific machine learning, and model deployment.
+distributed training, high-throughput LLM serving, scientific machine learning,
+and model deployment.
 
 ## Why the site is structured as case studies
 
@@ -18,7 +19,7 @@ basic story:
 5. the limits of what the project establishes.
 
 The homepage introduces the common thread across the work. Separate pages cover
-AeroRAG-X, NewsLens, EdgeGenBench, AeroSynth-Eval, rocket-motor failure
+AeroRAG-X, IntegrityBench, NewsLens, EdgeGenBench, AeroSynth-Eval, rocket-motor failure
 detection, equity backtesting, Atlanta mobility resilience, and GREEN TEA.
 
 ## How it was built
@@ -43,3 +44,8 @@ The portfolio summarizes results from the linked repositories. The repositories,
 frozen reports, tests, and source code remain the evidence of record. The site
 does not turn planned work into completed work or present synthetic fixtures as
 human, production, or safety evidence.
+
+For example, AeroRAG-X documents implemented PyTorch FSDP and vLLM experiment
+paths while labeling their CUDA measurements as pending. This distinction is
+intentional: runnable infrastructure is engineering evidence, but it is not a
+scaling or performance result until the controlled experiment has been run.

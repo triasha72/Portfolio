@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>IntegrityBench - Triasha Sarkar</title>
+<meta name="description" content="A controlled benchmark for policy-conditioned moderation under rule changes, long context, multilingual content, adversarial transformations, and limited labels."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&amp;display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="case-styles.css?v=20260823c"/></head>
+<body>
+<header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">TS</span><span>Triasha Sarkar</span></a>
+<nav class="nav-links"><a href="index.html#work">Work</a><a href="index.html#experience">Experience</a><a href="index.html#skills">Skills</a><a href="index.html#contact">Contact</a></nav></header>
+<main><section class="case-hero section-pad"><a class="back-link" href="index.html#work">&larr; Back to portfolio</a>
+<p class="eyebrow">independent · policy evaluation · responsible ML · benchmark design</p>
+<h1>A moderation benchmark where the correct answer changes when the policy changes.</h1>
+<p>I built IntegrityBench after noticing a gap in my portfolio: AeroRAG-X could retrieve and cite technical evidence, but it did not test whether a system could follow a changing policy. IntegrityBench isolates that problem.</p></section>
+<figure class="case-visual"><img src="assets/integritybench-card.svg" alt="IntegrityBench policy-version evaluation workflow"/><figcaption>The benchmark keeps the topic fixed while policy versions change the required action.</figcaption></figure>
+<section class="section-pad case-layout"><aside class="case-sidebar"><div class="case-panel"><h3>At a glance</h3><ul class="mini-list"><li>360 deterministic cases</li><li>Policy v1, v2, and v3</li><li>Standard, policy-shift, long-context, multilingual, adversarial, and low-resource slices</li><li>ALLOW / REJECT / ESCALATE output contract</li><li>Rule citation, evidence, confidence, remediation, and review flag</li><li>Macro F1, false acceptance/rejection, calibration, escalation, citation, remediation, and latency</li></ul></div></aside>
+<div><article class="case-panel"><h2>Why I built it</h2><p>A static moderation model can appear accurate while applying yesterday's rule. The benchmark gives the same topic different actions under different policy versions. That makes stale-policy behavior visible instead of folding it into a generic accuracy score.</p></article>
+<article class="case-panel"><h2>Three systems</h2><p>The prompt-only control always uses policy v1. The retrieval baseline fetches the current policy. The candidate system retrieves and reranks current rules, checks evidence sufficiency, returns a structured decision, and escalates if a policy match lacks support. Deterministic controls keep the benchmark runnable without an API key; later LLM, RAG, and LoRA runs plug into the same output contract.</p></article>
+<article class="case-panel"><h2>Control result</h2><p>The static-policy control reached 0.620 macro F1 and a 0.286 false-acceptance rate. Current-policy retrieval reached 1.000 macro F1 with no false acceptances or false rejections on the generated v0.1 set. The gap is a construction check, not a production claim: the generator and lexical controls share a controlled vocabulary.</p></article>
+<article class="case-panel"><h2>What the result changed</h2><p>The control established that policy version must be part of the decision path. It also showed that retrieval and validation have different jobs: retrieval fixes stale rules, while validation prevents an unsupported match from passing as a confident decision. That is why the candidate pipeline keeps both stages.</p></article>
+<article class="case-panel"><h2>Limits and next run</h2><p>The multilingual cases are parallel templates, the adversarial transforms are controlled, and no human-reviewed production sample is included. The next version needs human adjudication, broader paraphrases, and the preregistered 8/32/128/full-label comparison across prompting, RAG, and LoRA. If LoRA improves standard F1 but hurts policy-shift performance, that regression stays in the report.</p></article></div></section></main></body></html>

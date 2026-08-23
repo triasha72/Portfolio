@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">IntegrityBench policy evaluation diagram</title>
+  <desc id="desc">Content is evaluated against changing policy versions and routed to allow, reject, or review.</desc>
+  <rect width="1200" height="675" fill="#101820"/>
+  <text x="70" y="90" fill="#f5f1e8" font-family="Arial,sans-serif" font-size="46" font-weight="700">IntegrityBench</text>
+  <text x="70" y="132" fill="#99b9ad" font-family="Arial,sans-serif" font-size="22">Does the decision change when the policy changes?</text>
+  <g font-family="Arial,sans-serif" font-size="22" text-anchor="middle">
+    <rect x="70" y="245" width="220" height="100" rx="12" fill="#243943" stroke="#5fa896" stroke-width="2"/>
+    <text x="180" y="285" fill="#fff">Content</text><text x="180" y="316" fill="#b8d2ca">6 evaluation slices</text>
+    <rect x="380" y="210" width="220" height="170" rx="12" fill="#243943" stroke="#e4b363" stroke-width="2"/>
+    <text x="490" y="255" fill="#fff">Policy</text><text x="490" y="290" fill="#e4b363">v1 → v2 → v3</text><text x="490" y="325" fill="#b8d2ca">same topic</text><text x="490" y="353" fill="#b8d2ca">different action</text>
+    <rect x="690" y="245" width="220" height="100" rx="12" fill="#243943" stroke="#5fa896" stroke-width="2"/>
+    <text x="800" y="285" fill="#fff">Grounded decision</text><text x="800" y="316" fill="#b8d2ca">rule + evidence</text>
+    <rect x="1000" y="210" width="150" height="170" rx="12" fill="#243943" stroke="#d96c75" stroke-width="2"/>
+    <text x="1075" y="255" fill="#fff">Route</text><text x="1075" y="292" fill="#83c5a5">ALLOW</text><text x="1075" y="325" fill="#d96c75">REJECT</text><text x="1075" y="358" fill="#e4b363">REVIEW</text>
+  </g>
+  <g stroke="#99b9ad" stroke-width="4" fill="none"><path d="M290 295h80"/><path d="M600 295h80"/><path d="M910 295h80"/></g>
+  <text x="70" y="560" fill="#f5f1e8" font-family="Arial,sans-serif" font-size="26">360 controlled cases · policy shift · long context · multilingual · adversarial · low resource</text>
+  <text x="70" y="610" fill="#99b9ad" font-family="Arial,sans-serif" font-size="21">Measured as a contract baseline, not a claim about production moderation.</text>
+</svg>
