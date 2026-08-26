@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>AIRFAANS - Triasha Sarkar</title>
+<meta name="description" content="Georgia Tech AE 6394 scientific-machine-learning coursework comparing geometry-aware CFD surrogates on the official AirfRANS benchmark."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="case-styles.css?v=20260823c"/></head>
+<body>
+<header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">TS</span><span>Triasha Sarkar</span></a>
+<nav class="nav-links"><a href="index.html#work">Work</a><a href="index.html#experience">Experience</a><a href="index.html#skills">Skills</a><a href="index.html#contact">Contact</a></nav>
+</header>
+<main>
+<section class="case-hero section-pad">
+<a class="back-link" href="index.html#work">&larr; Back to portfolio</a>
+<p class="eyebrow">Georgia Tech AE 6394 coursework · scientific ML · CFD surrogates · graph neural networks</p>
+<h1>Geometry-aware surrogate modeling for aerodynamic flow fields — evaluated on full AirfRANS meshes.</h1>
+<p>AIRFAANS is a Georgia Tech AE 6394 coursework project comparing pointwise, graph-based, and operator-style neural surrogates for irregular aerodynamic CFD fields. The emphasis is on reproducible full-mesh evaluation, aerodynamic force consistency, out-of-distribution behavior, and uncertainty-aware simulation selection.</p>
+</section>
+<figure class="case-visual"><img src="assets/airfaans-card.svg" alt="AIRFAANS CFD surrogate comparison"/><figcaption>AirfRANS meshes are processed into matched pointwise, graph, and operator treatments, then evaluated on field error and aerodynamic coefficients.</figcaption></figure>
+<section class="section-pad case-layout">
+<aside class="case-sidebar"><div class="case-panel"><h3>At a glance</h3><ul class="mini-list"><li>Official AirfRANS data path and 1,000-case task manifest</li><li>Pointwise MLP, MeshGraphNet-style GNN, and point neural operator</li><li>Three matched seeds: 17, 29, and 41</li><li>9 trained treatments × 200 official interpolation test meshes</li><li>Train-only normalization and simulation-level splits</li><li>Verified pressure + viscous force convention</li><li>Field metrics plus lift/drag error</li><li>OOD, scarce-data, ensemble-UQ, and active-learning studies remain separate pending experiments</li></ul><p><a class="repo-link" href="https://github.com/triasha72/AIRFAANS" target="_blank" rel="noreferrer">View the repository &rarr;</a></p></div></aside>
+<div>
+<article class="case-panel"><h2>Problem formulation</h2><p>Each AirfRANS case provides an irregular aerodynamic mesh, operating conditions, and flow variables. AIRFAANS predicts velocity-x, velocity-y, pressure, and turbulent viscosity at every mesh node. Cases are split by simulation rather than mixing nodes from the same CFD solution across train and test.</p></article>
+<article class="case-panel"><h2>Three model families</h2><p>The benchmark holds data, normalization, optimization, seeds, evaluation cases, and reporting fixed while comparing a local pointwise MLP, a residual MeshGraphNet-style message-passing model, and a compact global point operator.</p></article>
+<article class="case-panel"><h2>Matched three-seed interpolation result</h2><p>The preregistered interpolation comparison is complete for seeds 17, 29, and 41. Each of the nine treatments is evaluated on all 200 official full-mesh interpolation test cases.</p>
+<p><strong>Pointwise MLP:</strong> ux 0.3993 ± 0.0141 · uy 0.7242 ± 0.0230 · pressure 0.9550 ± 0.0314 · nu_t 0.7979 ± 0.0219 · CD MAE 0.3663 ± 0.0221 · CL MAE 0.3546 ± 0.1460.</p>
+<p><strong>MeshGraphNet:</strong> ux <strong>0.3788 ± 0.0199</strong> · uy <strong>0.6703 ± 0.0720</strong> · pressure <strong>0.7693 ± 0.0557</strong> · nu_t <strong>0.6895 ± 0.0859</strong> · CD MAE <strong>0.2319 ± 0.0619</strong> · CL MAE 0.3907 ± 0.1705.</p>
+<p><strong>Point neural operator:</strong> ux 0.4183 ± 0.0090 · uy 1.0314 ± 0.0133 · pressure 1.2125 ± 0.0268 · nu_t 0.8127 ± 0.0167 · CD MAE 0.3544 ± 0.0230 · CL MAE <strong>0.2843 ± 0.0225</strong>.</p>
+<p>MeshGraphNet has the lowest mean error for all four predicted fields and drag, while the point operator has the lowest mean lift error. No architecture is presented as universally best.</p></article>
+<article class="case-panel"><h2>Engineering checks around the model</h2><p>The repository validates real VTK/PyVista ingestion, graph construction, checkpoint identity, resumable full-mesh evaluation, and the pressure-plus-viscous force convention against the official AirfRANS implementation. A bounded complete-pipeline run verifies train, validation, checkpoint reload, and protected-test execution before expensive GPU studies are launched.</p></article>
+<article class="case-panel"><h2>What is still pending</h2><p>The completed numbers above are interpolation results. Reynolds-number extrapolation, angle-of-attack extrapolation, scarce-data learning curves, ensemble uncertainty calibration, and uncertainty-guided active learning still require matched GPU execution. They remain labeled as pending rather than inferred from interpolation performance.</p></article>
+<article class="case-panel"><h2>Scope</h2><p>This is coursework research, not a production CFD solver or sponsored engineering engagement. AirfRANS data and model weights are not redistributed by this portfolio, and the reported conclusions apply only to the documented splits, budgets, and implementations.</p></article>
+</div></section>
+</main></body></html>
