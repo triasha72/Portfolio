@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#071a1f"/>
+      <stop offset="100%" stop-color="#0d2830"/>
+    </linearGradient>
+    <style>
+      .title{font:700 38px Arial,sans-serif; fill:#e8f4f2}
+      .sub{font:500 18px Arial,sans-serif; fill:#93aeb0}
+      .label{font:700 20px Arial,sans-serif; fill:#e8f4f2}
+      .small{font:500 16px Arial,sans-serif; fill:#93aeb0}
+      .tiny{font:500 15px Arial,sans-serif; fill:#93aeb0}
+      .chip{fill:#0f2329; stroke:#2dd4bf; stroke-opacity:.28; stroke-width:2}
+      .accent{stroke:#2dd4bf; stroke-width:4; fill:none; marker-end:url(#arrow)}
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L10,3 L0,6 z" fill="#2dd4bf"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <text x="70" y="80" class="title">EdgeGenBench</text>
+  <text x="70" y="116" class="sub">Scientific ML benchmark spanning surrogate accuracy, optimization, and hardware-aware inference</text>
+
+  <rect x="70" y="175" rx="18" ry="18" width="230" height="112" class="chip"/>
+  <text x="185" y="214" text-anchor="middle" class="label">Physics model</text>
+  <text x="185" y="244" text-anchor="middle" class="small">synthetic aircraft</text>
+  <text x="185" y="266" text-anchor="middle" class="small">design data</text>
+
+  <rect x="355" y="175" rx="18" ry="18" width="240" height="112" class="chip"/>
+  <text x="475" y="214" text-anchor="middle" class="label">Surrogate model</text>
+  <text x="475" y="244" text-anchor="middle" class="small">compact PyTorch MLP</text>
+  <text x="475" y="266" text-anchor="middle" class="small">+ classical baselines</text>
+
+  <rect x="650" y="175" rx="18" ry="18" width="230" height="112" class="chip"/>
+  <text x="765" y="214" text-anchor="middle" class="label">Uncertainty</text>
+  <text x="765" y="244" text-anchor="middle" class="small">conformal intervals</text>
+  <text x="765" y="266" text-anchor="middle" class="small">+ ensemble checks</text>
+
+  <rect x="935" y="175" rx="18" ry="18" width="195" height="112" class="chip"/>
+  <text x="1032.5" y="214" text-anchor="middle" class="label">Feasibility</text>
+  <text x="1032.5" y="244" text-anchor="middle" class="small">constraint checks</text>
+  <text x="1032.5" y="266" text-anchor="middle" class="small">+ false-safe guard</text>
+
+  <rect x="95" y="460" rx="18" ry="18" width="210" height="112" class="chip"/>
+  <text x="200" y="500" text-anchor="middle" class="label">Optimizer</text>
+  <text x="200" y="532" text-anchor="middle" class="small">20,000 candidates</text>
+
+  <rect x="345" y="460" rx="18" ry="18" width="220" height="112" class="chip"/>
+  <text x="455" y="500" text-anchor="middle" class="label">Pareto front</text>
+  <text x="455" y="529" text-anchor="middle" class="small">multi-objective</text>
+  <text x="455" y="551" text-anchor="middle" class="small">trade-offs</text>
+
+  <rect x="605" y="460" rx="18" ry="18" width="235" height="112" class="chip"/>
+  <text x="722.5" y="500" text-anchor="middle" class="label">Physics validation</text>
+  <text x="722.5" y="532" text-anchor="middle" class="small">agreement checks</text>
+
+  <rect x="880" y="448" rx="18" ry="18" width="250" height="136" class="chip"/>
+  <text x="1005" y="488" text-anchor="middle" class="label">Edge deployment</text>
+  <text x="1005" y="520" text-anchor="middle" class="small">ONNX · Core ML · QNN</text>
+  <text x="1005" y="544" text-anchor="middle" class="small">C++ · Android/JNI</text>
+
+  <path d="M300 231 L355 231" class="accent"/>
+  <path d="M595 231 L650 231" class="accent"/>
+  <path d="M880 231 L935 231" class="accent"/>
+  <path d="M1032 287 L1032 385 L200 385 L200 460" class="accent"/>
+  <path d="M305 516 L345 516" class="accent"/>
+  <path d="M565 516 L605 516" class="accent"/>
+  <path d="M840 516 L880 516" class="accent"/>
+
+  <rect x="70" y="650" rx="18" ry="18" width="1060" height="90" fill="#0f2329" stroke="#2dd4bf" stroke-opacity=".18"/>
+  <text x="100" y="688" class="label">What this demonstrates</text>
+  <text x="100" y="718" class="tiny">Scientific ML evaluated on predictive quality, engineering constraints, optimization utility, numerical drift, and deployment evidence.</text>
+</svg>
