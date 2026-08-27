@@ -109,7 +109,7 @@ endobj
 endobj
 10 0 obj
 <<
-/Length 8909
+/Length 8889
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
@@ -176,7 +176,7 @@ q
 1 0 0 1 43.44 616.74 cm
 q
 .333333 .333333 .333333 rg
-BT 1 0 0 1 0 1.8 Tm /F3 8.7 Tf 10.5 TL (Graduate Research Assistant, Aerospace Systems Design Laboratory \(ASDL\)) Tj T* ET
+BT 1 0 0 1 0 1.8 Tm /F3 8.7 Tf 10.5 TL (Entered PhD program; transitioned to MS, completed Aug 2026) Tj T* ET
 Q
 Q
 q
@@ -335,7 +335,7 @@ q
 1 0 0 1 0 11.5 cm
 q
 .12549 .129412 .141176 rg
-BT 1 0 0 1 0 1.7 Tm /F2 9.8 Tf 11.5 TL (Machine Learning Engineer | Rolls-Royce India) Tj T* ET
+BT 1 0 0 1 0 1.7 Tm /F2 9.8 Tf 11.5 TL (Machine Learning Engineer | Rolls-Royce) Tj T* ET
 Q
 Q
 q
@@ -638,17 +638,17 @@ xref
 0000001289 00000 n 
 0000001497 00000 n 
 0000001707 00000 n 
-0000010669 00000 n 
-0000010724 00000 n 
-0000010832 00000 n 
-0000010945 00000 n 
-0000011061 00000 n 
-0000011300 00000 n 
-0000011505 00000 n 
-0000011713 00000 n 
-0000011927 00000 n 
-0000012176 00000 n 
-0000012391 00000 n 
+0000010649 00000 n 
+0000010704 00000 n 
+0000010812 00000 n 
+0000010925 00000 n 
+0000011041 00000 n 
+0000011280 00000 n 
+0000011485 00000 n 
+0000011693 00000 n 
+0000011907 00000 n 
+0000012156 00000 n 
+0000012371 00000 n 
 trailer
 <<
 /Size 22
@@ -656,5 +656,5 @@ trailer
 /Info 1 0 R
 >>
 startxref
-15253
+15233
 %%EOF

@@ -7,7 +7,9 @@ systems, GenAI evaluation, distributed training, high-throughput LLM serving,
 and model deployment.
 
 The experience section and downloadable CV include my work as a **Machine
-Learning Engineer at Rolls-Royce India from July 2023 to April 2025**.
+Learning Engineer at Rolls-Royce from July 2023 to April 2025**. I entered
+Georgia Tech's Aerospace Engineering PhD program, transitioned to the MS, and
+completed the degree in August 2026.
 
 ## Why the site is structured as case studies
 
