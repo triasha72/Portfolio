@@ -1,179 +1,660 @@
 %PDF-1.4
-%“Œ‹ž ReportLab Generated PDF document (opensource)
+%âãÏÓ
 1 0 obj
 <<
-/F1 2 0 R /F2 3 0 R /F3 7 0 R
+/Producer (ReportLab PDF Library \055 \050opensource\051)
+/Author (Triasha Sarkar)
+/CreationDate (D\07220260823203831\05504\04700\047)
+/Creator (\050unspecified\051)
+/Keywords ()
+/ModDate (D\07220260823203831\05504\04700\047)
+/Subject (\050unspecified\051)
+/Title (Triasha Sarkar \204 CV)
+/Trapped (\057False)
 >>
 endobj
 2 0 obj
 <<
-/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+/Type /Pages
+/Count 2
+/Kids [ 4 0 R 15 0 R ]
 >>
 endobj
 3 0 obj
 <<
-/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+/Type /Catalog
+/Pages 2 0 R
 >>
 endobj
 4 0 obj
 <<
-/A <<
-/S /URI /Type /Action /URI (https://linkedin.com/in/triasha-sarkar)
->> /Border [ 0 0 0 ] /Rect [ 143.685 707.84 260.712 718.64 ] /Subtype /Link /Type /Annot
+/Annots [ 5 0 R 6 0 R 7 0 R 8 0 R 9 0 R ]
+/Contents 10 0 R
+/MediaBox [ 0 0 612 792 ]
+/Resources <<
+/Font 11 0 R
+/ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Parent 2 0 R
 >>
 endobj
 5 0 obj
 <<
 /A <<
-/S /URI /Type /Action /URI (https://github.com/triasha72)
->> /Border [ 0 0 0 ] /Rect [ 268.218 707.84 351.756 718.64 ] /Subtype /Link /Type /Annot
+/S /URI
+/Type /Action
+/URI (https\072\057\057linkedin\056com\057in\057triasha\055sarkar)
+>>
+/Border [ 0 0 0 ]
+/Rect [ 143.685 707.84 260.712 718.64 ]
+/Subtype /Link
+/Type /Annot
 >>
 endobj
 6 0 obj
 <<
 /A <<
-/S /URI /Type /Action /URI (https://triasha72.github.io/Portfolio)
->> /Border [ 0 0 0 ] /Rect [ 359.262 707.84 468.315 718.64 ] /Subtype /Link /Type /Annot
+/S /URI
+/Type /Action
+/URI (https\072\057\057github\056com\057triasha72)
+>>
+/Border [ 0 0 0 ]
+/Rect [ 268.218 707.84 351.756 718.64 ]
+/Subtype /Link
+/Type /Annot
 >>
 endobj
 7 0 obj
 <<
-/BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font
+/A <<
+/S /URI
+/Type /Action
+/URI (https\072\057\057triasha72\056github\056io\057Portfolio)
+>>
+/Border [ 0 0 0 ]
+/Rect [ 359.262 707.84 468.315 718.64 ]
+/Subtype /Link
+/Type /Annot
 >>
 endobj
 8 0 obj
 <<
 /A <<
-/S /URI /Type /Action /URI (https://github.com/triasha72/AeroRAG-X)
->> /Border [ 0 0 0 ] /Rect [ 43.44 206.3525 172.5393 216.8525 ] /Subtype /Link /Type /Annot
+/S /URI
+/Type /Action
+/URI (https\072\057\057github\056com\057triasha72\057AeroRAG\055X)
+>>
+/Border [ 0 0 0 ]
+/Rect [ 43.44 206.3525 172.5393 216.8525 ]
+/Subtype /Link
+/Type /Annot
 >>
 endobj
 9 0 obj
 <<
 /A <<
-/S /URI /Type /Action /URI (https://github.com/triasha72/IntegrityBench)
->> /Border [ 0 0 0 ] /Rect [ 43.44 111.0525 182.2224 121.5525 ] /Subtype /Link /Type /Annot
+/S /URI
+/Type /Action
+/URI (https\072\057\057github\056com\057triasha72\057IntegrityBench)
+>>
+/Border [ 0 0 0 ]
+/Rect [ 43.44 111.0525 182.2224 121.5525 ]
+/Subtype /Link
+/Type /Annot
 >>
 endobj
 10 0 obj
 <<
-/Annots [ 4 0 R 5 0 R 6 0 R 8 0 R 9 0 R ] /Contents 20 0 R /MediaBox [ 0 0 612 792 ] /Parent 19 0 R /Resources <<
-/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
->> /Rotate 0 
-  /Trans <<
-
->> /Type /Page
+/Length 8909
 >>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 43.44 735.64 cm
+q
+.12549 .129412 .141176 rg
+BT 1 0 0 1 0 2 Tm /F2 21 Tf 23 TL 168.0705 0 Td (TRIASHA SARKAR) Tj T* -168.0705 0 Td ET
+Q
+Q
+q
+1 0 0 1 43.44 707.64 cm
+q
+BT 1 0 0 1 0 13 Tm 149.304 0 Td 11 TL /F1 9 Tf .247059 .337255 .419608 rg (Atlanta, GA \267 +1 \(404\) 948-8761 \267 tsarkar34@gatech.edu) Tj  T* -49.059 0 Td (linkedin.com/in/triasha-sarkar) Tj ( \267 ) Tj (github.com/triasha72) Tj ( \267 ) Tj (triasha72.github.io/Portfolio) Tj T* -100.245 0 Td ET
+Q
+Q
+q
+1 0 0 1 43.44 667.44 cm
+q
+.12549 .129412 .141176 rg
+BT 1 0 0 1 0 25.2 Tm /F1 9 Tf 11.4 TL (Machine learning engineer and Georgia Tech aerospace MS graduate who builds evaluation-first systems from data and) Tj T* (experiments through deployment. My recent work connects retrieval and ranking, LLM evaluation, distributed training,) Tj T* (high-throughput serving, and policy-conditioned moderation.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 43.44 650.44 cm
+q
+.082353 .082353 .082353 rg
+BT 1 0 0 1 0 1.6 Tm /F2 10.4 Tf 12 TL (EDUCATION) Tj T* ET
+Q
+Q
+q
+1 0 0 1 43.44 647.74 cm
+q
+.7 w
+1 J
+.2 .2 .2 RG
+n 0 0 m 525.12 0 l S
+Q
+Q
+q
+1 0 0 1 48.6 633.24 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 0 0 cm
+q
+.12549 .129412 .141176 rg
+BT 1 0 0 1 0 1.7 Tm /F2 9.8 Tf 11.5 TL (MS, Aerospace Engineering | Georgia Institute of Technology, Atlanta, GA) Tj T* ET
+Q
+Q
+q
+1 0 0 1 436.4 0 cm
+q
+.12549 .129412 .141176 rg
+BT 1 0 0 1 0 1.7 Tm /F2 9.8 Tf 11.5 TL (Aug 2026) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 43.44 616.74 cm
+q
+.333333 .333333 .333333 rg
+BT 1 0 0 1 0 1.8 Tm /F3 8.7 Tf 10.5 TL (Graduate Research Assistant, Aerospace Systems Design Laboratory \(ASDL\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 48.6 603.04 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 0 0 cm
+q
+.12549 .129412 .141176 rg
+BT 1 0 0 1 0 1.7 Tm /F2 9.8 Tf 11.5 TL (MSc, Aerospace Vehicle Design | Cranfield University, United Kingdom) Tj T* ET
+Q
+Q
+q
+1 0 0 1 436.4 0 cm
+q
+.12549 .129412 .141176 rg
+BT 1 0 0 1 0 1.7 Tm /F2 9.8 Tf 11.5 TL (Feb 2023) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 43.44 586.54 cm
+q
+.333333 .333333 .333333 rg
+BT 1 0 0 1 0 1.8 Tm /F3 8.7 Tf 10.5 TL (First Class Honours \267 Thesis on geometry optimization under FAA constraints) Tj T* ET
+Q
+Q
+q
+1 0 0 1 48.6 572.84 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 0 0 cm
+q
+.12549 .129412 .141176 rg
+BT 1 0 0 1 0 1.7 Tm /F2 9.8 Tf 11.5 TL (B.Tech, Aerospace Engineering | SRM Institute of Science and Technology, India) Tj T* ET
+Q
+Q
+q
+1 0 0 1 436.4 0 cm
+q
+.12549 .129412 .141176 rg
+BT 1 0 0 1 0 1.7 Tm /F2 9.8 Tf 11.5 TL (Jun 2021) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 43.44 556.34 cm
+q
+.333333 .333333 .333333 rg
+BT 1 0 0 1 0 1.8 Tm /F3 8.7 Tf 10.5 TL (First Class Honours) Tj T* ET
+Q
+Q
+q
+1 0 0 1 43.44 539.34 cm
+q
+.082353 .082353 .082353 rg
+BT 1 0 0 1 0 1.6 Tm /F2 10.4 Tf 12 TL (TECHNICAL SKILLS) Tj T* ET
+Q
+Q
+q
+1 0 0 1 43.44 536.64 cm
+q
+.7 w
+1 J
+.2 .2 .2 RG
+n 0 0 m 525.12 0 l S
+Q
+Q
+q
+1 0 0 1 43.44 509.04 cm
+q
+BT 1 0 0 1 0 12.9 Tm 10.8 TL /F2 8.7 Tf .12549 .129412 .141176 rg (ML & GenAI:) Tj /F1 8.7 Tf ( PyTorch, FSDP, DeepSpeed, Megatron-LM, Transformers, vLLM, SGLang, TensorRT-LLM, RAG, hybrid retrieval,) Tj T* (reranking, PEFT/LoRA, GRPO evaluation) Tj T* ET
+Q
+Q
+q
+1 0 0 1 43.44 481.44 cm
+q
+BT 1 0 0 1 0 12.9 Tm 10.8 TL /F2 8.7 Tf .12549 .129412 .141176 rg (Systems:) Tj /F1 8.7 Tf ( Python, Go, SQL, Kafka, FastAPI, Docker, Kubernetes, GitHub Actions, PostgreSQL/pgvector, Prometheus, OpenTelemetry,) Tj T* (ONNX, Core ML, Qualcomm QNN) Tj T* ET
+Q
+Q
+q
+1 0 0 1 43.44 464.64 cm
+q
+BT 1 0 0 1 0 2.1 Tm 10.8 TL /F2 8.7 Tf .12549 .129412 .141176 rg (Scientific computing:) Tj /F1 8.7 Tf ( NumPy, SciPy, pandas, NetworkX, OSMnx, statistical inference, design of experiments, surrogate modeling) Tj T* ET
+Q
+Q
+q
+1 0 0 1 43.44 447.64 cm
+q
+.082353 .082353 .082353 rg
+BT 1 0 0 1 0 1.6 Tm /F2 10.4 Tf 12 TL (PROFESSIONAL EXPERIENCE) Tj T* ET
+Q
+Q
+q
+1 0 0 1 43.44 444.94 cm
+q
+.7 w
+1 J
+.2 .2 .2 RG
+n 0 0 m 525.12 0 l S
+Q
+Q
+q
+1 0 0 1 48.6 418.94 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 0 11.5 cm
+q
+.12549 .129412 .141176 rg
+BT 1 0 0 1 0 1.7 Tm /F2 9.8 Tf 11.5 TL (Graduate Research Assistant under Prof. Dimitri Mavris | Georgia Tech ASDL) Tj T* ET
+Q
+Q
+q
+1 0 0 1 436.4 0 cm
+q
+.12549 .129412 .141176 rg
+BT 1 0 0 1 0 13.2 Tm /F2 9.8 Tf 11.5 TL (May 2025 \226 Aug) Tj T* (2026) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 43.44 391.94 cm
+q
+.12549 .129412 .141176 rg
+BT 1 0 0 1 14 12.3 Tm /F1 8.7 Tf 10.5 TL -8 0 Td (\177 Took simulation, safety, and sustainability questions from data review and model design through tested analysis, with reproducible) Tj T* 8 0 Td (evidence for faculty and sponsors.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 43.44 364.94 cm
+q
+.12549 .129412 .141176 rg
+BT 1 0 0 1 14 12.3 Tm /F1 8.7 Tf 10.5 TL -8 0 Td (\177 Checked assumptions with domain experts, documented limitations, and delivered models and workflows that others could rerun and) Tj T* 8 0 Td (use.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 48.6 340.14 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 0 11.5 cm
+q
+.12549 .129412 .141176 rg
+BT 1 0 0 1 0 1.7 Tm /F2 9.8 Tf 11.5 TL (Machine Learning Engineer | Rolls-Royce India) Tj T* ET
+Q
+Q
+q
+1 0 0 1 436.4 0 cm
+q
+.12549 .129412 .141176 rg
+BT 1 0 0 1 0 13.2 Tm /F2 9.8 Tf 11.5 TL (Jul 2023 \226 Apr) Tj T* (2025) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 43.44 313.14 cm
+q
+.12549 .129412 .141176 rg
+BT 1 0 0 1 14 12.3 Tm /F1 8.7 Tf 10.5 TL -8 0 Td (\177 Built Python workflows for diagnostics, anomaly detection, predictive maintenance, and mixed-frequency time series from multivariate) Tj T* 8 0 Td (engine data.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 43.44 296.64 cm
+q
+.12549 .129412 .141176 rg
+BT 1 0 0 1 14 1.8 Tm /F1 8.7 Tf 10.5 TL -8 0 Td -0.104929 Tw (\177 Turned certification requirements into traceable analyses and model checks, reviewing each result with lifecycle engineers before use.) Tj T* 0 Tw 8 0 Td ET
+Q
+Q
+q
+1 0 0 1 48.6 283.34 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 0 0 cm
+q
+.12549 .129412 .141176 rg
+BT 1 0 0 1 0 1.7 Tm /F2 9.8 Tf 11.5 TL (Data Science Intern | Rolls-Royce DataLabs) Tj T* ET
+Q
+Q
+q
+1 0 0 1 436.4 0 cm
+q
+.12549 .129412 .141176 rg
+BT 1 0 0 1 0 1.7 Tm /F2 9.8 Tf 11.5 TL (May \226 Jul 2021) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 43.44 256.34 cm
+q
+.12549 .129412 .141176 rg
+BT 1 0 0 1 14 12.3 Tm /F1 8.7 Tf 10.5 TL -8 0 Td (\177 Cleaned aircraft-engine sensor data, designed features, and compared predictive and anomaly-detection models to identify recurring) Tj T* 8 0 Td (failure patterns.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 43.44 239.34 cm
+q
+.082353 .082353 .082353 rg
+BT 1 0 0 1 0 1.6 Tm /F2 10.4 Tf 12 TL (SELECTED TECHNICAL PROJECTS) Tj T* ET
+Q
+Q
+q
+1 0 0 1 43.44 236.64 cm
+q
+.7 w
+1 J
+.2 .2 .2 RG
+n 0 0 m 525.12 0 l S
+Q
+Q
+q
+1 0 0 1 48.6 222.14 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 0 0 cm
+q
+.12549 .129412 .141176 rg
+BT 1 0 0 1 0 1.7 Tm /F2 9.8 Tf 11.5 TL (AeroRAG-X | Retrieval, Post-Training, and ML Systems) Tj T* ET
+Q
+Q
+q
+1 0 0 1 436.4 0 cm
+q
+.12549 .129412 .141176 rg
+BT 1 0 0 1 0 1.7 Tm /F2 9.8 Tf 11.5 TL (2025 \226 Present) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 43.44 205.64 cm
+q
+.333333 .333333 .333333 rg
+BT 1 0 0 1 0 1.8 Tm /F3 8.7 Tf 10.5 TL (github.com/triasha72/AeroRAG-X) Tj T* ET
+Q
+Q
+q
+1 0 0 1 43.44 178.64 cm
+q
+.12549 .129412 .141176 rg
+BT 1 0 0 1 14 12.3 Tm /F1 8.7 Tf 10.5 TL -8 0 Td (\177 Built hybrid BM25/dense retrieval, RRF, cross-encoder reranking, pgvector search, evidence gating, and citation controls over 3,233) Tj T* 8 0 Td (source-preserving NASA NTRS chunks.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 43.44 151.64 cm
+q
+.12549 .129412 .141176 rg
+BT 1 0 0 1 14 12.3 Tm /F1 8.7 Tf 10.5 TL -8 0 Td (\177 Added protected Base/LoRA evaluation, bounded agents, FastAPI services, observability, FSDP/DeepSpeed/Megatron training) Tj T* 8 0 Td (treatments, and vLLM/SGLang/TensorRT-LLM serving paths. GPU result tables remain pending.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 48.6 126.84 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 0 11.5 cm
+q
+.12549 .129412 .141176 rg
+BT 1 0 0 1 0 1.7 Tm /F2 9.8 Tf 11.5 TL (IntegrityBench | Policy-Conditioned Moderation Evaluation) Tj T* ET
+Q
+Q
+q
+1 0 0 1 436.4 0 cm
+q
+.12549 .129412 .141176 rg
+BT 1 0 0 1 0 13.2 Tm /F2 9.8 Tf 11.5 TL (Aug 2026 \226) Tj T* (Present) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 43.44 110.34 cm
+q
+.333333 .333333 .333333 rg
+BT 1 0 0 1 0 1.8 Tm /F3 8.7 Tf 10.5 TL (github.com/triasha72/IntegrityBench) Tj T* ET
+Q
+Q
+q
+1 0 0 1 43.44 83.34 cm
+q
+.12549 .129412 .141176 rg
+BT 1 0 0 1 14 12.3 Tm /F1 8.7 Tf 10.5 TL -8 0 Td (\177 Built a 360-case benchmark across policy shifts, long context, multilingual, adversarial, standard, and low-resource slices with) Tj T* 8 0 Td (structured allow/reject/escalate decisions.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 43.44 56.34 cm
+q
+.12549 .129412 .141176 rg
+BT 1 0 0 1 14 12.3 Tm /F1 8.7 Tf 10.5 TL -8 0 Td (\177 A static-policy control reached 0.620 macro F1 and 0.286 false acceptance; current-policy retrieval reached 1.000 on the controlled) Tj T* 8 0 Td (generator. I report this as a construction check, not production moderation evidence.) Tj T* ET
+Q
+Q
+ 
+
+endstream
 endobj
 11 0 obj
 <<
-/A <<
-/S /URI /Type /Action /URI (https://github.com/triasha72/NewsLens)
->> /Border [ 0 0 0 ] /Rect [ 43.44 731.3525 167.2236 741.8525 ] /Subtype /Link /Type /Annot
+/F1 12 0 R
+/F2 13 0 R
+/F3 14 0 R
 >>
 endobj
 12 0 obj
 <<
-/A <<
-/S /URI /Type /Action /URI (https://github.com/triasha72/EdgeGenBench)
->> /Border [ 0 0 0 ] /Rect [ 43.44 636.0525 188.034 646.5525 ] /Subtype /Link /Type /Annot
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
 >>
 endobj
 13 0 obj
 <<
-/A <<
-/S /URI /Type /Action /URI (https://github.com/triasha72/AeroSynth-Eval)
->> /Border [ 0 0 0 ] /Rect [ 43.44 540.7525 187.0509 551.2525 ] /Subtype /Link /Type /Annot
+/BaseFont /Helvetica-Bold
+/Encoding /WinAnsiEncoding
+/Name /F2
+/Subtype /Type1
+/Type /Font
 >>
 endobj
 14 0 obj
 <<
-/A <<
-/S /URI /Type /Action /URI (https://github.com/triasha72/atlanta-mobility-resilience-digital-twin)
->> /Border [ 0 0 0 ] /Rect [ 43.44 258.5525 268.7352 269.0525 ] /Subtype /Link /Type /Annot
+/BaseFont /Helvetica-Oblique
+/Encoding /WinAnsiEncoding
+/Name /F3
+/Subtype /Type1
+/Type /Font
 >>
 endobj
 15 0 obj
 <<
-/A <<
-/S /URI /Type /Action /URI (https://github.com/triasha72/Equity-Backtest)
->> /Border [ 0 0 0 ] /Rect [ 43.44 201.7525 187.0509 212.2525 ] /Subtype /Link /Type /Annot
+/Annots [ 16 0 R 17 0 R 18 0 R 19 0 R 20 0 R ]
+/Contents 21 0 R
+/MediaBox [ 0 0 612 792 ]
+/Resources <<
+/Font 11 0 R
+/ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Parent 2 0 R
 >>
 endobj
 16 0 obj
 <<
-/Annots [ 11 0 R 12 0 R 13 0 R 14 0 R 15 0 R ] /Contents 21 0 R /MediaBox [ 0 0 612 792 ] /Parent 19 0 R /Resources <<
-/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
->> /Rotate 0 
-  /Trans <<
-
->> /Type /Page
+/A <<
+/S /URI
+/Type /Action
+/URI (https\072\057\057github\056com\057triasha72\057NewsLens)
+>>
+/Border [ 0 0 0 ]
+/Rect [ 43.44 731.3525 167.2236 741.8525 ]
+/Subtype /Link
+/Type /Annot
 >>
 endobj
 17 0 obj
 <<
-/PageMode /UseNone /Pages 19 0 R /Type /Catalog
+/A <<
+/S /URI
+/Type /Action
+/URI (https\072\057\057github\056com\057triasha72\057EdgeGenBench)
+>>
+/Border [ 0 0 0 ]
+/Rect [ 43.44 636.0525 188.034 646.5525 ]
+/Subtype /Link
+/Type /Annot
 >>
 endobj
 18 0 obj
 <<
-/Author (Triasha Sarkar) /CreationDate (D:20260823203831-04'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20260823203831-04'00') /Producer (ReportLab PDF Library - \(opensource\)) 
-  /Subject (\(unspecified\)) /Title (Triasha Sarkar \204 CV) /Trapped /False
+/A <<
+/S /URI
+/Type /Action
+/URI (https\072\057\057github\056com\057triasha72\057AeroSynth\055Eval)
+>>
+/Border [ 0 0 0 ]
+/Rect [ 43.44 540.7525 187.0509 551.2525 ]
+/Subtype /Link
+/Type /Annot
 >>
 endobj
 19 0 obj
 <<
-/Count 2 /Kids [ 10 0 R 16 0 R ] /Type /Pages
+/A <<
+/S /URI
+/Type /Action
+/URI (https\072\057\057github\056com\057triasha72\057atlanta\055mobility\055resilience\055digital\055twin)
+>>
+/Border [ 0 0 0 ]
+/Rect [ 43.44 258.5525 268.7352 269.0525 ]
+/Subtype /Link
+/Type /Annot
 >>
 endobj
 20 0 obj
 <<
-/Filter [ /ASCII85Decode /FlateDecode ] /Length 3220
+/A <<
+/S /URI
+/Type /Action
+/URI (https\072\057\057github\056com\057triasha72\057Equity\055Backtest)
 >>
-stream
-Gau`U?$G#6&q/*0R&@REHboIb"8BH5-R!2-P#.faoq=%UQ9cn<i^e5jcK^J*1U7JNPGBLAP>qn0dV(Iac^p7$2Z>\us(DFP1kF5W"-*bQ"<?=i@5<B4jP]J/V]+fHQL@2]CKl@NO5Ms_j0nn-i(MD:#;*u?S5''!G(?nZlNM7M"]"K;ld4^q7oMK8f<RJ])o&#`E&\`+LZA+PN5O&`E:aVeJ&14'd(DFIc2!#W%ns8jCQn0;m!,nCj7b+Np<+m)LDHeYp;e#mol501K'.:3FrN!ikll5H[fD1lT!Bn[%6+aSWuH0=57W'(oPOWo46ZLrB"&F5jVPI>lC'0Js5/ds4ITJ:0$G*T*cQC.U>0B2Z>1M>b_kJU-*gRS"OhGC/8$XI*L;nTmq3i:(K3-$)VT0QN`ppD<TAdL%Ah2\R0pKEVJY@BTD)n.FQhgda4n&&'<[kj3+__%?Ee)q1(GaG.MLJDGW*IS\H8)9E5n`C#mM(8(bi+g?F#C)`>E3E`<CQ#DW_Y0Kh,\_r._'CR?1Q-&PD5Z=$#LP%>g5ULfr#:dX&*Pr7dAbZ/Acf+eL8fbiTK.AL^dRR0=BW:cuV(E%BHr6o)r1KOY`e?d`,t7)cHI[(??k_8V]D%>]_XERQ,p1$"2ug0J4%pfu&*c"bd?JYmI1A#>q[QZsk)Wei7GJgSAQ(,G$pb\YgN4EWc'HZM;mfCdi=gjd"e5)pB-!-E$<RDba<c_l9`q)Fn7?X<)'eaHV2HIWM\in#7^nBfA9dFgftL+f3ZZ%-oMOM^el9O0J"n2uZFE['7c;&X5;a50pALNc@FH?hV6BO\C,T%0qEZ<[[q\,kPLdeZs#;Ik5`LZ<ZWF-5M)JkSjSAhoXX'gB.dK4k)s=T8<d%>u+6[Mq>2n'g=[j91rno#s>.s8$^-DRm=`>r!\!+=UAVX'n!I)A.oV%CO3k7k\\jEEiP7KPN<c@)/WPK3>2hZ=Q!Z)16l,[(B".fUc[Set@i-\+:u>M^[][G.tjKZ9TUY)T1`3gi0)YNmWCG$2bl"G[e5Y<<7*^V\B^!$Nm-Z%BT:&!oh]@mr?LWLA*HeL!jNJR`s/^)Is%./f.'P/!.qZ/Asc-eY(!Fi8?F#M.j:?bZm@S'l?WVh;9%a7i#P5Bt>.B0()WV3"e?k@Dq]jZuM*gc[JlAHmgb-&*KeZd1._r:#f_RAncV*N<)87cR/VNpQt'`i;gk>cNf*mcGbEqPl9":<mG7MeeE;Z<nHUS%;M*Y#0,lLCJQ!01=?1%L&!,)ci7dh5VZV/FU5n86n4)<e+(PaJMb?4j!El.""lRU:PAjaE7'1BZBe7]=s.62i+>6HNR%ffAB9F:>,ouGBg*PkB+:63VFncGq6LYhMQ^%,Y^\]J%HJqU*&njCD(22"T(]eA>.3e65?5^Ke2d>po\#YNh0p8!i$1mt0kHt4SVP+(FI.rh\\c[N.9@D53BH=sjR8!UKG!SSruOe'cP4F_>Kb\/b!Lpq$l'B/S/40CC<<dg:UsoFNMip30>B@%==P#i\Fc\NV5W,bnEFt[_"%U-nI!:DS0)\\0i9P9&L#s_:k7Qa4lWNc@PL9"_U8"]7,DC_[nE<V,0#UINA%SU%D[@`A'u/*C1<;O>S5/Q!\VqH'&T#)`mKK<P,]WLC9cK\mFo.d.GfNF!J[AMe,FTNOqpW^s(0h)SbFduq`AZaXkl86Xm^A`'>5T()>`2g#'`VE<G<9p3O.KFZSQ&20%c0#eG]>`3C^Ss^H'KDga<7B>>`g`UR#j$5g?o1e17o0f5ii_p_'&9T@h2b/(]-YXP&<5@/oM6n-^\K6&S0o<qW(s#q$HYa^,eI?'2Ck85U8AhZ_Vd8@C!H`GYmo25:U3C@p#@.FJca8X?W'Knn3/>:eh)WMPbt&W(5ECG41LiInIu)bBL\Yc(*4Bk,Cc'"R=6Q)#5kDs+=a3CfOW%;B*!QDHOaQ;B'+X%LMW\qjos&9Hd^PQI"J'MLS3qEVSse]4XI*tgLYWP#(-T&h)WO\pd$Z:HEi.?m&$?%CY+6M"jF6,</@)gD6bJQk'+#'I8JeshK?E%pN`Q:eF`Hnj`&9]"$&,h#^O7rf@7?O#,_-oX"S"kTU)L26[_E5`Q^[gKmF6DSn'"h#V0TRn5TAWkK0M)#L[FG5jCo;Dfc'&u^Eq\r4:<2K)CR<3)7/&(P`R4+(,c_;.^J]"Ir,C"obj9L'q.=qEo!3kTB%3=eeVV;Jbf4$&`e>iF<f/,5!D858.hR]h'X\dMrM@b]A(<Tg?[O2bB>A*.#8I_hY1F/ZOTX`ifZA>06^+:_Y2#/henP>.i-paJ_KL[PmWU'PUL+,nh-Z(*W-Gq<C+%N<bp"%[1n#-OgLs,*Fmi6sI;1Ds]K0UXcD#.DiZe'Ma;Q#*)LE_.@iTG(pIX>`-PV\1I-<-dCOuKGof;@mg&?,7HN_2:S$cOXE-c*r]o='6@T3"j+Y+]#H"cQ7"KG_M%UPn\a968Zr,tt,E#)_3+%W,j!FSAt)Nr+J.nYCX9S,*hAl3I6'=,#r-UI$iZESV_YDu4<\EeS)b=n<$[AR/f78ujtOqrd+7Z1b<B]3g8cNV"3"(h+o,'LVTF:"[cN:EI.4Bs%?B,>an*p[ouqFm69u&0+ucm1oauo;uU*N(0]SLm6C-_&h!H#&NrAl7*^pM?G5!X^881>b?CCaZo&&k"6i+--AIA)Qr8Z#IKeNMKj26#A3C)i%c:-E&eeq0d@FdohL<)D<L:K()hUUlCH!'h]4Gr:#k<[-.5aj6&+/Q.r4=J8Pre17Dt"&9(/h'U?qZ^ed\6Ph="M(5i)04Y)lkg_ON_^?(b6O"DVfJJEdLlilAU<i,&2!:>e.oIC^1M\p_[tJnD>0@bPgS+)0R!;bU,1Sged8&VesY8S;/^\fG_F\m;CUh4Xe27b3#gFFCQ,QtNOo?cPDA7c,9A[uW;k>u0kgeWrCG,8O`j\D#15nUqMf%9bH.%EpM%FgDF$/eX':<+86/Qgep=UX\GUO",sh=A0MkUsr>liQ>W,iY!M=.Q$Z0%)IHh$&D'j5+nQR'bMl2"E95/[1rWKdGEkD@OX0B@NGhMjm4TLH:oh*QMnFo=ZND><Wk7ZF>Vg^!Z)"CGn=pIEe&#;h#J(RU5rFknRYHAclYO,$=gE6Bld3ZcfJ9;D:9dB(?P3U.=Y0R,MR3Z6"n(pof/a6R[FO7.e'pY+=^!CB8VTOA28qG's^kh'l`J,Eo4iTn:.4M#A4~>endstream
+/Border [ 0 0 0 ]
+/Rect [ 43.44 201.7525 187.0509 212.2525 ]
+/Subtype /Link
+/Type /Annot
+>>
 endobj
 21 0 obj
 <<
-/Filter [ /ASCII85Decode /FlateDecode ] /Length 2769
+/Filter [ /ASCII85Decode /FlateDecode ]
+/Length 2769
 >>
 stream
-Gb!;e?$G$]&q0MXR$TtV]>nGQl?iE68h@SLD8icegHP65+s@R68[&2.76UV>HNEELPuB3YOdb)c-]TU:(u1Oi1Ns[6J=k3e)](n\VtB+$UbJP-SAM_lVWf[lVJ!Z8L$P#k^>Gbn]B=rdgjq*[pOu5c2YRFDhWWX`boXCQLJas4+T*.bYmsP:_d7QcLu%@Cn'SMX1F!h5IJ;+8n(>[PO82]2nl!s*oY=s>'YI,,&[K'bB9mmC;/htCVW-ro=IIOLP"?\K'm+ZsGFJLtdskKc52tbIfih[Oph3^BYB0P#MRkXG;i61*qeY;RcOB<tD<eM1^UlteDn/*>s80>ErPjd3orUY:,?UFt$Bs!r+#(A_8hcg@?M%i^i!WXH;hETGPV3%?;%Z9HX0Eu+\&IZCd57QgT>OurriLH4EMd7qF.%oQjeSq^(k"^!/+;WkMA.QWU.cLJ1,=`D&t_<ijsun,4J/m'6$'"RkA7t4mV+TBFE]OT,deF*MR,:[br!.^GQ"^!fUR>!P+5J/\%:DaaCLfOaZX./.$Jp#CI=gQ>Woql;9!mP_"-BmP5YL[]"ROrn9\Atg]3XUGsO[!q1;o!^!nB/I.Hg9_<d%n1VCIGVMp=P:),Q&/J/O>&mePcn1n=\PmM(0:c(/.p1['g+Ro.N0+I$kH:HF2'qFMliTN7(U%\Shl<,`]7b(mc6+m;"cs1R]Q!A*0lnfK#E$B\:#.\i_DL1AYo`C;BEOm/Yq!/g<jl2ENH'G-&R[7pn=U*lR_uf.Y\VNO#mV!\7mufnmR+"bik6gPMEN,hs7t5.+L12.]Cj%tV#Q?FJ$[JZ)lM.Ipo?L8G&*6R5hjJP[gaS'd'e;1$?Ga*@91".ZR52ZoAo0)d=u6Oa_k"r#JBWn\"ufp!Qn"DuG.`L8O;0C+hq!HZALf?A%>Np5!\6Koa$119<(UY+.dZ=o_Q-qE$Cc'\ZI+H;V:,sapj=-:c&jpr4@/()!F=_A"UBLX=`-6a5*!Z_aFo0L\7psApk(lY&jf/-cP+W&jF]8@DUS1_?+WbaDdd-MkL'"(p&9NSr#OE?;.=Do0Ah_dI>S&a81a[3VQnr14>ti0[\?CV,$t(%a[B.f&p>%@*^tV(EkW(HK[#nt`2^t*c^G[5%,Sfi,olQuiGb-a'iue+"bV.4E)<I]ofM&sK8-<bP>u<PDe*Y2mrVXoLcLm]_siEI`S-%'rtY'Gg4:?9R!AUdgnE67M1\`nmCE"&953;40eX-?P5]NL#Q>;npatMO*5ra,/&4%t0s/!'N@KX.=k[iN1(,U*Bq3pl.Fhn!bGB*VX]a=ViD!EF[@\`f05t!?QttFSmca]hU3fI1F=6fk&C?@Re5qAoUo8+p,Je5'+^94E.n>XTdp2p:\4AE.<^PP)dPbqJ\dEQ'8HYB43<\KM<qLk3@>oY4jQKo,/Q&"H9XYIgD'fq4dSah27`b.nD1*Dh)YD;7g&X@s)1*&q>nF6<X=e<@a\b@*Ka3F0h2D3f2j@)OO]r[+)F3L!ERneJ;::)U(Yj7Z'&c.j;:N,aXI"UW;+8qS>;`.sWi&pSVDcLU3Za&]F/`'RBZ^pG_o_"5U=!g"%<gJJ4[J@$\5]+qPHs8^6HCtCU)IBUMB#.\U6,;Z29Gb^(SLnFNK0:)L0t3k^]-6%EEn,!+9Q(!dAhtmM_GK/msP/gG/Y*73q'MFAY^p$k`hGbd@_;_p8Mn^Td"#iOCc:7?@4J`)]p-:E/Kqg-Inao?;epW_,21[1Lcr<k"m>3ld2_`"@\NI9q=,`BW3,<YblHZj?RVnAi)bnR?Xs3[84[8Tk)WcUGkC,pAk+R27*PiMo7QLL@7VC+0;sQCW>-K/fFHC_'*Ce%82^KT`>WOFBI>"r[M(O'6G.!GQfJ%qN4#;G+?qEFEZC\RhL6=Tsp3&.d2k=Cp`bM$]+3jS<2q]A/COd&<GV$Gs^51%sNOr'UB#ob0jiWMEt9$dhil))QQuSJg-nO]4Lk=T[6:%jaj/XC5$"N1H]:DI/P`;NG1ElDJ"K$?-m80I64_h?YeC/=>`C^8't^hB4VVKi%ODo-ZINefSA"cB01T;i.p]0:(UbOpeeeMlD`B9VI)G#jqfG-BZ-(2q9?mKHh#8(]psE!Nk\\VY'MZ#k;@1`#0![n<gc&+7p0N&J@g?baPR'r4I^_lKXf#8:TsF7'cH\u>M9!-(k-.=<Z6_6Sr$^&"!5ffjMFos9*+F5`1J[$OVQr8bhe.GHC\`.3kaoKn5Q-E2->.C)CnU#Z1=%^/'kkePr#f_lqBRq,jWA/Y5I@TH-D8uJNn!t35hYQHmMqT`OW?3>iP?8aA:OlZAAi4!AkS&Z*t[^`uojgJ"I=JYuJB(;VD'6h9CC<2!ObUX\k>(AXR%He=[/7g3R5k@(D(^1KR@P6al4*?Kr,.p4U,_RDBjp>"??Y2J:mPG[ZYoZLK0_(Z(EVBU'29VA-H/A94-)h_i*A5X[n_nqg!AQ+)>05`UMj`D_h&>hI^1A!qYa>/V`32NDlFm`GNFZu@R5FPB(;%R%@N;$!][YoW^#0l*;^BZ^KX&,Kl$JO8'>5[=psdV#>s6te*3R!k+6k/aPM>8:U/bbu4W4@Qi$]?n\a\#H3<PM,[[1/AAdWXp/\"Z>L6XUa-up\VLj]:0oFR-e0OS_oH^Q_T>XpG_gO\)!</\7LN#hk-V(C&U;$T9X;>6(OqV-f_s%9g4p2@;G?iDgdY3<S**S[?ZI71+&5[G3`7nF0aiEP1@P^poWS2g2&G?:MZ[YC)umlcdUHacN60)055K$nc~>endstream
+Gb!;e?$G$]&q0MXR$TtV]>nGQl?iE68h@SLD8icegHP65+s@R68[&2.76UV>HNEELPuB3YOdb)c-]TU:(u1Oi1Ns[6J=k3e)](n\VtB+$UbJP-SAM_lVWf[lVJ!Z8L$P#k^>Gbn]B=rdgjq*[pOu5c2YRFDhWWX`boXCQLJas4+T*.bYmsP:_d7QcLu%@Cn'SMX1F!h5IJ;+8n(>[PO82]2nl!s*oY=s>'YI,,&[K'bB9mmC;/htCVW-ro=IIOLP"?\K'm+ZsGFJLtdskKc52tbIfih[Oph3^BYB0P#MRkXG;i61*qeY;RcOB<tD<eM1^UlteDn/*>s80>ErPjd3orUY:,?UFt$Bs!r+#(A_8hcg@?M%i^i!WXH;hETGPV3%?;%Z9HX0Eu+\&IZCd57QgT>OurriLH4EMd7qF.%oQjeSq^(k"^!/+;WkMA.QWU.cLJ1,=`D&t_<ijsun,4J/m'6$'"RkA7t4mV+TBFE]OT,deF*MR,:[br!.^GQ"^!fUR>!P+5J/\%:DaaCLfOaZX./.$Jp#CI=gQ>Woql;9!mP_"-BmP5YL[]"ROrn9\Atg]3XUGsO[!q1;o!^!nB/I.Hg9_<d%n1VCIGVMp=P:),Q&/J/O>&mePcn1n=\PmM(0:c(/.p1['g+Ro.N0+I$kH:HF2'qFMliTN7(U%\Shl<,`]7b(mc6+m;"cs1R]Q!A*0lnfK#E$B\:#.\i_DL1AYo`C;BEOm/Yq!/g<jl2ENH'G-&R[7pn=U*lR_uf.Y\VNO#mV!\7mufnmR+"bik6gPMEN,hs7t5.+L12.]Cj%tV#Q?FJ$[JZ)lM.Ipo?L8G&*6R5hjJP[gaS'd'e;1$?Ga*@91".ZR52ZoAo0)d=u6Oa_k"r#JBWn\"ufp!Qn"DuG.`L8O;0C+hq!HZALf?A%>Np5!\6Koa$119<(UY+.dZ=o_Q-qE$Cc'\ZI+H;V:,sapj=-:c&jpr4@/()!F=_A"UBLX=`-6a5*!Z_aFo0L\7psApk(lY&jf/-cP+W&jF]8@DUS1_?+WbaDdd-MkL'"(p&9NSr#OE?;.=Do0Ah_dI>S&a81a[3VQnr14>ti0[\?CV,$t(%a[B.f&p>%@*^tV(EkW(HK[#nt`2^t*c^G[5%,Sfi,olQuiGb-a'iue+"bV.4E)<I]ofM&sK8-<bP>u<PDe*Y2mrVXoLcLm]_siEI`S-%'rtY'Gg4:?9R!AUdgnE67M1\`nmCE"&953;40eX-?P5]NL#Q>;npatMO*5ra,/&4%t0s/!'N@KX.=k[iN1(,U*Bq3pl.Fhn!bGB*VX]a=ViD!EF[@\`f05t!?QttFSmca]hU3fI1F=6fk&C?@Re5qAoUo8+p,Je5'+^94E.n>XTdp2p:\4AE.<^PP)dPbqJ\dEQ'8HYB43<\KM<qLk3@>oY4jQKo,/Q&"H9XYIgD'fq4dSah27`b.nD1*Dh)YD;7g&X@s)1*&q>nF6<X=e<@a\b@*Ka3F0h2D3f2j@)OO]r[+)F3L!ERneJ;::)U(Yj7Z'&c.j;:N,aXI"UW;+8qS>;`.sWi&pSVDcLU3Za&]F/`'RBZ^pG_o_"5U=!g"%<gJJ4[J@$\5]+qPHs8^6HCtCU)IBUMB#.\U6,;Z29Gb^(SLnFNK0:)L0t3k^]-6%EEn,!+9Q(!dAhtmM_GK/msP/gG/Y*73q'MFAY^p$k`hGbd@_;_p8Mn^Td"#iOCc:7?@4J`)]p-:E/Kqg-Inao?;epW_,21[1Lcr<k"m>3ld2_`"@\NI9q=,`BW3,<YblHZj?RVnAi)bnR?Xs3[84[8Tk)WcUGkC,pAk+R27*PiMo7QLL@7VC+0;sQCW>-K/fFHC_'*Ce%82^KT`>WOFBI>"r[M(O'6G.!GQfJ%qN4#;G+?qEFEZC\RhL6=Tsp3&.d2k=Cp`bM$]+3jS<2q]A/COd&<GV$Gs^51%sNOr'UB#ob0jiWMEt9$dhil))QQuSJg-nO]4Lk=T[6:%jaj/XC5$"N1H]:DI/P`;NG1ElDJ"K$?-m80I64_h?YeC/=>`C^8't^hB4VVKi%ODo-ZINefSA"cB01T;i.p]0:(UbOpeeeMlD`B9VI)G#jqfG-BZ-(2q9?mKHh#8(]psE!Nk\\VY'MZ#k;@1`#0![n<gc&+7p0N&J@g?baPR'r4I^_lKXf#8:TsF7'cH\u>M9!-(k-.=<Z6_6Sr$^&"!5ffjMFos9*+F5`1J[$OVQr8bhe.GHC\`.3kaoKn5Q-E2->.C)CnU#Z1=%^/'kkePr#f_lqBRq,jWA/Y5I@TH-D8uJNn!t35hYQHmMqT`OW?3>iP?8aA:OlZAAi4!AkS&Z*t[^`uojgJ"I=JYuJB(;VD'6h9CC<2!ObUX\k>(AXR%He=[/7g3R5k@(D(^1KR@P6al4*?Kr,.p4U,_RDBjp>"??Y2J:mPG[ZYoZLK0_(Z(EVBU'29VA-H/A94-)h_i*A5X[n_nqg!AQ+)>05`UMj`D_h&>hI^1A!qYa>/V`32NDlFm`GNFZu@R5FPB(;%R%@N;$!][YoW^#0l*;^BZ^KX&,Kl$JO8'>5[=psdV#>s6te*3R!k+6k/aPM>8:U/bbu4W4@Qi$]?n\a\#H3<PM,[[1/AAdWXp/\"Z>L6XUa-up\VLj]:0oFR-e0OS_oH^Q_T>XpG_gO\)!</\7LN#hk-V(C&U;$T9X;>6(OqV-f_s%9g4p2@;G?iDgdY3<S**S[?ZI71+&5[G3`7nF0aiEP1@P^poWS2g2&G?:MZ[YC)umlcdUHacN60)055K$nc~>
+endstream
 endobj
 xref
 0 22
 0000000000 65535 f 
-0000000061 00000 n 
-0000000112 00000 n 
-0000000219 00000 n 
-0000000331 00000 n 
-0000000515 00000 n 
-0000000689 00000 n 
-0000000872 00000 n 
-0000000987 00000 n 
-0000001174 00000 n 
-0000001366 00000 n 
-0000001604 00000 n 
-0000001791 00000 n 
-0000001981 00000 n 
-0000002174 00000 n 
-0000002393 00000 n 
-0000002587 00000 n 
-0000002830 00000 n 
-0000002900 00000 n 
-0000003191 00000 n 
-0000003259 00000 n 
-0000006571 00000 n 
+0000000015 00000 n 
+0000000346 00000 n 
+0000000412 00000 n 
+0000000461 00000 n 
+0000000694 00000 n 
+0000000899 00000 n 
+0000001088 00000 n 
+0000001289 00000 n 
+0000001497 00000 n 
+0000001707 00000 n 
+0000010669 00000 n 
+0000010724 00000 n 
+0000010832 00000 n 
+0000010945 00000 n 
+0000011061 00000 n 
+0000011300 00000 n 
+0000011505 00000 n 
+0000011713 00000 n 
+0000011927 00000 n 
+0000012176 00000 n 
+0000012391 00000 n 
 trailer
 <<
-/ID 
-[<9c52185b46f668e55e539be11baee4d5><9c52185b46f668e55e539be11baee4d5>]
-% ReportLab generated PDF document -- digest (opensource)
-
-/Info 18 0 R
-/Root 17 0 R
 /Size 22
+/Root 3 0 R
+/Info 1 0 R
 >>
 startxref
-9432
+15253
 %%EOF
