@@ -32,13 +32,18 @@ and GREEN TEA.
 
 - **AIRFAANS** now reports a matched three-seed comparison of a pointwise MLP,
   MeshGraphNet-style GNN, and point neural operator across all 200 official
-  AirfRANS interpolation test meshes per treatment. Reynolds/AoA OOD,
-  scarce-data, UQ, and active-learning studies remain pending.
-- **EdgeGenBench** now extends the measured ONNX/Core ML/Qualcomm QNN work with
-  native C++, Android Kotlin/JNI, physical-device reference captures,
-  self-describing evidence export, 16 KiB validation, and checksum-bound release
-  evidence. Reference-backend Android measurements are kept separate from QNN
-  profile claims.
+  AirfRANS interpolation test meshes per treatment. No architecture wins every
+  field and force metric; Reynolds/AoA OOD and uncertainty runs remain pending.
+- **IntegrityBench** now evaluates a validation-thresholded candidate on 97,320
+  public Civil Comments and keeps the release blocked because threat and
+  calibration gates fail. The registry, review, shadow, rollback, container,
+  telemetry, and Terraform paths are implemented without claiming a live SLO.
+- **EdgeGenBench** now leads with its public NASA DASHlink flight-anomaly track.
+  The generated aircraft-design surrogate remains useful deployment evidence,
+  but it is no longer presented as measured-aircraft model accuracy.
+- **AeroSynth-Eval** now includes a ten-seed transfer study on public AGDD real
+  images. Mixed training improved macro F1 but reduced crack recall, and that
+  trade-off is kept visible.
 - **AeroRAG-X** continues to distinguish implemented distributed-training and
   serving infrastructure from CUDA benchmark results that have not yet been
   executed.

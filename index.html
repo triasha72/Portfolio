@@ -151,7 +151,7 @@
           <div>
             <h3><a href="case-airfaans.html">AIRFAANS: geometry-aware scientific ML for aerodynamic CFD fields</a></h3>
             <p>Georgia Tech AE 6394 coursework comparing a pointwise MLP, MeshGraphNet-style GNN, and point neural operator on official AirfRANS meshes with simulation-level splits, force verification, and resumable full-mesh evaluation.</p>
-            <p>Across <span class="metric">3 matched seeds × 3 architectures × 200 official interpolation test meshes</span>, MeshGraphNet achieved the lowest mean error on all four predicted fields and drag; Reynolds/AoA OOD, scarce-data, UQ, and active-learning studies remain pending.</p>
+            <p>Across <span class="metric">3 matched seeds × 3 architectures × 200 official interpolation test meshes</span>, no model won every output. At seed 17, MeshGraphNet led pressure and drag error while the MLP led both velocity components and lift error. Reynolds/AoA OOD and uncertainty runs remain pending.</p>
             <p class="meta">Georgia Tech coursework · Aug 2026</p>
             <p class="links"><a href="case-airfaans.html">Case study</a><a href="https://github.com/triasha72/AIRFAANS" target="_blank" rel="noreferrer">Code</a></p>
           </div>
@@ -161,8 +161,8 @@
           <a class="project-image" href="case-integritybench.html"><img src="assets/integritybench-card.svg" alt="IntegrityBench policy evaluation workflow" /></a>
           <div>
             <h3><a href="case-integritybench.html">IntegrityBench: evaluation for changing moderation policies</a></h3>
-            <p>A 360-case benchmark across policy shifts, long context, multilingual content, adversarial transformations, and limited-label settings. Decisions include a rule, evidence, confidence, remediation, and a human-review flag.</p>
-            <p>The static-policy control reached <span class="metric">0.620 macro F1</span> with a 0.286 false-acceptance rate; current-policy retrieval reached 1.000 on the controlled generator. I treat that as a benchmark construction check, not a production moderation result.</p>
+            <p>A moderation benchmark and fail-closed service with versioned policy controls, a checksummed model registry, human-review routing, shadow comparison, rollback, telemetry, and an AWS infrastructure plan.</p>
+            <p>On <span class="metric">97,320 held-out public Civil Comments</span>, validation-selected thresholds reduced false acceptance from 11.43% to 1.84%. The candidate remained blocked because threat false acceptance was 6.05% and calibration error was 5.31%.</p>
             <p class="meta">Independent · Aug 2026–Present</p>
             <p class="links"><a href="case-integritybench.html">Case study</a><a href="https://github.com/triasha72/IntegrityBench" target="_blank" rel="noreferrer">Code</a></p>
           </div>
@@ -194,8 +194,8 @@
           <a class="project-image" href="case-edgegenbench.html"><img src="assets/edgegenbench-card.svg" alt="EdgeGenBench deployment workflow" /></a>
           <div>
             <h3><a href="case-edgegenbench.html">EdgeGenBench: scientific ML and hardware-aware inference</a></h3>
-            <p>Aircraft-design surrogate benchmark spanning PyTorch modeling, uncertainty-aware optimization, ONNX/FP16/INT8 deployment, Core ML, Qualcomm QNN, native C++ inference, and an Android Kotlin/JNI evidence path.</p>
-            <p><span class="metric">QNN retained 0.996953 mean held-out R²</span> on the documented Snapdragon target. The Android path now adds physical-device reference captures, versioned evidence exports, 16 KiB validation, and fail-closed QNN/JNI integration without turning those measurements into unsupported power or iPhone claims.</p>
+            <p>A real NASA DASHlink flight-anomaly track plus a separately labeled generated aircraft-design benchmark spanning ONNX, Core ML, Qualcomm QNN, native C++, Android, and browser inference.</p>
+            <p>The recorded-flight model reached <span class="metric">0.7380 macro F1 on 17,780 aircraft-disjoint approaches</span> and remained blocked by its macro-F1 and late-flap-recall gates. ONNX prediction consistency stayed above 99.55% under the tested sensor corruptions.</p>
             <p class="meta">Independent · Aug 2026–Present</p>
             <p class="links"><a href="case-edgegenbench.html">Case study</a><a href="https://github.com/triasha72/EdgeGenBench" target="_blank" rel="noreferrer">Code</a></p>
           </div>
@@ -205,8 +205,8 @@
           <a class="project-image" href="case-aerosynth.html"><img src="assets/aerosynth-card.svg" alt="AeroSynth-Eval evaluation diagram" /></a>
           <div>
             <h3><a href="case-aerosynth.html">AeroSynth-Eval: multimodal AI evaluation</a></h3>
-            <p>Reproducible VLM evaluation framework for synthetic aerospace inspection imagery with a frozen <span class="metric">48-scenario benchmark</span>, protected <span class="metric">36/12 development-test split</span>, deterministic assets, SHA-256 provenance, annotation workflows, and typed evaluator contracts.</p>
-            <p>A free Kaggle P100 batch attempted all 12 development cases: eight passed the strict response schema, while four JSON failures were retained. This is execution evidence, not human-alignment evidence.</p>
+            <p>Aircraft inspection-image evaluation using the public AGDD real-image benchmark, with generated images kept as explicit controls or augmentation rather than treated as operational evidence.</p>
+            <p>Across ten matched seeds, mixed training raised mean macro F1 from <span class="metric">0.3881 to 0.4419</span> but lowered mean crack recall from 0.4000 to 0.3167, so the augmentation was not treated as a safety win.</p>
             <p class="meta">Independent · Aug 2026–Present</p>
             <p class="links"><a href="case-aerosynth.html">Case study</a><a href="https://github.com/triasha72/AeroSynth-Eval" target="_blank" rel="noreferrer">Code</a></p>
           </div>
