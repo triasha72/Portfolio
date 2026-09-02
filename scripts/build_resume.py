@@ -11,7 +11,7 @@ from reportlab.lib.styles import ParagraphStyle, getSampleStyleSheet
 from reportlab.lib.units import inch
 from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.pdfbase import pdfmetrics
-from reportlab.platypus import PageBreak, Paragraph, SimpleDocTemplate, Spacer
+from reportlab.platypus import Paragraph, SimpleDocTemplate, Spacer
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "assets" / "Triasha_Sarkar_CV.pdf"
@@ -40,33 +40,34 @@ def build() -> None:
     )
     contact = ParagraphStyle(
         "Contact", parent=styles["Normal"], fontName=regular, fontSize=8.2,
-        leading=10.2, alignment=TA_CENTER, textColor=muted, spaceAfter=7,
+        leading=10.8, alignment=TA_CENTER, textColor=muted, spaceAfter=9,
     )
     summary = ParagraphStyle(
-        "Summary", parent=styles["Normal"], fontName=regular, fontSize=8.7,
-        leading=11.2, textColor=navy, spaceAfter=6,
+        "Summary", parent=styles["Normal"], fontName=regular, fontSize=9,
+        leading=12.4, textColor=navy, spaceAfter=8,
     )
     section = ParagraphStyle(
         "Section", parent=styles["Heading2"], fontName=bold, fontSize=9.2,
-        leading=11, textColor=teal, spaceBefore=5, spaceAfter=3,
+        leading=11.5, textColor=teal, spaceBefore=7, spaceAfter=4,
         borderWidth=0, borderPadding=0,
     )
     role = ParagraphStyle(
-        "Role", parent=styles["Normal"], fontName=bold, fontSize=8.5,
-        leading=10.2, textColor=navy, spaceBefore=2, spaceAfter=1,
+        "Role", parent=styles["Normal"], fontName=bold, fontSize=8.7,
+        leading=11.2, textColor=navy, spaceBefore=3.2, spaceAfter=2,
+        keepWithNext=True,
     )
     body = ParagraphStyle(
-        "Body", parent=styles["Normal"], fontName=regular, fontSize=8.2,
-        leading=10.4, textColor=navy, spaceAfter=2,
+        "Body", parent=styles["Normal"], fontName=regular, fontSize=8.5,
+        leading=11.8, textColor=navy, spaceAfter=3,
     )
     bullet = ParagraphStyle(
         "Bullet", parent=body, leftIndent=9, firstLineIndent=-7,
-        bulletIndent=0, spaceAfter=1.5,
+        bulletIndent=0, spaceAfter=2.3,
     )
 
     doc = SimpleDocTemplate(
-        str(OUTPUT), pagesize=letter, rightMargin=0.55 * inch,
-        leftMargin=0.55 * inch, topMargin=0.38 * inch, bottomMargin=0.38 * inch,
+        str(OUTPUT), pagesize=letter, rightMargin=0.62 * inch,
+        leftMargin=0.62 * inch, topMargin=0.42 * inch, bottomMargin=0.42 * inch,
         title="Triasha Sarkar Resume", author="Triasha Sarkar",
     )
     story = [
@@ -112,8 +113,6 @@ def build() -> None:
         Paragraph("NewsLens | Recommendation and real-time search | Jul - Aug 2026", role),
         Paragraph("Reached NDCG@10 of 0.366 with leakage-safe MIND evaluation; the one-time holdout interval included zero.", bullet, bulletText="•"),
         Paragraph("Built a Go, Kafka, PostgreSQL, and FastAPI article path; a 500-event local run measured 44 ms publish p99, 79 ms freshness p95, and 5.7 s partition recovery.", bullet, bulletText="•"),
-        PageBreak(),
-        Paragraph("TRIASHA SARKAR | SELECTED PROJECTS", section),
         Paragraph("EdgeGenBench | Real-flight ML and on-device inference | Aug 2026 - Present", role),
         Paragraph("A NASA DASHlink anomaly model reached 0.7380 macro F1 on 17,780 aircraft-disjoint approaches and remained blocked by release gates.", bullet, bulletText="•"),
         Paragraph("ONNX prediction consistency stayed above 99.55% under tested sensor corruptions; generated aircraft-design data is labeled separately as deployment evidence.", bullet, bulletText="•"),
