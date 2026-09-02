@@ -78,9 +78,9 @@ def build() -> None:
             "triasha72.github.io/Portfolio", contact,
         ),
         Paragraph(
-            "Machine Learning Engineer with an MS in Aerospace Engineering from Georgia "
-            "Tech. Builds and evaluates retrieval, scientific ML, and production systems, "
-            "with a focus on measurable results, failure analysis, and deployment.", summary,
+            "Machine Learning Engineer with an aerospace background, building retrieval, "
+            "recommendation, and scientific ML systems. I care about clear metrics, "
+            "production readiness, and knowing when a model should not ship.", summary,
         ),
         Paragraph("EDUCATION", section),
         Paragraph("MS, Aerospace Engineering | Georgia Institute of Technology, Atlanta, GA | Aug 2026", role),
