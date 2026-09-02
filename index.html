@@ -116,7 +116,7 @@
         <p class="subtitle">I build ML systems from measurable baselines through deployment and failure analysis.</p>
         <p class="intro">My strongest work combines retrieval and ranking, ML evaluation, scientific machine learning, and deployment-focused engineering. I care about systems that are measurable, reproducible, and useful outside a notebook.</p>
         <div class="buttons">
-          <a class="button primary" href="https://triasha72.github.io/Portfolio/assets/Triasha_Sarkar_CV.pdf?v=20260827e" type="application/pdf">Resume</a>
+          <a class="button primary" href="https://triasha72.github.io/Portfolio/assets/Triasha_Sarkar_CV.pdf?v=20260901" type="application/pdf">Resume</a>
           <a class="button" href="https://github.com/triasha72" target="_blank" rel="noreferrer">GitHub</a>
           <a class="button" href="https://www.linkedin.com/in/triasha-sarkar/" target="_blank" rel="noreferrer">LinkedIn</a>
         </div>
@@ -162,7 +162,7 @@
           <div>
             <h3><a href="case-integritybench.html">IntegrityBench: evaluation for changing moderation policies</a></h3>
             <p>A moderation benchmark and fail-closed service with versioned policy controls, a checksummed model registry, human-review routing, shadow comparison, rollback, telemetry, and an AWS infrastructure plan.</p>
-            <p>On <span class="metric">97,320 held-out public Civil Comments</span>, validation-selected thresholds reduced false acceptance from 11.43% to 1.84%. The candidate remained blocked because threat false acceptance was 6.05% and calibration error was 5.31%.</p>
+            <p>On <span class="metric">97,320 held-out public Civil Comments</span>, validation-selected thresholds reduced false acceptance from 11.43% to 1.84%. A later transfer test on 2,802 human-annotated ToxicChat prompts failed badly: false acceptance rose to 59.32%. The candidate remains blocked.</p>
             <p class="meta">Independent · Aug 2026–Present</p>
             <p class="links"><a href="case-integritybench.html">Case study</a><a href="https://github.com/triasha72/IntegrityBench" target="_blank" rel="noreferrer">Code</a></p>
           </div>
@@ -173,7 +173,7 @@
           <div>
             <h3><a href="case-aerorag.html">AeroRAG-X: retrieval and LLM evaluation for technical knowledge</a></h3>
             <p>Evaluation-first GenAI system over <span class="metric">3,233 citation-preserving NASA NTRS chunks</span>, combining BM25 + dense retrieval, Reciprocal Rank Fusion, cross-encoder reranking, pgvector, evidence-sufficiency checks, and application-controlled citations.</p>
-            <p>Added PEFT/LoRA experiments, bounded LangGraph agents, protected evaluation, containerized FastAPI services, and controlled FSDP, DeepSpeed, Megatron-LM, vLLM, SGLang, and TensorRT-LLM experiment paths. Their GPU result tables remain pending rather than being presented as completed benchmarks.</p>
+            <p>On 888 answerable QASPER questions with human evidence spans, a frozen within-paper TF-IDF baseline reached <span class="metric">76.24% evidence recall@10</span>. This measures retrieval on NLP papers, not answer generation or NASA-domain transfer. GPU result tables for the distributed training and serving paths remain pending.</p>
             <p class="meta">Independent · Oct 2025–Present</p>
             <p class="links"><a href="case-aerorag.html">Case study</a><a href="https://github.com/triasha72/AeroRAG-X" target="_blank" rel="noreferrer">Code</a></p>
           </div>
@@ -206,7 +206,7 @@
           <div>
             <h3><a href="case-aerosynth.html">AeroSynth-Eval: multimodal AI evaluation</a></h3>
             <p>Aircraft inspection-image evaluation using the public AGDD real-image benchmark, with generated images kept as explicit controls or augmentation rather than treated as operational evidence.</p>
-            <p>Across ten matched seeds, mixed training raised mean macro F1 from <span class="metric">0.3881 to 0.4419</span> but lowered mean crack recall from 0.4000 to 0.3167, so the augmentation was not treated as a safety win.</p>
+            <p>Across ten matched seeds, mixed training raised mean macro F1 from <span class="metric">0.3881 to 0.4419</span> but lowered mean crack recall from 0.4000 to 0.3167. A separate GenAI-Bench track now materializes 1,735 public human preference votes for evaluator development; those votes do not validate aircraft inspection.</p>
             <p class="meta">Independent · Aug 2026–Present</p>
             <p class="links"><a href="case-aerosynth.html">Case study</a><a href="https://github.com/triasha72/AeroSynth-Eval" target="_blank" rel="noreferrer">Code</a></p>
           </div>

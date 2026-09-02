@@ -34,19 +34,22 @@ and GREEN TEA.
   MeshGraphNet-style GNN, and point neural operator across all 200 official
   AirfRANS interpolation test meshes per treatment. No architecture wins every
   field and force metric; Reynolds/AoA OOD and uncertainty runs remain pending.
-- **IntegrityBench** now evaluates a validation-thresholded candidate on 97,320
-  public Civil Comments and keeps the release blocked because threat and
-  calibration gates fail. The registry, review, shadow, rollback, container,
-  telemetry, and Terraform paths are implemented without claiming a live SLO.
+- **IntegrityBench** evaluates a validation-thresholded candidate on 97,320
+  public Civil Comments, then tests the frozen model on 2,802 human-annotated
+  ToxicChat prompts. False acceptance rises to 59.32% under that shift, so the
+  release remains blocked.
 - **EdgeGenBench** now leads with its public NASA DASHlink flight-anomaly track.
   The generated aircraft-design surrogate remains useful deployment evidence,
   but it is no longer presented as measured-aircraft model accuracy.
-- **AeroSynth-Eval** now includes a ten-seed transfer study on public AGDD real
-  images. Mixed training improved macro F1 but reduced crack recall, and that
-  trade-off is kept visible.
-- **AeroRAG-X** continues to distinguish implemented distributed-training and
-  serving infrastructure from CUDA benchmark results that have not yet been
-  executed.
+- **AeroSynth-Eval** includes a ten-seed transfer study on public AGDD images
+  and a separate set of 1,735 GenAI-Bench human preference votes. The votes
+  support evaluator development, not aircraft-inspection claims.
+- **AeroRAG-X** adds a QASPER retrieval baseline over 888 questions with human
+  evidence spans. Evidence recall@10 is 76.24%; the result covers retrieval on
+  NLP papers, not NASA answer generation.
+- **Atlanta Mobility Resilience** now materializes 50 Census tract origins from
+  2024 ACS five-year estimates, representing an estimated 216,659 residents.
+  Essential destinations and observed-trip calibration remain open.
 
 ## How it was built
 
