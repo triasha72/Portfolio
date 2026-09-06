@@ -49,7 +49,12 @@ and GREEN TEA.
   NLP papers, not NASA answer generation.
 - **Atlanta Mobility Resilience** now materializes 50 Census tract origins from
   2024 ACS five-year estimates, representing an estimated 216,659 residents.
-  Essential destinations and observed-trip calibration remain open.
+  Its research config also uses 101 mapped hospitals, clinics, fire stations,
+  and shelters. ACS uncertainty propagation is implemented; observed travel
+  calibration remains open.
+- **Surrogate Model Learning** confirms a frozen uncertainty method on 1,030
+  public UCI concrete measurements. Test R² is 0.9023, and normalized 90%
+  intervals cover 95.83% of the held-out mixture groups.
 
 ## How it was built
 
