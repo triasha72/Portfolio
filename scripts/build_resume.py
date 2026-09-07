@@ -136,6 +136,10 @@ def build() -> None:
         Spacer(1, 5),
         Paragraph("LEADERSHIP", section),
         Paragraph("Graduate Chair | Women of Aeronautics and Astronautics, Georgia Tech | Aug 2025 - Aug 2026", body),
+        Paragraph("Organizing Team | Aaruush, SRM Institute of Science and Technology | 2019", body),
+        Paragraph("Helped organize a campus hackathon, gaining early exposure to collaborative, deadline-driven technical projects and the student developer community.", bullet, bulletText="•"),
+        Paragraph("Hackathon Participant | SRM Institute of Science and Technology | 2019", body),
+        Paragraph("Worked in a five-member team to plan a sustainable-city modeling project.", bullet, bulletText="•"),
         Spacer(1, 3),
     ]
     doc.build(story)
