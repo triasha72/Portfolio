@@ -4,9 +4,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Triasha Sarkar | Machine Learning Engineer</title>
-  <meta name="description" content="Machine Learning Engineer focused on retrieval, evaluation, scientific ML, and reliable ML systems." />
+  <meta name="description" content="Machine Learning Engineer focused on scientific ML, CFD surrogates, uncertainty, and reliable ML systems." />
   <meta property="og:title" content="Triasha Sarkar | Machine Learning Engineer" />
-  <meta property="og:description" content="Retrieval, evaluation, scientific ML, and reliable ML systems." />
+  <meta property="og:description" content="Scientific ML, CFD surrogates, uncertainty, and reliable ML systems." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://triasha72.github.io/Portfolio/" />
   <meta property="og:image" content="https://triasha72.github.io/Portfolio/assets/og-card.png" />
@@ -113,8 +113,8 @@
       <div>
         <p class="eyebrow">Georgia Tech · Ex-Rolls-Royce</p>
         <h1 id="hero-title">Machine Learning Engineer</h1>
-        <p class="subtitle">I build ML systems from measurable baselines through deployment and failure analysis.</p>
-        <p class="intro">My strongest work combines retrieval and ranking, ML evaluation, scientific machine learning, and deployment-focused engineering. I care about systems that are measurable, reproducible, and useful outside a notebook.</p>
+        <p class="subtitle">I build reliable ML systems from rigorous evaluation through deployment and failure analysis.</p>
+        <p class="intro">I bring experience across scientific ML, retrieval and ranking, ML evaluation, time-series modelling, and production-minded ML systems. My aerospace background adds an engineering perspective: understanding the data and failure modes, measuring uncertainty, and making models useful beyond a notebook.</p>
         <div class="buttons">
           <a class="button primary" href="https://triasha72.github.io/Portfolio/assets/Triasha_Sarkar_CV.pdf?v=20260902c" type="application/pdf">Resume</a>
           <a class="button" href="https://github.com/triasha72" target="_blank" rel="noreferrer">GitHub</a>
@@ -126,11 +126,11 @@
 
     <section id="about">
       <h2 class="section-title">About</h2>
-      <p class="lede">I take machine learning beyond model training by defining honest baselines, testing failure cases, connecting models to engineering constraints, and building usable systems. My aerospace background keeps me focused on physical consistency, reliability, and reproducibility.</p>
+      <p class="lede">I work across applied machine learning, scientific ML, retrieval, evaluation, and software systems. I define honest baselines, test failure cases, and build reproducible services; my aerospace background brings particular depth in physical context, simulation, uncertainty, and engineering decision-making.</p>
       <div class="grid-3">
         <article class="card">
           <h3>Scientific ML &amp; engineering surrogates</h3>
-          <p>CFD field surrogates, graph neural networks, uncertainty quantification, simulation-level generalization, physics checks, and constrained design optimization.</p>
+          <p>CFD field surrogates, graph neural networks, uncertainty quantification, simulation-level generalization, physics checks, and design optimization.</p>
         </article>
         <article class="card">
           <h3>Search, retrieval &amp; GenAI evaluation</h3>
@@ -151,9 +151,20 @@
           <div>
             <h3><a href="case-airfaans.html">AIRFAANS: geometry-aware scientific ML for aerodynamic CFD fields</a></h3>
             <p>Georgia Tech AE 6394 coursework comparing a pointwise MLP, MeshGraphNet-style GNN, and point neural operator on official AirfRANS meshes with simulation-level splits, force verification, and resumable full-mesh evaluation.</p>
-            <p>Across <span class="metric">3 matched seeds × 3 architectures × 200 official interpolation test meshes</span>, no model won every output. At seed 17, MeshGraphNet led pressure and drag error while the MLP led both velocity components and lift error. Reynolds/AoA OOD and uncertainty runs remain pending.</p>
+            <p>Across <span class="metric">3 matched seeds × 3 architectures × 200 official interpolation test meshes</span>, MeshGraphNet had the lowest mean error for all predicted fields and drag, while the point operator had the lowest mean lift error. Reynolds/AoA OOD and uncertainty runs remain pending, so the project is not presented as operationally ready.</p>
             <p class="meta">Georgia Tech coursework · Aug 2026</p>
             <p class="links"><a href="case-airfaans.html">Case study</a><a href="https://github.com/triasha72/AIRFAANS" target="_blank" rel="noreferrer">Code</a></p>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-image" aria-hidden="true"><img src="assets/airfaans-card.svg" alt="" /></div>
+          <div>
+            <h3><a href="case-surrogate-model-learning.html">Surrogate Model Learning: reliability under engineering distribution shift</a></h3>
+            <p>Public engineering-data studies of Gaussian-process and conventional surrogate models using grouped splits, multi-seed analysis, split-conformal intervals, and a distance-to-training-domain guard.</p>
+            <p>An airfoil Gaussian process achieved <span class="metric">R² 0.8145</span> on a physically grouped split, while the 10-seed mean was 0.8662 ± 0.0680. Nominal 90% intervals did not retain 90% coverage under design shift—an explicit result that shaped the uncertainty analysis.</p>
+            <p class="meta">Independent · Feb 2026–Present</p>
+            <p class="links"><a href="case-surrogate-model-learning.html">Case study</a><a href="https://github.com/triasha72/Surrogate-model-learning" target="_blank" rel="noreferrer">Code</a></p>
           </div>
         </article>
 
@@ -224,7 +235,7 @@
         </article>
       </div>
 
-      <p class="lede" style="margin-top:22px;font-size:15px;">Other work: <a href="case-atlanta.html">Atlanta mobility resilience</a> · <a href="https://github.com/triasha72/Surrogate-model-learning" target="_blank" rel="noreferrer">surrogate model learning</a> · <a href="case-green-tea.html">sustainable-aviation modeling</a> · <a href="case-backtest.html">walk-forward equity backtesting</a></p>
+      <p class="lede" style="margin-top:22px;font-size:15px;">Other work: <a href="case-atlanta.html">Atlanta mobility resilience</a> · <a href="case-green-tea.html">sustainable-aviation modeling</a> · <a href="case-backtest.html">walk-forward equity backtesting</a></p>
     </section>
 
     <section id="experience">
@@ -294,7 +305,7 @@
 
     <section id="direction">
       <h2 class="section-title">Current focus</h2>
-      <p class="direction">I am focused on applied ML roles where retrieval, evaluation, and reliable engineering matter. I work from measurable baselines through deployment, observability, data-quality or physical checks, and failure analysis.</p>
+      <p class="direction">I am focused on Machine Learning Engineer and Applied ML roles where rigorous evaluation, reliable deployment, and useful engineering outcomes matter. I work from measurable baselines through uncertainty and distribution-shift checks, observability, and failure analysis.</p>
     </section>
 
     <section id="contact">

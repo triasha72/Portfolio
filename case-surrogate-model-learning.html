@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Surrogate Model Learning - Triasha Sarkar</title>
+  <link rel="stylesheet" href="case-styles.css" />
+</head>
+<body>
+  <main class="case-wrap">
+    <header class="case-header"><a class="brand" href="index.html">Triasha Sarkar</a><nav class="nav-links"><a href="index.html#work">Work</a><a href="index.html#experience">Experience</a><a href="index.html#skills">Skills</a><a href="index.html#contact">Contact</a></nav></header>
+    <p class="eyebrow">Independent · Feb 2026–Present</p>
+    <h1>Surrogate Model Learning</h1>
+    <p class="case-lede">Public engineering-data studies that treat uncertainty and distribution shift as central evaluation questions—not as afterthoughts once a regression score is available.</p>
+    <div class="case-layout">
+      <article>
+        <section class="case-panel"><h2>Question</h2><p>Can a surrogate remain useful when the held-out data represents genuinely different operating conditions or designs? The work compares Gaussian-process, polynomial, RBF, and tree-based regressors on UCI airfoil self-noise, energy-efficiency, and concrete-strength data.</p></section>
+        <section class="case-panel"><h2>Evaluation design</h2><p>Rather than relying only on random train/test splits, the experiments use grouped physical-design splits, multi-seed robustness checks, split-conformal intervals, and distance-to-training-domain guards. This makes split sensitivity and uncertainty calibration visible.</p></section>
+        <section class="case-panel"><h2>What the evidence says</h2><p>On an airfoil grouped split, the Gaussian process obtained R² 0.8145. Across ten seeds, mean R² was 0.8662 ± 0.0680, showing that the choice of withheld physical conditions materially affects the result. Nominal 90% uncertainty intervals did not retain 90% coverage after design shift.</p></section>
+        <section class="case-panel"><h2>Engineering takeaway</h2><p>The project does not treat nominal uncertainty as proof of reliability. It tests whether uncertainty is calibrated where it matters and documents where the guard has limits. This is the discipline needed before a learned surrogate is trusted in a design workflow.</p></section>
+      </article>
+      <aside class="case-sidebar"><div class="case-panel"><h3>At a glance</h3><ul class="mini-list"><li>UCI airfoil, energy, and concrete datasets</li><li>Grouped physical-design splits</li><li>Gaussian-process and conventional surrogates</li><li>Multi-seed robustness analysis</li><li>Split-conformal intervals</li><li>Distance-to-training-domain guard</li></ul><p><a class="repo-link" href="https://github.com/triasha72/Surrogate-model-learning" target="_blank" rel="noreferrer">View the repository &rarr;</a></p></div></aside>
+    </div>
+  </main>
+</body>
+</html>
