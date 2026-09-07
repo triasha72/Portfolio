@@ -63,6 +63,9 @@ framework or build step, which keeps the deployed site small and makes every
 page easy to inspect. Shared case-study styling lives in `case-styles.css`, and
 project visuals and the downloadable CV live under `assets/`.
 
+The update path from repository evidence to case study and resume is shown in
+[the site architecture](docs/architecture.md).
+
 ## Run locally
 
 ```bash
