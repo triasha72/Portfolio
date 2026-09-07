@@ -49,11 +49,11 @@ and GREEN TEA.
   audits 20,283 public TREC RAG relevance judgments and 2,840 citation-support
   judgments, and rejects 200/200 deliberately wrong NASA source IDs. The
   50-case aerospace author audit is still pending.
-- **Atlanta Mobility Resilience** now materializes 50 Census tract origins from
-  2024 ACS five-year estimates, representing an estimated 216,659 residents.
-  Its research config also uses 101 mapped hospitals, clinics, fire stations,
-  and shelters. It now audits MARTA's public GTFS schedule before multimodal
-  routing; transfer rules and observed travel calibration remain open.
+- **Atlanta Mobility Resilience** uses 50 Census tract centroids, 101 mapped
+  essential facilities, and MARTA's public static GTFS schedule. In the
+  corrected 08:00 run, 28.0% of the 5,050 sampled OD pairs are reachable within
+  60 minutes. Three MARTA planner checks caught and helped fix a same-vehicle
+  transfer bug; a fixed 20-case review is ready but still needs completion.
 - **Surrogate Model Learning** confirms a frozen uncertainty method on 1,030
   public UCI concrete measurements. Test R² is 0.9023, and normalized 90%
   intervals cover 95.83% of the held-out mixture groups. A high-age tail did
