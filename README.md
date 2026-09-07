@@ -34,10 +34,10 @@ and GREEN TEA.
   MeshGraphNet-style GNN, and point neural operator across all 200 official
   AirfRANS interpolation test meshes per treatment. No architecture wins every
   field and force metric; Reynolds/AoA OOD and uncertainty runs remain pending.
-- **IntegrityBench** keeps its three-way candidate blocked after a 59.32%
-  ToxicChat false-acceptance result. A separate BeaverTails-only training run
-  cuts held-out false acceptance to 18.79%, but raises false rejection to
-  16.43% and cannot escalate uncertain cases.
+- **IntegrityBench** keeps every candidate blocked. A 20,000-row mixed Civil
+  Comments/BeaverTails experiment reached 2.29% false acceptance in-domain but
+  9.60% on human-reviewed ToxicChat, making the shift gap visible rather than
+  hiding it behind the in-domain result.
 - **EdgeGenBench** now leads with its public NASA DASHlink flight-anomaly track.
   The generated aircraft-design surrogate remains useful deployment evidence,
   but it is no longer presented as measured-aircraft model accuracy.
@@ -52,11 +52,12 @@ and GREEN TEA.
 - **Atlanta Mobility Resilience** now materializes 50 Census tract origins from
   2024 ACS five-year estimates, representing an estimated 216,659 residents.
   Its research config also uses 101 mapped hospitals, clinics, fire stations,
-  and shelters. ACS uncertainty propagation is implemented; observed travel
-  calibration remains open.
+  and shelters. It now audits MARTA's public GTFS schedule before multimodal
+  routing; transfer rules and observed travel calibration remain open.
 - **Surrogate Model Learning** confirms a frozen uncertainty method on 1,030
   public UCI concrete measurements. Test R² is 0.9023, and normalized 90%
-  intervals cover 95.83% of the held-out mixture groups.
+  intervals cover 95.83% of the held-out mixture groups. A high-age tail did
+  not trigger the distance guard more often, so the guard is not overstated.
 
 ## How it was built
 
