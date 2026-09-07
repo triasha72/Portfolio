@@ -45,11 +45,11 @@ def build() -> None:
         Paragraph("Atlanta, GA | +1 (404) 948-8761 | tsarkar34@gatech.edu | linkedin.com/in/triasha-sarkar | github.com/triasha72 | triasha72.github.io/Portfolio", contact),
         Paragraph("Machine Learning Engineer with experience in scientific ML, model evaluation, retrieval, time-series data, and ML systems. Aerospace background in simulation, uncertainty, and engineering problems.", summary),
         Paragraph("EXPERIENCE", section),
-        Paragraph("Graduate Research Assistant | Georgia Tech ASDL | May 2025 - Aug 2026", role),
+        Paragraph("Graduate Research Assistant | Georgia Tech ASDL | May 2025 – Aug 2026", role),
         Paragraph("Built ML workflows for simulation reliability, airline-safety retrieval, and sustainable aviation; documented assumptions and results for faculty and sponsors.", bullet, bulletText="•"),
-        Paragraph("Machine Learning Engineer | Rolls-Royce | Jul 2023 - Apr 2025", role),
+        Paragraph("Machine Learning Engineer | Rolls-Royce | Jul 2023 – Apr 2025", role),
         Paragraph("Built Python workflows for engine diagnostics, anomaly detection, predictive maintenance, and mixed-frequency sensor data; reviewed findings with lifecycle engineers.", bullet, bulletText="•"),
-        Paragraph("Data Science Intern | Rolls-Royce DataLabs | May 2021 - Jul 2021", role),
+        Paragraph("Data Science Intern | Rolls-Royce DataLabs | May 2021 – Jul 2021", role),
         Paragraph("Cleaned aircraft-engine sensor data, built features, and compared prediction and anomaly-detection models for engineering review.", bullet, bulletText="•"),
         Paragraph("PROJECTS", section),
         Paragraph("AIRFAANS | CFD surrogates", role),
@@ -71,7 +71,7 @@ def build() -> None:
         Paragraph("MS Aerospace Engineering, Georgia Tech (2026) | MSc Aerospace Vehicle Design, Cranfield (2023) | B.Tech Aerospace Engineering, SRM (2021)", body),
         Paragraph("Python, PyTorch, PyTorch Geometric, scikit-learn, GNNs, surrogate modeling, uncertainty quantification, SQL, FastAPI, Docker, Kubernetes, Kafka, PostgreSQL, ONNX", body),
         Paragraph("LEADERSHIP", section),
-        Paragraph("Graduate Chair, Women of Aeronautics and Astronautics, Georgia Tech | Aaruush organizing team and SRM hackathon participant (2019)", body),
+        Paragraph("Graduate Chair, Women of Aeronautics and Astronautics, Georgia Tech | Aaruush organizing team (Jul 2019 – Sep 2019) and SRM hackathon participant (Sep 2019)", body),
         Spacer(1, 1),
     ]
     doc.build(story)
