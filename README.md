@@ -34,16 +34,17 @@ and GREEN TEA.
   MeshGraphNet-style GNN, and point neural operator across all 200 official
   AirfRANS interpolation test meshes per treatment. No architecture wins every
   field and force metric; Reynolds/AoA OOD and uncertainty runs remain pending.
-- **IntegrityBench** evaluates a validation-thresholded candidate on 97,320
-  public Civil Comments, then tests the frozen model on 2,802 human-annotated
-  ToxicChat prompts. False acceptance rises to 59.32% under that shift, so the
-  release remains blocked.
+- **IntegrityBench** keeps its three-way candidate blocked after a 59.32%
+  ToxicChat false-acceptance result. A separate BeaverTails-only training run
+  cuts held-out false acceptance to 18.79%, but raises false rejection to
+  16.43% and cannot escalate uncertain cases.
 - **EdgeGenBench** now leads with its public NASA DASHlink flight-anomaly track.
   The generated aircraft-design surrogate remains useful deployment evidence,
   but it is no longer presented as measured-aircraft model accuracy.
-- **AeroSynth-Eval** includes a ten-seed transfer study on public AGDD images
-  and a separate set of 1,735 GenAI-Bench human preference votes. The votes
-  support evaluator development, not aircraft-inspection claims.
+- **AeroSynth-Eval** includes a ten-seed AGDD transfer study and 1,735
+  GenAI-Bench preference votes. It now has a verified acquisition path for
+  DLR's MIT-licensed 6,000+ image aircraft-dent dataset; no DLR model result is
+  claimed until its archive and splits are audited.
 - **AeroRAG-X** evaluates retrieval on QASPER and SciFact human annotations,
   audits 20,283 public TREC RAG relevance judgments and 2,840 citation-support
   judgments, and rejects 200/200 deliberately wrong NASA source IDs. The
