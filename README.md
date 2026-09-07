@@ -44,9 +44,10 @@ and GREEN TEA.
 - **AeroSynth-Eval** includes a ten-seed transfer study on public AGDD images
   and a separate set of 1,735 GenAI-Bench human preference votes. The votes
   support evaluator development, not aircraft-inspection claims.
-- **AeroRAG-X** adds a QASPER retrieval baseline over 888 questions with human
-  evidence spans. Evidence recall@10 is 76.24%; the result covers retrieval on
-  NLP papers, not NASA answer generation.
+- **AeroRAG-X** evaluates retrieval on QASPER and SciFact human annotations,
+  audits 20,283 public TREC RAG relevance judgments and 2,840 citation-support
+  judgments, and rejects 200/200 deliberately wrong NASA source IDs. The
+  50-case aerospace author audit is still pending.
 - **Atlanta Mobility Resilience** now materializes 50 Census tract origins from
   2024 ACS five-year estimates, representing an estimated 216,659 residents.
   Its research config also uses 101 mapped hospitals, clinics, fire stations,
