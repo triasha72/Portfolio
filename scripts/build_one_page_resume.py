@@ -52,7 +52,7 @@ def build() -> None:
         Paragraph("Data Science Intern | Rolls-Royce DataLabs | May 2021 – Jul 2021", role),
         Paragraph("Cleaned aircraft-engine sensor data, built features, and compared prediction and anomaly-detection models for engineering review.", bullet, bulletText="•"),
         Paragraph("PROJECTS", section),
-        Paragraph("AIRFAANS | CFD surrogates", role),
+        Paragraph("AIRFAANS | CFD surrogates | Jan 2026 – Apr 2026", role),
         Paragraph("Compared an MLP, MeshGraphNet-style GNN, and point neural operator on 200 AirfRANS meshes per model across three seeds; kept OOD and uncertainty work explicitly pending.", bullet, bulletText="•"),
         Paragraph("EdgeGenBench | Flight-anomaly ML and ONNX", role),
         Paragraph("Evaluated NASA DASHlink data on 17,780 held-out aircraft approaches; 0.738 macro F1 missed the release target, while ONNX consistency stayed above 99.55% under tested sensor corruptions.", bullet, bulletText="•"),

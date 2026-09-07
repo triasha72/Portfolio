@@ -103,7 +103,7 @@ def build() -> None:
         Paragraph("Data Science Intern | Rolls-Royce DataLabs | May 2021 – Jul 2021", role),
         Paragraph("Cleaned aircraft-engine sensor data, built features, and compared prediction and anomaly models; summarized recurring failure patterns for engineers.", bullet, bulletText="•"),
         Paragraph("TECHNICAL PROJECTS", section),
-        Paragraph("AIRFAANS | Geometry-aware CFD surrogates | Aug 2026", role),
+        Paragraph("AIRFAANS | Geometry-aware CFD surrogates | Jan 2026 – Apr 2026", role),
         Paragraph("Compared a pointwise MLP, MeshGraphNet-style GNN, and point neural operator across three matched seeds and 200 official AirfRANS interpolation meshes per model; MeshGraphNet had the lowest mean field and drag error, while the point operator had the lowest lift error.", bullet, bulletText="•"),
         Paragraph("Kept the model explicitly non-operational until Reynolds/AoA OOD, uncertainty, and active-learning experiments are complete; split cases by simulation to prevent node-level leakage.", bullet, bulletText="•"),
         KeepTogether([
