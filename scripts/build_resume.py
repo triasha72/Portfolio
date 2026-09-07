@@ -28,6 +28,10 @@ def _fonts() -> tuple[str, str]:
     return "Helvetica", "Helvetica-Bold"
 
 
+def github_link(label: str, repository: str) -> str:
+    return f'<link href="https://github.com/triasha72/{repository}"><u>{label}</u></link>'
+
+
 def build() -> None:
     regular, bold = _fonts()
     navy = colors.HexColor("#0B2830")
@@ -70,12 +74,21 @@ def build() -> None:
         leftMargin=0.62 * inch, topMargin=0.42 * inch, bottomMargin=0.42 * inch,
         title="Triasha Sarkar Resume", author="Triasha Sarkar",
     )
+    edgegenbench = github_link("EdgeGenBench", "EdgeGenBench")
+    integritybench = github_link("IntegrityBench", "IntegrityBench")
+    aerosynth = github_link("AeroSynth-Eval", "AeroSynth-Eval")
+    newslens = github_link("NewsLens", "NewsLens")
+    equity = github_link("Equity Backtest", "Equity-Backtest")
+    surrogate = github_link("Surrogate Model Learning", "Surrogate-model-learning")
+    airfaans = github_link("AIRFAANS", "AIRFAANS")
+    aerorag = github_link("AeroRAG-X", "AeroRAG-X")
     story = [
         Paragraph("TRIASHA SARKAR", name),
         Paragraph(
-            "Atlanta, GA | +1 (404) 948-8761 | tsarkar34@gatech.edu<br/>"
-            "linkedin.com/in/triasha-sarkar | github.com/triasha72 | "
-            "triasha72.github.io/Portfolio", contact,
+            'Atlanta, GA | +1 (404) 948-8761 | <link href="mailto:tsarkar34@gatech.edu"><u>tsarkar34@gatech.edu</u></link><br/>'
+            '<link href="https://www.linkedin.com/in/triasha-sarkar/"><u>linkedin.com/in/triasha-sarkar</u></link> | '
+            '<link href="https://github.com/triasha72"><u>github.com/triasha72</u></link> | '
+            '<link href="https://triasha72.github.io/Portfolio/"><u>triasha72.github.io/Portfolio</u></link>', contact,
         ),
         Paragraph(
             "Machine Learning Engineer with experience in scientific ML, model evaluation, retrieval, "
@@ -93,30 +106,30 @@ def build() -> None:
         Paragraph("Cleaned aircraft-engine sensor data, built features, and compared prediction and anomaly models; summarized recurring failure patterns for engineers.", bullet, bulletText="•"),
         Paragraph("TECHNICAL PROJECTS", section),
         KeepTogether([
-            Paragraph("EdgeGenBench | Real-flight ML and on-device inference | Aug 2026 – Present", role),
+            Paragraph(f"{edgegenbench} | Real-flight ML and on-device inference | Aug 2026 – Present", role),
             Paragraph("Trained a flight-anomaly model on NASA DASHlink recordings and tested it on 17,780 approaches from held-out aircraft. Its 0.738 macro F1 missed the release target.", bullet, bulletText="•"),
             Paragraph("Exported the model to ONNX and tested corrupted sensor inputs; prediction agreement stayed above 99.55% across the tested cases.", bullet, bulletText="•"),
         ]),
-        Paragraph("IntegrityBench | Moderation evaluation and release controls | Aug 2026 – Present", role),
+        Paragraph(f"{integritybench} | Moderation evaluation and release controls | Aug 2026 – Present", role),
         Paragraph("Built controlled evaluation and release checks for changing moderation policies, keeping separate candidates and frozen benchmark results distinct from deployment claims.", body),
-        Paragraph("AeroSynth-Eval | Synthetic inspection-image evaluation | Aug 2026 – Present", role),
+        Paragraph(f"{aerosynth} | Synthetic inspection-image evaluation | Aug 2026 – Present", role),
         Paragraph("Evaluated synthetic aircraft-inspection image data with reproducible splits; reported where results were strong, limited, or still pending validation.", body),
         KeepTogether([
-            Paragraph("NewsLens | Recommendation and real-time search | Jul 2026 – Present", role),
+            Paragraph(f"{newslens} | Recommendation and real-time search | Jul 2026 – Present", role),
             Paragraph("Used chronological splits to keep future clicks out of training. The recommender scored 0.366 NDCG@10, but the uncertainty interval still included no improvement.", bullet, bulletText="•"),
             Paragraph("Built a Go, Kafka, PostgreSQL, and FastAPI ingestion path for new articles. In a 500-event run, publish p99 was 44 ms and search freshness p95 was 79 ms.", bullet, bulletText="•"),
         ]),
-        Paragraph("Equity Backtest | Walk-forward signal evaluation | Jul 2026 – Present", role),
+        Paragraph(f"{equity} | Walk-forward signal evaluation | Jul 2026 – Present", role),
         Paragraph("Built a cross-sectional equity-signal backtest with trading costs and safeguards against common look-ahead and selection biases.", body),
         Paragraph("Silent Failure Detection in Rocket-Motor Simulations | Georgia Tech ASDL | May 2026 – Jul 2026", role),
         Paragraph("Traced silent failures in a 15,120-case rocket-motor study to an uncapped convergence loop; a leakage-safe classifier reached 96.8% accuracy on unseen geometries.", body),
-        Paragraph("Surrogate Model Learning | Reliability under design shift | Feb 2026 – Present", role),
+        Paragraph(f"{surrogate} | Reliability under design shift | Feb 2026 – Present", role),
         Paragraph("Evaluated Gaussian-process and conventional surrogates on public airfoil, energy, and concrete data using grouped splits, multi-seed analysis, split-conformal intervals, and distance-to-training-domain guards.", bullet, bulletText="•"),
         Paragraph("An airfoil Gaussian process reached R² 0.8145 on a physically grouped split; a 10-seed mean of 0.8662 ± 0.0680 exposed split sensitivity. Nominal 90% intervals did not retain 90% coverage under design shift.", bullet, bulletText="•"),
-        Paragraph("AIRFAANS | Geometry-aware CFD surrogates | Jan 2026 – Apr 2026", role),
+        Paragraph(f"{airfaans} | Geometry-aware CFD surrogates | Jan 2026 – Apr 2026", role),
         Paragraph("Compared an MLP, MeshGraphNet-style GNN, and point neural operator across three matched seeds and 200 AirfRANS interpolation meshes per model; MeshGraphNet had the lowest mean field and drag error.", bullet, bulletText="•"),
         Paragraph("Used simulation-level splits and train-only normalization; Reynolds/AoA OOD, uncertainty, and active-learning experiments remain pending.", bullet, bulletText="•"),
-        Paragraph("AeroRAG-X | Retrieval, evaluation, and ML systems | Oct 2025 – Present", role),
+        Paragraph(f"{aerorag} | Retrieval, evaluation, and ML systems | Oct 2025 – Present", role),
         Paragraph("Built a technical-knowledge system over 3,233 NASA report sections using hybrid retrieval, reranking, evidence checks, controlled citations, and containerized FastAPI services; retained negative experimental findings rather than claiming every change helped.", bullet, bulletText="•"),
         Paragraph("GREEN TEA and Project EAGLE | Sustainable aviation modeling | Sep 2025 – Apr 2026", role),
         Paragraph("Built surrogate models to speed up sustainability calculations and connected fuel, demand, transport, and life-cycle inputs; GREEN TEA remains in sponsor use.", body),
