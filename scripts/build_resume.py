@@ -78,9 +78,9 @@ def build() -> None:
             "triasha72.github.io/Portfolio", contact,
         ),
         Paragraph(
-            "Machine Learning Engineer with experience across scientific ML, retrieval and ranking, "
-            "ML evaluation, time-series modelling, and deployment-focused systems. Aerospace training "
-            "adds depth in simulation, uncertainty, physical context, and engineering decision-making.", summary,
+            "Machine Learning Engineer with experience in scientific ML, model evaluation, retrieval, "
+            "time-series data, and ML systems. Aerospace background with experience in simulation, "
+            "uncertainty, and engineering problems.", summary,
         ),
         Paragraph("EDUCATION", section),
         Paragraph("MS, Aerospace Engineering | Georgia Institute of Technology, Atlanta, GA | Aug 2026", role),
