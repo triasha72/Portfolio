@@ -119,6 +119,8 @@ def build() -> None:
         ]),
         Paragraph(f"{equity} | Walk-forward signal evaluation | Jul 2026 – Present", role),
         Paragraph("Built a cross-sectional equity-signal backtest with trading costs and safeguards against common look-ahead and selection biases.", bullet, bulletText="•"),
+        Paragraph("Atlanta Mobility Resilience Digital Twin | Independent project | 2026 – Present", role),
+        Paragraph("Built an OSMnx and MARTA GTFS graph-analysis workflow covering 50 Census-tract origins, 101 essential-service destinations, and 216,659 estimated residents; the planned accessibility validation cycle is still pending.", bullet, bulletText="•"),
         Paragraph("Silent Failure Detection in Rocket-Motor Simulations | AE8900 Special Problems Coursework | May 2026 – Jul 2026", role),
         Paragraph("Traced silent failures in a 15,120-case rocket-motor study to an uncapped convergence loop; a leakage-safe classifier reached 96.8% accuracy on unseen geometries.", bullet, bulletText="•"),
         Paragraph(f"{surrogate} | Reliability under design shift | Feb 2026 – Present", role),
