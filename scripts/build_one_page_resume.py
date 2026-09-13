@@ -62,7 +62,7 @@ def build() -> None:
         Paragraph("Used grouped splits and uncertainty checks on public engineering data; airfoil GP reached R² 0.8145, while nominal 90% intervals lost coverage under design shift.", bullet, bulletText="•"),
         Paragraph("Other ML projects | IntegrityBench | AeroRAG-X | AeroSynth-Eval | Equity Backtest", role),
         Paragraph("Built evaluation and release controls for changing moderation policies; source-grounded NASA technical-report retrieval; synthetic inspection-image evaluation; and a walk-forward equity-signal backtest.", bullet, bulletText="•"),
-        Paragraph("Georgia Tech ASDL projects | Rocket-Motor Failure Detection | GREEN TEA and Project EAGLE | HERO", role),
+        Paragraph("Georgia Tech ASDL projects | Rocket-Motor Failure Detection | Project GREEN TEA | Project EAGLE | HERO", role),
         Paragraph("Worked on silent-failure detection in simulation, sustainable-aviation modeling, and source-aware retrieval for airline safety.", bullet, bulletText="•"),
         Paragraph("EARLIER AEROSPACE PROJECTS", section),
         Paragraph("Supersonic Business Jets and Noise Mitigation (Cranfield) | Bird-Strike Impact Analysis (SRM) | Ornithopter Aerodynamics (SRM)", role),
@@ -71,7 +71,7 @@ def build() -> None:
         Paragraph("MS Aerospace Engineering, Georgia Tech (2026) | MSc Aerospace Vehicle Design, Cranfield (2023) | B.Tech Aerospace Engineering, SRM (2021)", body),
         Paragraph("Python, PyTorch, PyTorch Geometric, scikit-learn, GNNs, surrogate modeling, uncertainty quantification, SQL, FastAPI, Docker, Kubernetes, Kafka, PostgreSQL, ONNX", body),
         Paragraph("LEADERSHIP", section),
-        Paragraph("Graduate Chair, Women of Aeronautics and Astronautics, Georgia Tech | Aaruush organizing team (Jul 2019 – Sep 2019) and SRM hackathon participant (Sep 2019)", body),
+        Paragraph("Graduate Chair, Women of Aeronautics and Astronautics, Georgia Tech | Aarush Hackathon Event organising team (Jun 2019 – Jul 2019) | Aarush student volunteer (Aug 2018 – Jan 2019) | 36-Hour SRM Hackathon team participant (Sep 2019)", body),
         Spacer(1, 1),
     ]
     doc.build(story)
