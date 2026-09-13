@@ -150,7 +150,7 @@ def build() -> None:
         Paragraph("Organising Team Member | Aarush Hackathon Event, SRM University | Jun 2019 – Jul 2019", body),
         Paragraph("Student Volunteer | Aarush, SRM University | Aug 2018 – Jan 2019", body),
         Paragraph("Team Participant | 36-Hour SRM Hackathon, SRM University | Sep 2019", body),
-        Paragraph("Worked in a five-member team on a sustainable urban-transport concept for densely populated Indian cities, comparing travel time, fuel use, cost, and CO₂ emissions.", bullet, bulletText="•"),
+        Paragraph("Worked in a five-member team on a sustainable urban-transport concept for densely populated Indian cities, comparing travel time, fuel use, cost, and CO2 emissions.", bullet, bulletText="•"),
         Paragraph("EDUCATION", section),
         Paragraph("M.S., Aerospace Engineering | Georgia Institute of Technology, Atlanta, GA | Aug 2026", role),
         Paragraph("GPA: 3.7/4.0", body),

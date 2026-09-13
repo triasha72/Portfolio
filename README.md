@@ -12,7 +12,6 @@ production, device, or safety evidence.
 ## CV and status
 
 - [Two-page CV (PDF)](Triasha_Sarkar_CV.pdf)
-- [Editable CV (DOCX)](Triasha_Sarkar_CV.docx)
 - [Project status](project-status.html)
 
 ## Run locally
