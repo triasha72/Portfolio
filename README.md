@@ -33,7 +33,9 @@ and GREEN TEA.
 - **AIRFAANS** now reports a matched three-seed comparison of a pointwise MLP,
   MeshGraphNet-style GNN, and point neural operator across all 200 official
   AirfRANS interpolation test meshes per treatment. No architecture wins every
-  field and force metric; Reynolds/AoA OOD and uncertainty runs remain pending.
+  field and force metric; Reynolds/AoA OOD, uncertainty, and active-learning
+  studies are in progress, with no outcomes reported before the matched runs
+  finish.
 - **IntegrityBench** keeps every candidate blocked. A 20,000-row mixed Civil
   Comments/BeaverTails experiment reached 2.29% false acceptance in-domain but
   9.60% on human-reviewed ToxicChat, making the shift gap visible rather than
