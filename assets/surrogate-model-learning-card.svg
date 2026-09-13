@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" role="img" aria-labelledby="title desc">
+  <title id="title">Surrogate Model Learning reliability card</title>
+  <desc id="desc">A prediction-versus-measurement chart with uncertainty intervals and an out-of-domain warning boundary.</desc>
+  <rect width="900" height="600" fill="#101827"/>
+  <rect x="62" y="78" width="776" height="426" rx="18" fill="#17243a" stroke="#314665" stroke-width="2"/>
+  <g stroke="#30435f" stroke-width="2">
+    <path d="M150 140V440H775"/>
+    <path d="M150 370H775M150 300H775M150 230H775M150 160H775" opacity=".7"/>
+  </g>
+  <path d="M173 399C252 350 305 315 388 286S546 219 622 185S702 147 750 131" fill="none" stroke="#b8c8e3" stroke-width="4" stroke-dasharray="10 10"/>
+  <path d="M173 416C258 363 306 345 390 302S545 254 620 204S702 178 750 151L750 210C701 232 662 244 620 268S478 324 390 355S256 402 173 444Z" fill="#264d71" opacity=".7"/>
+  <path d="M173 430C258 378 306 351 390 319S545 274 620 226S702 195 750 171" fill="none" stroke="#55c9ff" stroke-width="6" stroke-linecap="round"/>
+  <g fill="#f4c95d" stroke="#101827" stroke-width="4">
+    <circle cx="203" cy="401" r="10"/><circle cx="267" cy="369" r="10"/><circle cx="330" cy="341" r="10"/>
+    <circle cx="406" cy="303" r="10"/><circle cx="479" cy="280" r="10"/><circle cx="545" cy="244" r="10"/>
+    <circle cx="610" cy="223" r="10"/><circle cx="673" cy="193" r="10"/>
+  </g>
+  <path d="M694 128V440" stroke="#ff7b72" stroke-width="4" stroke-dasharray="9 8"/>
+  <rect x="703" y="94" width="106" height="34" rx="8" fill="#542f3a"/>
+  <text x="714" y="117" fill="#ffb4aa" font-family="Arial, sans-serif" font-size="17" font-weight="700">DOMAIN EDGE</text>
+  <g font-family="Arial, sans-serif">
+    <text x="68" y="62" fill="#f1f6ff" font-size="40" font-weight="700">SURROGATE MODEL LEARNING</text>
+    <text x="68" y="548" fill="#a9bad5" font-size="23">grouped splits · uncertainty intervals · domain guard</text>
+    <text x="104" y="157" fill="#a9bad5" font-size="18">measured response</text>
+    <text x="642" y="475" fill="#a9bad5" font-size="18">design shift →</text>
+    <text x="188" y="475" fill="#55c9ff" font-size="18">prediction with interval</text>
+  </g>
+</svg>
