@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 260" role="img" aria-label="Atlanta mobility resilience pipeline from public data to scenario metrics">
+<rect width="1000" height="260" rx="22" fill="#071a20"/>
+<g font-family="Arial, sans-serif" fill="#f7fbfb" text-anchor="middle">
+<g fill="#123b43" stroke="#69d2c5" stroke-width="2"><rect x="35" y="82" width="180" height="96" rx="14"/><rect x="285" y="82" width="180" height="96" rx="14"/><rect x="535" y="82" width="180" height="96" rx="14"/><rect x="785" y="82" width="180" height="96" rx="14"/></g>
+<g font-size="19" font-weight="700"><text x="125" y="120">Public data</text><text x="375" y="120">Build graph</text><text x="625" y="120">Simulate</text><text x="875" y="120">Report</text></g>
+<g font-size="14" fill="#c8e7e3"><text x="125" y="146">OSM · ACS · GTFS</text><text x="375" y="146">snap origins and services</text><text x="625" y="146">closures and OD paths</text><text x="875" y="146">travel time · reachability</text></g>
+<g stroke="#f5a524" stroke-width="4" fill="none"><path d="M215 130h60"/><path d="M465 130h60"/><path d="M715 130h60"/></g><g fill="#f5a524"><path d="m268 120 12 10-12 10z"/><path d="m518 120 12 10-12 10z"/><path d="m768 120 12 10-12 10z"/></g>
+</g></svg>
