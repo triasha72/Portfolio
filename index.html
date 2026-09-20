@@ -147,9 +147,9 @@
     <section id="role-guide">
       <h2 class="section-title">Projects</h2>
       <div class="grid-3">
-        <article class="card"><h3>Applied ML</h3><p><a href="case-newslens.html">NewsLens</a>: chronological recommendation evaluation and model release controls. <a href="case-aerosynth.html">AeroSynth-Eval</a>: human-aligned evaluation and controlled augmentation experiments.</p></article>
-        <article class="card"><h3>Scientific ML</h3><p><a href="case-airfaans.html">AIRFAANS</a>: geometry-aware CFD surrogates. <a href="case-surrogate-model-learning.html">Surrogate Model Learning</a>: grouped regression, uncertainty diagnostics and measurement requests.</p></article>
-        <article class="card"><h3>ML engineering</h3><p><a href="case-edgegenbench.html">EdgeGenBench</a>: model export and iOS inference instrumentation. <a href="case-backtest.html">Equity Backtest</a>: temporal evaluation, accounting tests and data-quality controls.</p></article>
+        <article class="card"><h3>Applied ML</h3><p><a href="case-newslens.html">NewsLens</a>: chronological recommendation evaluation, real-time ingestion, and release controls. <a href="case-integritybench.html">IntegrityBench</a>: safety evaluation and fail-closed service boundaries.</p></article>
+        <article class="card"><h3>Scientific ML</h3><p><a href="case-airfaans.html">AIRFAANS</a>: geometry-aware CFD surrogates with full-mesh evaluation. <a href="case-edgegenbench.html">EdgeGenBench</a>: recorded-flight evaluation and on-device inference evidence.</p></article>
+        <article class="card"><h3>ML systems</h3><p><a href="case-aerorag.html">AeroRAG-X</a>: retrieval, grounding, model adaptation, distributed training, and controlled serving studies.</p></article>
       </div>
     </section>
 
@@ -164,17 +164,6 @@
             <p>Across <span class="metric">3 matched seeds × 3 architectures × 200 official interpolation test meshes</span>, MeshGraphNet had the lowest mean error for all predicted fields and drag, while the point operator had the lowest mean lift error. Reynolds/AoA OOD, uncertainty, and active-learning studies are now in progress; no results are reported until the matched runs finish, so the project is not presented as operationally ready.</p>
             <p class="meta">Georgia Tech coursework · Jan 2026 – Apr 2026</p>
             <p class="links"><a href="case-airfaans.html">Case study</a><a href="https://github.com/triasha72/AIRFAANS" target="_blank" rel="noreferrer">Code</a></p>
-          </div>
-        </article>
-
-        <article class="project">
-          <a class="project-image" href="case-surrogate-model-learning.html"><img src="assets/surrogate-model-learning-card.svg" alt="Surrogate Model Learning uncertainty and domain-guard visualization" /></a>
-          <div>
-            <h3><a href="case-surrogate-model-learning.html">Surrogate Model Learning: reliability under engineering distribution shift</a></h3>
-            <p>Public engineering-data studies of Gaussian-process and conventional surrogate models using grouped splits, multi-seed analysis, split-conformal intervals, and a distance-to-training-domain guard.</p>
-            <p>An airfoil Gaussian process achieved <span class="metric">R² 0.8145</span> on a physically grouped split, while the 10-seed mean was 0.8662 ± 0.0680. Nominal 90% intervals did not retain 90% coverage under design shift—an explicit result that shaped the uncertainty analysis.</p>
-            <p class="meta">Independent · Feb 2026 – Present</p>
-            <p class="links"><a href="case-surrogate-model-learning.html">Case study</a><a href="https://github.com/triasha72/Surrogate-model-learning" target="_blank" rel="noreferrer">Code</a></p>
           </div>
         </article>
 
@@ -216,36 +205,15 @@
           <div>
             <h3><a href="case-edgegenbench.html">EdgeGenBench: scientific ML and hardware-aware inference</a></h3>
             <p>A real NASA DASHlink flight-anomaly track plus a separately labeled generated aircraft-design benchmark spanning ONNX, Core ML, Qualcomm QNN, native C++, Android, and browser inference.</p>
-            <p>The recorded-flight model reached <span class="metric">0.7380 macro F1 on 17,780 aircraft-disjoint approaches</span> and remained blocked by its macro-F1 and late-flap-recall gates. ONNX prediction consistency stayed above 99.55% under the tested sensor corruptions.</p>
+            <p>The recorded-flight model reached <span class="metric">0.7380 macro F1 on 17,780 aircraft-disjoint approaches</span> and remained blocked by its macro-F1 and late-flap-recall gates. A separate iPhone 16 Pro Core ML capture measured 106.57 ms cold latency and 0.0471 ms warm p95 across 100 runs; energy and Neural Engine placement remain unmeasured.</p>
             <p class="meta">Independent · Aug 2026 – Present</p>
             <p class="links"><a href="case-edgegenbench.html">Case study</a><a href="https://github.com/triasha72/EdgeGenBench" target="_blank" rel="noreferrer">Code</a></p>
           </div>
         </article>
 
-        <article class="project">
-          <a class="project-image" href="case-aerosynth.html"><img src="assets/aerosynth-card.svg" alt="AeroSynth-Eval evaluation diagram" /></a>
-          <div>
-            <h3><a href="case-aerosynth.html">AeroSynth-Eval: multimodal AI evaluation</a></h3>
-            <p>Aircraft inspection-image evaluation using the public AGDD real-image benchmark, with generated images kept as explicit controls or augmentation rather than treated as operational evidence.</p>
-            <p>Across ten matched seeds, mixed training raised mean macro F1 from <span class="metric">0.3881 to 0.4419</span> but lowered mean crack recall from 0.4000 to 0.3167. A separate 3,224-image DLR aircraft-dent track reached 0.9777 dent recall on its first 645-image test, but only 0.5969 ROC-AUC because of false alarms. It remains a baseline, not a maintenance claim.</p>
-            <p class="meta">Independent · Aug 2026 – Present</p>
-            <p class="links"><a href="case-aerosynth.html">Case study</a><a href="https://github.com/triasha72/AeroSynth-Eval" target="_blank" rel="noreferrer">Code</a></p>
-          </div>
-        </article>
-
-        <article class="project">
-          <a class="project-image" href="case-srm.html"><img src="assets/srm-timeseries.svg" alt="Time-series thrust-data analysis graphic" /></a>
-          <div>
-            <h3><a href="case-srm.html">Rocket-motor failure detection: time-series machine learning</a></h3>
-            <p>Built a leakage-resistant failure-detection workflow over <span class="metric">15,120 simulated thrust profiles</span> using time-series feature extraction, statistical analysis, clustering, and supervised classification.</p>
-            <p><span class="metric">96.8% accuracy · 0.986 ROC AUC</span> on previously unseen motor geometries, with emphasis on generalization and failure analysis.</p>
-            <p class="meta">Georgia Tech · May 2026 – Jul 2026</p>
-            <p class="links"><a href="case-srm.html">Case study</a></p>
-          </div>
-        </article>
       </div>
 
-      <p class="lede" style="margin-top:22px;font-size:15px;"><strong>Other work and active studies:</strong> <a href="case-atlanta.html">Atlanta Mobility Resilience Digital Twin</a> · <a href="case-green-tea.html">GREEN TEA systems-of-systems modeling</a> · <a href="case-backtest.html">walk-forward equity backtesting</a></p>
+      <p class="lede" style="margin-top:22px;font-size:15px;"><strong>Other work and active studies:</strong> <a href="case-atlanta.html">Atlanta Mobility Resilience Digital Twin</a> · <a href="case-aerosynth.html">AeroSynth-Eval</a> · <a href="case-surrogate-model-learning.html">Surrogate Model Learning</a> · <a href="case-srm.html">AE8900 Silent Failure Detection</a> · <a href="case-green-tea.html">GREEN TEA systems-of-systems modeling</a> · <a href="case-backtest.html">walk-forward equity backtesting</a></p>
     </section>
 
     <section id="experience">
