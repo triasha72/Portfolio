@@ -159,9 +159,9 @@
         <article class="project">
           <a class="project-image" href="case-airfaans.html"><img src="assets/airfaans-card.svg" alt="AIRFAANS CFD surrogate comparison" /></a>
           <div>
-            <h3><a href="case-airfaans.html">AIRFAANS: geometry-aware scientific ML for aerodynamic CFD fields</a></h3>
-            <p>Georgia Tech AE 6394 coursework comparing a pointwise MLP, MeshGraphNet-style GNN, and point neural operator on official AirfRANS meshes with simulation-level splits, force verification, and resumable full-mesh evaluation.</p>
-            <p>Across <span class="metric">3 matched seeds × 3 architectures × 200 official interpolation test meshes</span>, MeshGraphNet had the lowest mean error for all predicted fields and drag, while the point operator had the lowest mean lift error. The project also includes six hash-verified Reynolds-OOD treatments and a two-seed scarce-data Pointwise MLP replication with 200 saved full-mesh evaluation records per seed. Uncertainty, active-learning, and 3D-geometry extensions remain future work.</p>
+            <h3><a href="case-airfaans.html">AIRFAANS: scientific ML for aerodynamic CFD fields</a></h3>
+            <p>A study of whether learned surrogates can predict airfoil flow fields and still preserve the pressure, lift, and drag information an engineer would need. It compares a pointwise MLP, MeshGraphNet-style GNN, and point neural operator on official AirfRANS meshes.</p>
+            <p>Across <span class="metric">3 matched seeds × 3 architectures × 200 full-mesh interpolation tests</span>, MeshGraphNet had the lowest mean field and drag error, while the point operator had the lowest mean lift error. Six hash-verified Reynolds-OOD runs and a two-seed scarce-data replication are also complete. Uncertainty, active learning, and 3-D geometry are the next research steps.</p>
             <p class="meta">Georgia Tech coursework · Jan 2026 – Apr 2026</p>
             <p class="links"><a href="case-airfaans.html">Case study</a><a href="https://github.com/triasha72/AIRFAANS" target="_blank" rel="noreferrer">Code</a></p>
           </div>
