@@ -1,5 +1,7 @@
 # Triasha Sarkar — machine learning portfolio
 
+I’m a machine learning engineer with about two years of industry experience and graduate research experience in aerospace. This portfolio shows how I build models, the systems around them, and the evaluation needed to understand their limits.
+
 This repository contains the portfolio site I use to explain my machine
 learning work through problems, decisions, experiments, and results. The site
 covers scientific ML, retrieval and ranking, GenAI evaluation, distributed

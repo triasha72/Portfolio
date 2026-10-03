@@ -178,6 +178,16 @@ h1 {
   background: var(--panel-soft);
 }
 
+.case-status {
+  max-width: 1080px;
+  margin: 18px auto 0;
+  padding: 13px 16px;
+  border-left: 3px solid var(--accent);
+  background: rgba(81, 226, 205, .07);
+  color: var(--muted);
+  font-size: 14px;
+}
+
 .case-panel h2,
 .case-panel h3 {
   margin: 0 0 10px;

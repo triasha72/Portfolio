@@ -114,8 +114,8 @@
       <div>
         <p class="eyebrow">Georgia Tech · Ex-Rolls-Royce</p>
         <h1 id="hero-title">Machine Learning Engineer</h1>
-        <p class="subtitle">Machine learning for engineering, data, and real-world decisions.</p>
-        <p class="intro">I'm a Machine Learning Engineer with experience in scientific ML, model evaluation, retrieval, time-series data, and ML systems. My work started in aerospace, which taught me to care about the data, the limits of a model, and whether people can actually use it.</p>
+        <p class="subtitle">Applied machine learning for engineering and data products.</p>
+        <p class="intro">I’m a machine learning engineer with about two years of industry experience and graduate research experience in aerospace. I build models and the systems around them: data pipelines, evaluation protocols, APIs, and deployment checks. My current focus is scientific ML, retrieval, and dependable ML products. Start with NewsLens, AIRFAANS, or AeroRAG-X.</p>
         <div class="buttons">
           <a class="button primary" href="assets/Triasha_Sarkar_CV.pdf" type="application/pdf">Resume (PDF)</a>
           <a class="button" href="https://github.com/triasha72" target="_blank" rel="noreferrer">GitHub</a>
@@ -194,7 +194,7 @@
           <div>
             <h3><a href="case-newslens.html">NewsLens: recommendation and real-time search systems</a></h3>
             <p>Leakage-safe MIND recommendation paired with a separate Go, Kafka, PostgreSQL, and FastAPI article path built for idempotency, dead letters, and freshness-aware ranking.</p>
-            <p><span class="metric">NDCG@10 0.3664</span> offline. In a 500-event local run, publish p99 was 44 ms, index-freshness p95 was 79 ms, all duplicate probes were caught, and a stopped consumer's partition recovered in 5.7 seconds.</p>
+            <p><span class="metric">NDCG@10 0.3664</span> offline. In the verified 60-minute local soak, 100,000 events were accepted with 0% publish failures, 224 ms freshness p95, and 3.1 s outage recovery. Multi-host and online product impact remain unmeasured.</p>
             <p class="meta">Independent · Jul 2026 – Present</p>
             <p class="links"><a href="case-newslens.html">Case study</a><a href="https://newslens-demo.onrender.com/docs" target="_blank" rel="noreferrer">Synthetic API demo</a><a href="https://github.com/triasha72/NewsLens" target="_blank" rel="noreferrer">Code</a></p>
           </div>

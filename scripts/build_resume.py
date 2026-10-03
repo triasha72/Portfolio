@@ -90,8 +90,9 @@ def build() -> None:
             '<link href="https://triasha72.github.io/Portfolio/" color="#0000FF"><u>triasha72.github.io/Portfolio</u></link>', contact,
         ),
         Paragraph(
-            "Machine Learning Engineer with experience in scientific ML, model evaluation, retrieval, "
-            "time-series data, and ML systems. Background in aerospace engineering, simulation, and uncertainty.", summary,
+            "Machine learning engineer with about two years of industry experience and graduate research "
+            "experience in aerospace. Builds models and the systems around them, from data preparation and "
+            "evaluation through APIs and deployment checks.", summary,
         ),
         Paragraph("<u>PROFESSIONAL EXPERIENCE</u>", section),
         Paragraph("Graduate Research Assistant under Prof. Dimitri Mavris | Georgia Tech ASDL | May 2025 – Aug 2026", role),
@@ -115,7 +116,7 @@ def build() -> None:
         KeepTogether([
             Paragraph(f"{newslens} | Recommendation and real-time search | Jul 2026 – Present", role),
             Paragraph("Used chronological splits to keep future clicks out of training. The recommender scored 0.366 NDCG@10, but the uncertainty interval still included no improvement.", bullet, bulletText="•"),
-            Paragraph("Built a Go, Kafka, PostgreSQL, and FastAPI ingestion path for new articles. In a 500-event run, publish p99 was 44 ms and search freshness p95 was 79 ms.", bullet, bulletText="•"),
+            Paragraph("Built a Go, Kafka, PostgreSQL, and FastAPI ingestion path for new articles. A 60-minute local soak accepted 100,000 events with 0% publish failures, 224 ms freshness p95, and 3.1 s outage recovery; multi-host and online product impact remain unmeasured.", bullet, bulletText="•"),
         ]),
         Paragraph(f"{equity} | Walk-forward signal evaluation | Jul 2026 – Present", role),
         Paragraph("Built a cross-sectional equity-signal backtest with trading costs and safeguards against common look-ahead and selection biases.", bullet, bulletText="•"),
@@ -126,9 +127,9 @@ def build() -> None:
         Paragraph(f"{surrogate} | Reliability under design shift | Feb 2026 – Present", role),
         Paragraph("Evaluated Gaussian-process and conventional surrogates on public airfoil, energy, and concrete data using grouped splits, multi-seed analysis, split-conformal intervals, and distance-to-training-domain guards.", bullet, bulletText="•"),
         Paragraph("An airfoil Gaussian process reached R² 0.8145 on a physically grouped split; a 10-seed mean of 0.8662 ± 0.0680 exposed split sensitivity. Nominal 90% intervals did not retain 90% coverage under design shift.", bullet, bulletText="•"),
-        Paragraph(f"{airfaans} | Extension of AE6394 Coursework Project | Jan 2026 – Apr 2026", role),
+        Paragraph(f"{airfaans} | Extension of AE6394 Coursework Project | Jan 2026 – Present", role),
         Paragraph("Compared an MLP, MeshGraphNet-style GNN, and point neural operator across three matched seeds and 200 AirfRANS interpolation meshes per model; MeshGraphNet had the lowest mean field and drag error.", bullet, bulletText="•"),
-        Paragraph("Used simulation-level splits and train-only normalization; matched OOD, uncertainty, and active-learning studies are in progress, with no results reported yet.", bullet, bulletText="•"),
+        Paragraph("Completed six Reynolds-OOD treatments and a scarce-data replication; AoA-OOD, uncertainty calibration, active learning, and operational readiness remain pending.", bullet, bulletText="•"),
         Paragraph(f"{aerorag} | Independent extension of Project HERO | Retrieval, evaluation, and ML systems | Oct 2025 – Present", role),
         Paragraph("Extended Project HERO independently into a technical-knowledge system over 3,233 NASA report sections using hybrid retrieval, reranking, evidence checks, controlled citations, and containerized FastAPI services; retained negative experimental findings rather than claiming every change helped.", bullet, bulletText="•"),
         Paragraph("Project EAGLE | RIC Enterprise-sponsored Vehicle Grand Challenge | Georgia Tech ASDL | Sep 2025 – Present", role),
