@@ -68,6 +68,8 @@ def build() -> None:
         bulletIndent=0, spaceAfter=2.3,
     )
 
+    event_description = ParagraphStyle("EventDescription", parent=body, leftIndent=9, spaceAfter=2.3)
+
     doc = SimpleDocTemplate(
         str(OUTPUT), pagesize=letter, rightMargin=0.62 * inch,
         leftMargin=0.62 * inch, topMargin=0.42 * inch, bottomMargin=0.42 * inch,
@@ -118,13 +120,13 @@ def build() -> None:
             Paragraph("Used chronological splits to keep future clicks out of training. The recommender scored 0.366 NDCG@10, but the uncertainty interval still included no improvement.", bullet, bulletText="•"),
             Paragraph("Built a Go, Kafka, PostgreSQL, and FastAPI ingestion path for new articles. A 60-minute local soak accepted 100,000 events with 0% publish failures, 224 ms freshness p95, and 3.1 s outage recovery; multi-host and online product impact remain unmeasured.", bullet, bulletText="•"),
         ]),
-        Paragraph(f"{equity} | Walk-forward signal evaluation | Jul 2026 – Present", role),
+        Paragraph(f"{equity} | Walk-forward signal evaluation | Jul 2026 – Sep 2026", role),
         Paragraph("Built a cross-sectional equity-signal backtest with trading costs and safeguards against common look-ahead and selection biases.", bullet, bulletText="•"),
-        Paragraph("Atlanta Mobility Resilience Digital Twin | Independent project | 2026 – Present", role),
+        Paragraph(f"{github_link('Atlanta Mobility Resilience Digital Twin', 'atlanta-mobility-resilience-digital-twin')} | Independent project | 2026 – Present", role),
         Paragraph("Built an OSMnx and MARTA GTFS graph-analysis workflow covering 50 Census-tract origins, 101 essential-service destinations, and 216,659 estimated residents; the planned accessibility validation cycle is still pending.", bullet, bulletText="•"),
         Paragraph("Silent Failure Detection in Rocket-Motor Simulations | AE8900 Special Problems Coursework | May 2026 – Jul 2026", role),
         Paragraph("Traced silent failures in a 15,120-case rocket-motor study to an uncapped convergence loop; a leakage-safe classifier reached 96.8% accuracy on unseen geometries.", bullet, bulletText="•"),
-        Paragraph(f"{surrogate} | Reliability under design shift | Feb 2026 – Present", role),
+        Paragraph(f"{surrogate} | Reliability under design shift | Feb 2026 – Oct 2026", role),
         Paragraph("Evaluated Gaussian-process and conventional surrogates on public airfoil, energy, and concrete data using grouped splits, multi-seed analysis, split-conformal intervals, and distance-to-training-domain guards.", bullet, bulletText="•"),
         Paragraph("An airfoil Gaussian process reached R² 0.8145 on a physically grouped split; a 10-seed mean of 0.8662 ± 0.0680 exposed split sensitivity. Nominal 90% intervals did not retain 90% coverage under design shift.", bullet, bulletText="•"),
         Paragraph(f"{airfaans} | Extension of AE6394 Coursework Project | Jan 2026 – Present", role),
@@ -132,7 +134,7 @@ def build() -> None:
         Paragraph("Completed six Reynolds-OOD treatments and a scarce-data replication; AoA-OOD, uncertainty calibration, active learning, and operational readiness remain pending.", bullet, bulletText="•"),
         Paragraph(f"{aerorag} | Independent extension of Project HERO | Retrieval, evaluation, and ML systems | Oct 2025 – Present", role),
         Paragraph("Extended Project HERO independently into a technical-knowledge system over 3,233 NASA report sections using hybrid retrieval, reranking, evidence checks, controlled citations, and containerized FastAPI services; retained negative experimental findings rather than claiming every change helped.", bullet, bulletText="•"),
-        Paragraph("Project EAGLE | RIC Enterprise-sponsored Vehicle Grand Challenge | Georgia Tech ASDL | Sep 2025 – Present", role),
+        Paragraph("Project EAGLE | RIC Enterprise-sponsored Vehicle Grand Challenge | Georgia Tech ASDL | Sep 2025 – May 2026", role),
         Paragraph("Developed sizing and synthesis tooling, passenger layout, AutoCAD cabin geometry, and requirements for the Eco-friendly Airborne Global Luxury Ekranoplan.", bullet, bulletText="•"),
         Paragraph("Project GREEN TEA | U.S. Endowment-sponsored Systems of Systems Grand Challenge | Georgia Tech ASDL | Sep 2025 – Present", role),
         Paragraph("Developed a techno-economic framework for forest-residue sustainable aviation fuel and bioenergy, including jobs, CO2 impacts, a GREET surrogate, and forest-health modeling.", bullet, bulletText="•"),
@@ -156,7 +158,7 @@ def build() -> None:
         Paragraph("Organising Team Member | Aarush Hackathon Event, SRM University | Jun 2019 – Jul 2019", bullet, bulletText="•"),
         Paragraph("Student Volunteer | Aarush, SRM University | Aug 2018 – Jan 2019", bullet, bulletText="•"),
         Paragraph("Team Participant | 36-Hour SRM Hackathon, SRM University | Sep 2019", bullet, bulletText="•"),
-        Paragraph("Worked in a five-member team on a sustainable urban-transport concept for densely populated Indian cities, comparing travel time, fuel use, cost, and CO2 emissions.", bullet, bulletText="•"),
+        Paragraph("Worked in a five-member team on a sustainable urban-transport concept for densely populated Indian cities, comparing travel time, fuel use, cost, and CO2 emissions.", event_description),
         Paragraph("<u>EDUCATION</u>", section),
         Paragraph("M.S., Aerospace Engineering | Georgia Institute of Technology, Atlanta, GA | Aug 2026", role),
         Paragraph("GPA: 3.7/4.0", body),
@@ -171,3 +173,4 @@ def build() -> None:
 
 if __name__ == "__main__":
     build()
+
